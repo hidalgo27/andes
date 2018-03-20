@@ -32,22 +32,7 @@
             </div>
         </div>
     </header>
-    <section class="sticky-top bg-white d-sm-none">
-        <div class="container">
-            <div class="row no-gutters text-center">
-                <div class="col">
-                    <a href="{{route('tours_path')}}" class="btn btn-link">Tours</a>
-                </div>
-                <div class="col">
-                    <a href="{{route('destinations_path')}}" class="btn btn-link">Destinos</a>
-                </div>
-                <div class="col">
-                    <a href="{{route("about_path")}}" class="btn btn-link">Nosotros</a>
-                </div>
-                {{--<div class="col">hola1</div>--}}
-            </div>
-        </div>
-    </section>
+    @include('layouts.page.menu-mobil')
 
     <section class="bg-white m-0">
         <div class="container">
@@ -70,7 +55,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mb-0 lead text-secondary text-center"><b>Nuestros paquetes turísticos más populares a Perú y América del Sur, estos paquetes podrían usarse como referencia para personalizar su propio viaje. En GOTOPERU nos especializamos en crear experiencias personalizadas según sus preferencias; Invitamos a revisar estos programas para tener una idea de los destinos más importantes, por ejemplo, MachuPicchu, Lago Titicaca, Nazca y el Amazonas.</b></p>
+                    <p class="mb-0 lead text-secondary text-center"><b>Nuestros paquetes turísticos más populares a Perú. Estos paquetes podrían usarse como referencia para personalizar su propio viaje. En GOTOPERU nos especializamos en crear experiencias personalizadas según sus preferencias; Invitamos a revisar estos programas para tener una idea de los destinos más importantes, por ejemplo, MachuPicchu, Lago Titicaca, Nazca y el Amazonas.</b></p>
                 </div>
             </div>
             <div class="row mt-5">
@@ -82,6 +67,9 @@
             </div>
         </div>
     </section>
+
+
+
 
     <section class="py-5 bg-white" id="con-hoteles">
         <div class="container">
@@ -159,15 +147,7 @@
                                 </div>
                                 <div class="col-2 text-right">
                                     <b>
-                                        @foreach($paquetes->precio_paquetes as $precio)
-                                            @if($precio->estrellas == 2)
-                                                @if($precio->precio == 0)
-                                                    <span class="text-danger">Pida una cotización</span>
-                                                @else
-                                                    <sup>$</sup>{{$precio->precio}}<small>USD</small>
-                                                @endif
-                                            @endif
-                                        @endforeach
+                                        <sup>$</sup>{{$paquetes->precio}}<small>USD</small>
                                     </b>
                                 </div>
                             </div>

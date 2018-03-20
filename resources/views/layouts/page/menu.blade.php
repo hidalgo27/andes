@@ -12,7 +12,7 @@
                         <a href="#" class="btn btn-g-green btn-sm text-white d-none d-sm-inline-block" onclick="startOlark()"><i class="fa fa-comment"></i> Chat</a>
                         <span class="mx-2">|</span>
                         <button type="button" class="btn btn-g-yellow btn-sm text-white d-none d-sm-inline-block" data-toggle="modal" data-target="#contant_m">
-                            Pregunte Ahora
+                            Pergunte Agora
                         </button>
                         <a href="https://www.facebook.com/GOTOPERUcom/" class="text-white d-inline mx-1" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/GOTOPERUCOM" class="text-white d-inline mx-1" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -24,12 +24,12 @@
                 <div class="row d-none d-sm-block">
                     <div class="col">
                         <nav class="nav nav-pills nav-fill rounded-right bg-light">
-                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('tours_path')}}">PERÚ TOURS</a>
-                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('paquetes_path')}}">PAQUETES DE VIAJE</a>
+                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('tours_path')}}">PERÚ PASSEIOS</a>
+                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('paquetes_path')}}">PACOTES DE VIAGEM</a>
                             <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('destinations_path')}}">DESTINOS</a>
-                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('hoteles_path')}}">HOTELES</a>
-                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route("about_path")}}">ACERCA DE NOSOTROS</a>
-                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-none d-lg-inline" href="{{route('social_path')}}">RESPONSABILIDAD SOCIAL</a>
+                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-sm-none  d-md-inline" href="{{route('hoteles_path')}}">HOTÉIS</a>
+                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-sm-none  d-xl-inline" href="{{route("about_path")}}">SOBRE NÓS</a>
+                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-none d-lg-inline" href="{{route('social_path')}}">RESPONSABILIDADE SOCIAL</a>
                         </nav>
                     </div>
                 </div>

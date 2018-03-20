@@ -40,6 +40,12 @@
 .top-0{
   top: 0;
 }
+.right-0{
+  right: 0;
+}
+.left-0{
+  left: 0;
+}
 .mt-10-p{
   margin-top: 10%;
 }
@@ -81,7 +87,14 @@
   bottom: 0;
   right: 0;
 }
-
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #f9a825;
+}
+.nav-link, .nav-link:hover{
+  background: #6c757d;
+  color: #ffffff;
+}
 /* Video Overlay */
 .header-video{
   width: 100%;

@@ -74,22 +74,7 @@
             </div>
         </div>
     </header>
-    <section class="sticky-top bg-white d-sm-none">
-        <div class="container">
-            <div class="row no-gutters text-center">
-                <div class="col">
-                    <a href="{{route('tours_path')}}" class="btn btn-link">Tours</a>
-                </div>
-                <div class="col">
-                    <a href="{{route('destinations_path')}}" class="btn btn-link">Destinos</a>
-                </div>
-                <div class="col">
-                    <a href="{{route("about_path")}}" class="btn btn-link">Nosotros</a>
-                </div>
-                {{--<div class="col">hola1</div>--}}
-            </div>
-        </div>
-    </section>
+    @include('layouts.page.menu-mobil')
 
     <section class="bg-white m-0">
         <div class="container">
@@ -113,6 +98,14 @@
                             <h1 class="font-montserrat text-g-green font-weight-bold">TOURS EN PERU {{$paquete_i->duracion}} DÍAS: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                             @php $s_none = ''; @endphp
                         @endif
+                    @endforeach
+
+                    @foreach($paquete_categoria->where('idpaquetes', $paquete_i->id) as $categoria)
+                        @if($categoria)
+                                @php $s_none = 'd-none'; @endphp
+                            @else
+                                @php $s_none = ''; @endphp
+                            @endif
                     @endforeach
                     {{--<p class="h3 my-3 font-weight-bold ">Lorem elit. Accusamus asperiores commodi</p>--}}
                     {{--<p class="lead">L orem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad assumenda blanditiis consectetur cumque, debitis enim eveniet id <b>labore nam necessitatibus</b> repellat? Consectetur doloremque harum necessitatibus quis repellendus sit veniam.</p>--}}
@@ -153,6 +146,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-2">
+                        <div class="col text-right">
+                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Ver todos los paquetes <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col">
@@ -161,10 +159,10 @@
                                 <div class="alert alert-danger py-2 mb-1" role="alert">
                                     <h5 class="font-weight-bold m-0">Paquetes sin Hotel</h5>
                                 </div>
-                                <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</p>
+                                <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> Tours, traslados, entradas, desayunos, trenes.</p>
 
                                 @foreach($paquete->where('s_precio', 1)->sortBy('duracion')->take(6) as $paquetes)
-                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action text-primary">
+                                    <a href="{{route('sin_hotel_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action text-primary">
                                         {{$paquetes->duracion}} Dias {{ucwords(strtolower($paquetes->titulo))}}. <b class="text-danger">Visite</b>:
 
                                         @php
@@ -179,6 +177,11 @@
                                 @endforeach
 
                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col text-right">
+                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Ver todos los paquetes <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -217,52 +220,95 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Itinerario:</h3>
-                            @foreach($paquete_iti as $paquete_itinerary)
-                                @foreach($paquete_itinerary->itinerario as $itinerario)
-                                    <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
-                                    @php echo $itinerario->descripcion; @endphp
-                                @endforeach
-                            @endforeach
+                            <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#resumen" role="tab" aria-controls="resumen" aria-selected="true">Resumen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#detalle" role="tab" aria-controls="detalle" aria-selected="false">Detallado</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="resumen" role="tabpanel" aria-labelledby="home-tab">
+                                    @foreach($paquete_iti as $paquete_itinerary)
+                                        @foreach($paquete_itinerary->itinerario as $itinerario)
+                                            <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
+                                            @php echo $itinerario->resumen; @endphp
+                                        @endforeach
+                                    @endforeach
+                                </div>
+                                <div class="tab-pane fade" id="detalle" role="tabpanel" aria-labelledby="profile-tab">
+                                    @foreach($paquete_iti as $paquete_itinerary)
+                                        @foreach($paquete_itinerary->itinerario as $itinerario)
+                                            <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
+                                            @php echo $itinerario->descripcion; @endphp
+                                        @endforeach
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
                     <div class="row {{$s_none}}">
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Precios:</h3>
-                            <table class="table table-bordered table-responsive">
+                            <table class="table table-bordered table-responsive mb-0">
                                 {{--<caption>Price per person</caption>--}}
                                 <thead>
                                 <tr>
                                     <th colspan="5">Precios basados en doble acomodación</th>
                                 </tr>
                                 <tr class="bg-primary text-white">
-                                    <th>Económico  2 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>
-                                    <th>Tourista 3 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>
-                                    <th>Superior 3 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>
-                                    <th>Comfort 4 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>
-                                    <th>Lujo 5 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>
+                                    <th class="text-center">Económico  <span class="d-block text-warning">2 <i class="fa fa-star" aria-hidden="true"></i></span></th>
+                                    {{--<th class="text-center">Tourista 3 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>--}}
+                                    <th class="text-center">Turista <span class="d-block text-warning">3 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
+                                    <th class="text-center">Superior <span class="d-block text-warning">4 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
+                                    <th class="text-center">Lujo <span class="d-block text-warning">5 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
+                                <tr class="bg-light">
                                     @foreach($paquete_iti as $paquetes)
                                         @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
                                             @if($precio->precio == 0)
-                                                <td>Ask for a quote</td>
+                                                <td>Pida una cotización</td>
 
-                                            @elseif($precio->estrellas == 2)
-                                                    <td>USD ${{$precio->precio}}</td>
-                                                    <td>Pida una cotización</td>
-                                            @elseif($precio->estrellas > 2)
-                                                <td>USD ${{$precio->precio}}</td>
+                                                @else
+                                                <td class="text-center h5">USD ${{$precio->precio}}</td>
+
+                                            {{--@elseif($precio->estrellas == 2)--}}
+                                                    {{--<td>USD ${{$precio->precio}}</td>--}}
+                                                    {{--<td>Pida una cotización</td>--}}
+                                            {{--@elseif($precio->estrellas > 2)--}}
+                                                {{--<td>USD ${{$precio->precio}}</td>--}}
                                             @endif
+                                        @endforeach
+                                    @endforeach
+                                </tr>
+                                <tr>
+                                    @foreach($paquete_iti as $paquetes)
+                                        @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
+                                            <td>
+                                                @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
+                                                    @foreach($hoteles_destinos->where('iddestinos', $paquete_destino->destinos->id) as $hoteles_destino)
+                                                        @foreach($hoteles->where('id', $hoteles_destino->hotel->id)->where('estrellas', $precio->estrellas) as $hotel)
+                                                            <a href="{{$hoteles_destino->hotel->url}}" target="_blank" data-toggle="tooltip" data-placement="top" title="{{$hotel->servicios}}"><small class="d-block"><i class="fas fa-angle-right"></i> {{ucwords(strtolower($hotel->nombre))}} <i class="text-secondary">({{ucwords(strtolower($paquete_destino->destinos->nombre))}})</i></small></a>
+                                                        @endforeach
+                                                    @endforeach
+                                                @endforeach
+                                            </td>
                                         @endforeach
                                     @endforeach
                                 </tr>
                                 </tbody>
                             </table>
+                            <small>*Si tiene algún hotel en especifico con gusto lo prepararemos una cotización personalizada.
+                                <a href="#book-now">Pregunte aquí.</a></small>
                         </div>
                     </div>
 
@@ -278,56 +324,65 @@
                             @php echo $paquetes->noincluye; @endphp
                         </div>
                     </div>
-                    <div class="row">
+                    @if(isset($paquetes->opcional))
+                        @php
+                            $hide_op = '';
+                        @endphp
+                        @else
+                        @php
+                            $hide_op = 'd-none';
+                        @endphp
+                    @endif
+                    <div class="row {{$hide_op}}">
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Opcional:</h3>
                             @php echo $paquetes->opcional; @endphp
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="font-weight-bold mt-4"><strong>Hotels</strong></h3>
+                    {{--<div class="row">--}}
+                        {{--<div class="col">--}}
+                            {{--<h3 class="font-weight-bold mt-4"><strong>Hotels</strong></h3>--}}
                             {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at distinctio eos error minus, perspiciatis praesentium sint suscipit ullam voluptatum. Ab, aliquid architecto atque consequuntur expedita hic inventore non repudiandae!</p>--}}
-                            <div class="alert alert-primary text-center mt-3" role="alert">|
-                                @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                    <a href="#{{$paquete_destino->destinos->id}}-hotel" class="font-weight-bold">{{$paquete_destino->destinos->nombre}} HOTEL</a> |
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                        <h5 class="text-g-yellow pt-4 m-0" id="{{$paquete_destino->destinos->id}}-hotel"><i class="fa fa-check"></i> {{$paquete_destino->destinos->nombre}} HOTEL</h5>
-                        @foreach($hoteles_destinos->where('iddestinos', $paquete_destino->destinos->id) as $hoteles_destino)
-                            <div class="row pt-3 pb-4">
-                                <div class="col-auto d-none d-sm-block">
-                                    <img src="{{$hoteles_destino->hotel->imagen}}" alt="" class=" rounded-circle" width="100" height="100">
-                                </div>
-                                <div class="col">
-                                    <h3>{{$hoteles_destino->hotel->nombre}}</h3>
-                                    @for($i=0; $i < $hoteles_destino->hotel->estrellas; $i++)
-                                        <i class="fa fa-star text-g-yellow"></i>
-                                    @endfor
-                                    <p class="pt-2"><i class="fa fa-map-marker-alt"></i> {{$hoteles_destino->hotel->direccion}}</p>
-                                    @php $services = explode(',', $hoteles_destino->hotel->servicios); @endphp
-                                    <p class="lead"><b>Services:</b>
-                                        @foreach($services as $service)
-                                            <i class="fa fa-check text-secondary"></i> {{$service}}
-                                        @endforeach
-                                    </p>
-                                    <a href="{{$hoteles_destino->hotel->url}}" class="btn btn-outline-secondary" target="_blank">{{$hoteles_destino->hotel->nombre}}</a>
-                                </div>
-                            </div>
-                            <hr>
-                        @endforeach
-                    @endforeach
+                            {{--<div class="alert alert-primary text-center mt-3" role="alert">|--}}
+                                {{--@foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)--}}
+                                    {{--<a href="#{{$paquete_destino->destinos->id}}-hotel" class="font-weight-bold">{{$paquete_destino->destinos->nombre}} HOTEL</a> |--}}
+                                {{--@endforeach--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--@foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)--}}
+                        {{--<h5 class="text-g-yellow pt-4 m-0" id="{{$paquete_destino->destinos->id}}-hotel"><i class="fa fa-check"></i> {{$paquete_destino->destinos->nombre}} HOTEL</h5>--}}
+                        {{--@foreach($hoteles_destinos->where('iddestinos', $paquete_destino->destinos->id) as $hoteles_destino)--}}
+                            {{--<div class="row pt-3 pb-4">--}}
+                                {{--<div class="col-auto d-none d-sm-block">--}}
+                                    {{--<img src="{{$hoteles_destino->hotel->imagen}}" alt="" class=" rounded-circle" width="100" height="100">--}}
+                                {{--</div>--}}
+                                {{--<div class="col">--}}
+                                    {{--<h3>{{$hoteles_destino->hotel->nombre}}</h3>--}}
+                                    {{--@for($i=0; $i < $hoteles_destino->hotel->estrellas; $i++)--}}
+                                        {{--<i class="fa fa-star text-g-yellow"></i>--}}
+                                    {{--@endfor--}}
+                                    {{--<p class="pt-2"><i class="fa fa-map-marker-alt"></i> {{$hoteles_destino->hotel->direccion}}</p>--}}
+                                    {{--@php $services = explode(',', $hoteles_destino->hotel->servicios); @endphp--}}
+                                    {{--<p class="lead"><b>Services:</b>--}}
+                                        {{--@foreach($services as $service)--}}
+                                            {{--<i class="fa fa-check text-secondary"></i> {{$service}}--}}
+                                        {{--@endforeach--}}
+                                    {{--</p>--}}
+                                    {{--<a href="{{$hoteles_destino->hotel->url}}" class="btn btn-outline-secondary" target="_blank">{{$hoteles_destino->hotel->nombre}}</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<hr>--}}
+                        {{--@endforeach--}}
+                    {{--@endforeach--}}
 
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="my-5 py-5 bg-light" id="book-now">
+    <section class="py-5 bg-light" id="book-now">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-9 col-md-9 col-lg-8 text-center">

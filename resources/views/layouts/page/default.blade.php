@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="jwORR3CP8HncGeqMvD-edmeNZKnF1mbTojRwWhyXzZA" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{--<title>Agencia de Viajes en Peru | Tours Machu Picchu</title>--}}
     {!! SEOMeta::generate() !!}
@@ -13,6 +14,15 @@
     <meta name="description" content="Paquetes de viaje a Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.">
     <link href="{{asset('images/icons/favicon/favicon.ico')}}" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="{{mix("css/app.css")}}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57960909-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-57960909-3');
+    </script>
 
 </head>
 <body data-spy="scroll" data-target="#menu" class="position-relative">
@@ -163,6 +173,7 @@
 {{--scripts--}}
 <script src="{{asset("js/app.js")}}"></script>
 @stack('scripts')
+
 <div id="fb-root"></div>
 <script>
 
@@ -483,5 +494,8 @@
         / Add configuration calls below this comment /
         olark.identify('8407-174-10-8084');</script>
     <!-- end olark code -->
+
+
+
 </body>
 </html>

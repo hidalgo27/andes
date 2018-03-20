@@ -74,29 +74,29 @@
                             <div class="col">
                                 <div class="row no-gutters">
                                     <div class="col">
-                                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Assistances">
+                                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Assistências">
                                         {{--<span>Assistances</span>--}}
                                     </div>
 
                                     <div class="col">
-                                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Entrances">
+                                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Ingressos">
                                         {{--<span>Entrances</span>--}}
                                     </div>
                                     <div class="col">
-                                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Transfers">
+                                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Traslados">
                                         {{--<span>Transfers</span>--}}
                                     </div>
 
                                     <div class="col">
-                                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Hotels">
+                                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Hotéis">
                                         {{--<span>Hotels</span>--}}
                                     </div>
                                     <div class="col">
-                                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Tours">
+                                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Passeios">
                                         {{--<span>Tours</span>--}}
                                     </div>
                                     <div class="col">
-                                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Trains">
+                                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="p-1 w-100" data-toggle="tooltip" data-placement="top" title="Trenes">
                                         {{--<span>Trains</span>--}}
                                     </div>
                                 </div>
@@ -109,9 +109,9 @@
                         {{--</div>--}}
                         <div class="row my-3 justify-content-center">
                             <div class="col">
-                                <p class="text-white mb-3 h5"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> <b>Los mejores precios:</b> <small>Somos operadores locales.</small></p>
-                                <p class="text-white mb-3 h5"><span class="bg-g-yellow p-1 rounded-circle px-3 text-white">2</span> <b>Flexibles:</b> <small>Paquetes completos o solo transportes.</small></p>
-                                <p class="text-white mb-3 h5"><span class="bg-g-dark p-1 rounded-circle px-3 text-white">3</span> <b>Calidad:</b> <small>Cientos de testimonios lo comprueban.</small></p>
+                                <p class="text-white mb-3 h5"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> <b>Os melhores preços:</b> <small>Somos operadores locais.</small></p>
+                                <p class="text-white mb-3 h5"><span class="bg-g-yellow p-1 rounded-circle px-3 text-white">2</span> <b>Flexivéis:</b> <small>Pacotes completos ou só traslados.</small></p>
+                                <p class="text-white mb-3 h5"><span class="bg-g-dark p-1 rounded-circle px-3 text-white">3</span> <b>Qualidade:</b> <small>Muitos testemunhos nos acreditam.</small></p>
                             </div>
                         </div>
                         {{--<div class="row justify-content-center">--}}
@@ -126,22 +126,7 @@
             </div>
         </div>
     </header>
-    <section class="sticky-top bg-white d-sm-none">
-        <div class="container">
-            <div class="row no-gutters text-center">
-                <div class="col">
-                    <a href="{{route('tours_path')}}" class="btn btn-link">Tours</a>
-                </div>
-                <div class="col">
-                    <a href="{{route('destinations_path')}}" class="btn btn-link">Destinos</a>
-                </div>
-                <div class="col">
-                    <a href="{{route("about_path")}}" class="btn btn-link">Nosotros</a>
-                </div>
-                {{--<div class="col">hola1</div>--}}
-            </div>
-        </div>
-    </section>
+    @include('layouts.page.menu-mobil')
 
 
     <div class="bg-white">
@@ -167,14 +152,14 @@
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-12 col-sm text-center mb-4">
-                        <h3>Diseñe su viaje</h3>
-                        <p>Sin compromiso.</p>
+                        <h3>Personalize sua viagem</h3>
+                        <p>Sem cumpromisso</p>
                         <button type="button" class="btn btn-g-green" data-toggle="modal" data-target="#design_m">
                             Mi viaje ideal seria ...
                         </button>
                     </div>
                     <div class="col-12 col-sm text-center mb-4 border border-top-0 border-bottom-0">
-                        <h3>Contacte con nosotros</h3>
+                        <h3>Contate com nós</h3>
                         <p>Telefono: <i class="fa fa-phone"></i>51(84)262555</p>
                         {{--<a href="" class="btn btn-g-yellow">Contáctenos</a>--}}
                         <button type="button" class="btn btn-g-yellow btn-sm mb-2" data-toggle="modal" data-target="#contant_m">
@@ -187,7 +172,7 @@
                         {{--<a href="" class="btn btn-dark">Nosotros te llamamos</a>--}}
                     </div>
                     <div class="col-12 col-sm text-center mb-3">
-                        <h3>Chatee ahora</h3>
+                        <h3>Fale com nós agora</h3>
                         <p>Contacte mediante:</p>
                         <a href="https://m.me/GOTOPERUcom/" class="btn btn-primary mb-2" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
                         <a href="https://api.whatsapp.com/send?phone=5184262555" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
@@ -437,7 +422,7 @@
 
         <section class="container bg-white">
             <div class="row">
-                <div class="col col-sm-12 col-md-8">
+                <div class="col-12 col-sm-12 col-md-8">
                     <div class="row">
                         <div class="col">
                             <div id="paquetes" class="d-sm-block">
@@ -448,12 +433,17 @@
                                 <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
                                 <div class="list-group">
                                     @foreach($paquete->where('estado', 1)->sortBy('duracion') as $paquetes)
-                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
+                                        @if($paquetes->duracion==8)
+                                            @php $new = "list-group-item-secondary"; $bad = "position-absolute top-0 right-0 badge badge-danger"; @endphp
+                                        @else
+                                            @php $new = ""; $bad = "d-none"; @endphp
+                                        @endif
+                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action {{$new}} position-relative">
                                         <div class="row no-gutters">
-                                            <div class="col-5 text-primary">
+                                            <div class="col-8 col-sm-5 text-primary">
                                                 <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                             </div>
-                                            <div class="col">
+                                            <div class="col d-none d-sm-inline">
                                                 <i class="fa fa-map-marker-alt pl-2 pr-1 text-g-green"></i>
                                                 @php
                                                     $i = 1;
@@ -464,7 +454,7 @@
                                                     @php $i++; @endphp
                                                 @endforeach
                                             </div>
-                                            <div class="col-2 text-right">
+                                            <div class="col col-sm-2 text-right">
                                                 <b>
                                                 @foreach($paquetes->precio_paquetes as $precio)
                                                     @if($precio->estrellas == 2)
@@ -478,6 +468,7 @@
                                                 </b>
                                             </div>
                                         </div>
+                                        <span class="{{$bad}}">new</span>
                                     </a>
                                     @endforeach
                                 </div>
@@ -498,15 +489,15 @@
                                 <div class="alert alert-danger py-2 mb-1" role="alert">
                                     <h5 class="font-weight-bold m-0">Paquetes sin Hotel</h5>
                                 </div>
-                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
+                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> Tours, traslados, entradas, desayunos, trenes.</h5>
 
                                 @foreach($paquete->where('s_precio', 1)->sortBy('duracion')->take(6) as $paquetes)
                                         <a href="{{route('sin_hotel_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                                         <div class="row no-gutters">
-                                            <div class="col-5 text-primary">
+                                            <div class="col-8 col-sm-5 text-primary">
                                                 <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                             </div>
-                                            <div class="col">
+                                            <div class="col d-none d-sm-inline">
                                                 <i class="fa fa-map-marker-alt pl-2 pr-1 text-danger"></i>
                                                 @php
                                                     $i = 1;
@@ -517,7 +508,7 @@
                                                     @php $i++; @endphp
                                                 @endforeach
                                             </div>
-                                            <div class="col-2 text-right">
+                                            <div class="col col-sm-2 text-right">
                                                 <b>
                                                     <sup>$</sup>{{$paquetes->precio}}<small>USD</small>
                                                 </b>
@@ -546,13 +537,13 @@
                                 @foreach($tours as $tour)
                                     <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
                                         <div class="row no-gutters">
-                                            <div class="col-5 text-primary">
+                                            <div class="col-8 col-sm-5 text-primary">
                                                 <b>{{ucwords(strtolower($tour->titulo))}}</b>
                                             </div>
                                             {{--<div class="col">--}}
                                                 {{--<i class="fa fa-clock pl-2 pr-1 text-info"></i> {{$tour->duracion}}--}}
                                             {{--</div>--}}
-                                            <div class="col">
+                                            <div class="col d-none d-sm-inline">
                                                 <i class="fa fa-map-marker-alt pl-2 pr-1 text-info"></i>
                                                 @php
                                                     $i = 1;
@@ -563,7 +554,7 @@
                                                     @php $i++; @endphp
                                                 @endforeach
                                             </div>
-                                            <div class="col-2 text-right">
+                                            <div class="col col-sm-2 text-right">
                                                 <b>
                                                     @if($tour->precio < 0)
                                                         <span class="text-danger">Pida una cotización</span>
@@ -647,7 +638,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sm-12 col-md-4">
+                <div class="col-12 col-sm-12 col-md-4">
                     {{--<div class="card-deck owl-carousel owl-theme">--}}
 
                         {{--<div class="card">--}}
