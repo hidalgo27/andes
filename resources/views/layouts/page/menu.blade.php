@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-4 col-sm-2 position-relative">
                 <div class="logo-goto position-absolute w-100 top-0 p-3 border rounded border-dark bg-dark">
-                    <a href="/"><img src="{{asset('images/logo-goto-b.png')}}" alt="" class="img-fluid"></a>
+                    <a href="/"><img src="{{asset('images/logo-andes-b.png')}}" alt="" class="img-fluid"></a>
                 </div>
             </div>
             <div class="col col-sm">
