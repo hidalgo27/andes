@@ -64,7 +64,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        Grupos de 6 a 14 pasajeros y/o paseos privados.
+                        Grupos pequenos e passeios privados
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        Vivimos en el Peru, ofreciendo asistencia real las 24horas.
+                        Moramos no perú, porém oferecemos assistencia 24/7
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        Elija programas prearmados o personalize vuestras vacaciones
+                        Escolha de programas prontos para comprar ou personalizar suas férias
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        Costos menores al ser una operadora local
+                        Custos menores, somos uma agencia local
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        Excelentes comentarios en Tripadvisor
+                        Excelentes coméntarios na tripadvisor
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        Salidas Diarias para todos nuestros tours.
+                        Temos passeios todos os dias do ano
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
     <div class="container">
         <div class="row pt-4">
             <div class="col text-center text-white">
-                <p>LAS MEJORES VACACIONES AL PERÚ CON EL MEJOR OPERADOR DE VIAJES</p>
+                <p>OS MELHORES FERIADOS AO PERU COM O MELHOR OPERADOR DE VIAGEM</p>
                 <p>&copy; GOTOPERU COMPANY</p>
             </div>
         </div>

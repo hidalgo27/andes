@@ -46,7 +46,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mb-0 lead text-secondary text-center"><b>Trabajaremos en torno a su agenda y sus intereses de viaje para construir juntos los planes de viaje más exclusivos. Revise nuestros programas de viajes y explore Perú.</b></p>
+                    <p class="mb-0 lead text-secondary text-center"><b>Vamos trabalhar em torno de sua agenda e seus interesses de viagem para construir juntos os planos de viagem mais exclusivos. Confira nossos programas de viagem e explore o Perú.</b></p>
                 </div>
 
             </div>

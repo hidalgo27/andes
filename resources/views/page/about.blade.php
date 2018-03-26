@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row content-header-row align-items-center">
                     <div class="col text-center">
-                        <h3 class="text-white text-center h1">ACERCA DE NOSOTROS</h3>
+                        <h3 class="text-white text-center h1">SOBRE NÓS</h3>
                         <i class="fa fa-chevron-down text-white h1"></i>
                     </div>
 

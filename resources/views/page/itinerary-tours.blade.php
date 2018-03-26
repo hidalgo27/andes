@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="font-montserrat text-g-green font-weight-bold">TOURS EN PERU: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
+                    <h1 class="font-montserrat text-g-green font-weight-bold">PASSEIOS EM PERU: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                     {{--<p class="h3 my-3 font-weight-bold ">Lorem elit. Accusamus asperiores commodi</p>--}}
                     {{--<p class="lead">L orem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad assumenda blanditiis consectetur cumque, debitis enim eveniet id <b>labore nam necessitatibus</b> repellat? Consectetur doloremque harum necessitatibus quis repellendus sit veniam.</p>--}}
                 </div>
@@ -78,13 +78,13 @@
 
                     <div class="row">
                         <div class="col">
-                            <h3 class="font-weight-bold mt-4">Incluye:</h3>
+                            <h3 class="font-weight-bold mt-4">Incluso:</h3>
                             @php echo $tour->incluye; @endphp
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <h3 class="font-weight-bold mt-4">No Incluye:</h3>
+                            <h3 class="font-weight-bold mt-4">Não Incluso:</h3>
                             @php echo $tour->noincluye; @endphp
                         </div>
                     </div>
@@ -107,16 +107,16 @@
                                         <td>{{$tour->horario}}</td>
                                     </tr>
                                     <tr>
-                                        <td><b>Duración</b></td>
+                                        <td><b>Duração</b></td>
                                         <td>{{$tour->duracion}}</td>
                                     </tr>
                                     <tr>
-                                        <td><b>Precio por persona (GRUPO)</b></td>
+                                        <td><b>Preço por pessoa (GRUPO)</b></td>
                                         <td><sup>$</sup>{{$tour->precio_g}} <small>USD</small></td>
                                     </tr>
                                     <tr>
-                                        <td><b>Precio por persona (PRIVADO)</b></td>
-                                        <td><i class="text-danger">Pida Cotización</i></td>
+                                        <td><b>Preço por pessoa (PRIVADO)</b></td>
+                                        <td><i class="text-danger">Solicite um orçamento</i></td>
                                     </tr>
                                 </table>
                                 <a  href="#book-now" type="button" class="btn btn-primary btn-lg btn-avalavility btn-block">
@@ -136,9 +136,9 @@
                 <div class="col">
                     <div class="d-none d-sm-block pt-5">
                         <div class="alert alert-info py-2 mb-1" role="alert">
-                            <h5 class="font-weight-bold m-0">Tours Similares</h5>
+                            <h5 class="font-weight-bold m-0">Excursões similares</h5>
                         </div>
-                        <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</p>
+                        <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> Hotéis, passeios, traslados, ingressos, café da manha, trenes.</p>
 
                         @foreach($tours_a as $tour2)
                             <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour2->titulo)))}}" class="list-group-item list-group-item-action">
@@ -209,7 +209,7 @@
                 <div class="col-12 col-sm-9 col-md-9 col-lg-8">
                     <form id="i_form" role="form">
                         {{csrf_field()}}
-                        <h3 class="text-secondary mt-4 d-none">Acomodación</h3>
+                        <h3 class="text-secondary mt-4 d-none">Acomodação</h3>
 
                         <div class="row d-none">
                             <div class="col-6 col-sm" data-toggle="buttons">
@@ -256,7 +256,7 @@
                             </div>
                         </div>
 
-                        <h3 class="text-secondary mt-4">Numero de Pasajeros</h3>
+                        <h3 class="text-secondary mt-4">Numero de Passageiros</h3>
 
                         <div class="row no-gutters" data-toggle="buttons">
                             <label class="btn col btn-outline-primary">
@@ -281,34 +281,34 @@
 
                         <div class="row">
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Fecha de Viaje</h3>
+                                <h3 class="text-secondary mt-4">Data de Viagem</h3>
                                 <input type="text" class="form-control" id="i_date" placeholder="Fecha de Viaje">
                                 <input type="hidden" id="i_package" value="{{$tour->codigo}}: {{$tour->titulo}} {{$tour->duracion}} DAYS">
                             </div>
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Telefono</h3>
-                                <input type="tel" class="form-control" id="i_tel" placeholder="Ingrese su numero">
+                                <h3 class="text-secondary mt-4">Telefone</h3>
+                                <input type="tel" class="form-control" id="i_tel" placeholder="Telefone">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Nombre</h3>
-                                <input type="text" class="form-control" id="i_name" placeholder="Nombre completo">
+                                <h3 class="text-secondary mt-4">Nome</h3>
+                                <input type="text" class="form-control" id="i_name" placeholder="Nome completo">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
                                 <h3 class="text-secondary mt-4">Email</h3>
-                                <input type="email" class="form-control" id="i_email" placeholder="Ingrese su email">
+                                <input type="email" class="form-control" id="i_email" placeholder="Digite seu email">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Algun Duda?</h3>
-                                <textarea class="form-control" id="i_comment" rows="3" placeholder="Como usted imagina un viaje inolvidable al Perú, sugerencias especiales, preguntas, comentarios"></textarea>
+                                <h3 class="text-secondary mt-4">Dúvidas?</h3>
+                                <textarea class="form-control" id="i_comment" rows="3" placeholder="Como você imagina uma viagem inesquecivel ao Perú, sugestões especiais, perguntas, comentários"></textarea>
                             </div>
                         </div>
 
@@ -319,7 +319,7 @@
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                 </button>
                                 <ul class="fa-ul pull-right d-none" id="loader2">
-                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
+                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                                 </ul>
                             </div>
                         </div>
@@ -329,7 +329,7 @@
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                    <strong>Muchas</strong> por contactar con GOTOPERU, un agente de viajes se pondrá en contacto con usted en las próximas 24 horas para ayudarle con la planificación de su viaje. :)
+                                    <strong>Muito obrigado</strong> por entrar em contato com a GOTOPERU, um agente de viagens entrará em contato com você nas próximas 24 horas para ajudá-lo a planejar sua viagem. :)
                                 </div>
                             </div>
                         </div>

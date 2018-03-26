@@ -133,16 +133,16 @@
 
         <ul id="menu" class="nav nav-pills nav-fill bg-light rounded d-none  d-sm-flex sticky-top nav-itinerary">
             <li class="nav-item d-none d-sm-block">
-                <a class="nav-link text-white rounded-0 bg-g-green" href="#paquetes">Paquetes</a>
+                <a class="nav-link text-white rounded-0 bg-g-green" href="#paquetes">Pacotes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white rounded-0 bg-danger" href="#hotel">Paquetes sin Hoteles</a>
+                <a class="nav-link text-white rounded-0 bg-danger" href="#hotel">Pacotes sem Hotel</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white rounded-0 bg-info" href="#tours">Solo Tours</a>
+                <a class="nav-link text-white rounded-0 bg-info" href="#tours">Passeios Individuais</a>
             </li>
             <li class="nav-item d-none d-sm-block">
-                <a class="nav-link text-white rounded-0 bg-g-yellow" href="#traslados">Solo Traslados</a>
+                <a class="nav-link text-white rounded-0 bg-g-yellow" href="#traslados">Transferências Solo</a>
             </li>
         </ul>
 
@@ -186,31 +186,31 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Contacte con nosotros</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Entre em contato conosco</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Envié la información requerida y nos pondremos en contacto dentro de las 24 horas garantizado.</p>
+                            <p>Envie as informações necessárias e entraremos em contato com você dentro de 24 horas garantidas.</p>
                             <form id="d_form">
                                 {{csrf_field()}}
                                 <div class="row">
                                     <div class="col-12 col-sm border-secondary border-right-0  m-0">
 
                                         <div class="d-block mb-3">
-                                            <span class="text-secondary align-bottom">Información Personal</span>
+                                            <span class="text-secondary align-bottom">Informação pessoal</span>
                                             {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                                         </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
                                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
-                                                    <input type="text" class="form-control" id="d_name" placeholder="Nombre Completo">
+                                                    <input type="text" class="form-control" id="d_name" placeholder="Nome Completo">
                                                 </div>
                                                 <div class="form-group">
                                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
-                                                    <input type="email" class="form-control" id="d_email" placeholder="Su email">
+                                                    <input type="email" class="form-control" id="d_email" placeholder="Seu email">
                                                 </div>
                                             </div>
                                         </div>
@@ -218,13 +218,13 @@
                                             <div class="col-12 col-sm">
                                                 <div class="form-group">
                                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
-                                                    <input type="text" class="form-control" id="d_date" placeholder="Fecha de viaje">
+                                                    <input type="text" class="form-control" id="d_date" placeholder="Data de viagem">
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm">
                                                 <div class="form-group">
                                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
-                                                    <input type="tel" class="form-control" id="d_tel" placeholder="N° de Telefono">
+                                                    <input type="tel" class="form-control" id="d_tel" placeholder="N° de Telefone">
                                                 </div>
                                             </div>
                                         </div>
@@ -238,7 +238,7 @@
                                             <div class="col-6 col-sm-6">
                                                 <div class="form-group">
                                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
-                                                    <input type="number" class="form-control" id="d_numero" placeholder="N° de Pasajeros">
+                                                    <input type="number" class="form-control" id="d_numero" placeholder="N° de passageir">
                                                 </div>
                                             </div>
                                         </div>
@@ -249,7 +249,7 @@
                                         {{--<h4 class="card-title">Card title</h4>--}}
                                         {{--<label class="d-block">Eu Gostaria de visitar</label>--}}
                                         <div class="d-block mb-3">
-                                            <span class="text-secondary align-bottom">Le gustaria visitar:</span>
+                                            <span class="text-secondary align-bottom">Eu Gostaria de visitar:</span>
                                             {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                                         </div>
                                         <div class="">
@@ -285,14 +285,14 @@
                                                 </div>
                                                 <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                                     <label class="btn btn-outline-primary btn-block">
-                                                        <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Lineas de Nazca
+                                                        <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Linhas de Nazca
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="input-group">
-                                            <span class="input-group-addon" id="">Otros</span>
+                                            <span class="input-group-addon" id="">Outros</span>
                                             <input type="text" class="form-control" id="d_otros" aria-describedby="basic-addon3">
                                         </div>
 
@@ -324,7 +324,7 @@
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <strong>Muchas</strong> por contactar con GOTOPERU, un agente de viajes se pondrá en contacto con usted en las próximas 24 horas para ayudarle con la planificación de su viaje. :)
+                                        <strong>Muito obrigado</strong> por entrar em contato com a GOTOPERU, um agente de viagens entrará em contato com você nas próximas 24 horas para ajudá-lo a planejar sua viagem. :)
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -335,7 +335,7 @@
                                             <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                         </button>
                                         <ul class="fa-ul pull-right d-none" id="loader2">
-                                            <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
+                                            <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -352,30 +352,30 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Nosotros te llamamos</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Nós ligamos para você</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Ingrese la información requeriada y nosotros te llamamos.</p>
+                            <p>Digite as informações necessárias e nós ligaremos para você.</p>
                             <form id="t_form">
                                 {{csrf_field()}}
                                 <div class="form-group">
-                                    <label for="t_name">Nombres</label>
-                                    <input type="text" class="form-control" id="t_name" placeholder="Nombre completo">
+                                    <label for="t_name">Nome</label>
+                                    <input type="text" class="form-control" id="t_name" placeholder="Nome completo">
                                 </div>
                                 <div class="form-group">
                                     <label for="t_email">Email</label>
-                                    <input type="email" class="form-control" id="t_email" placeholder="Email">
+                                    <input type="email" class="form-control" id="t_email" placeholder="Seu email">
                                 </div>
                                 <div class="form-group">
-                                    <label for="t_city">Ciudad/País</label>
+                                    <label for="t_city">Cidade/País</label>
                                     <input type="text" class="form-control" id="t_city" placeholder="Lima/Perú">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="t_tel">Telefono</label>
+                                    <label for="t_tel">Telefone</label>
                                     <input type="text" class="form-control" id="t_tel" placeholder="Ej. +51 980385734">
                                 </div>
 
@@ -384,7 +384,7 @@
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                    <strong>Muchas</strong> por contactar con GOTOPERU, un agente de viajes se pondrá en contacto con usted en las próximas 24 horas para ayudarle con la planificación de su viaje. :)
+                                    <strong>Muito obrigado</strong> por entrar em contato com a GOTOPERU, um agente de viagens entrará em contato com você nas próximas 24 horas para ajudá-lo a planejar sua viagem. :)
                                 </div>
 
                                 {{--<button type="submit" class="btn btn-primary">Sign in</button>--}}
@@ -393,11 +393,11 @@
                         <div class="modal-footer">
                             {{--<button type="submit" class="btn btn-primary">Llámenme ahora mismo</button>--}}
 
-                            <button class="btn btn-lg btn-block btn-g-green" id="t_send" type="button" onclick="tel()">Llámenme ahora mismo
+                            <button class="btn btn-lg btn-block btn-g-green" id="t_send" type="button" onclick="tel()">Me ligue agora mesmo
                                 <i class="fa fa-paper-plane" aria-hidden="true"></i>
                             </button>
                             <ul class="fa-ul pull-right d-none" id="loader4">
-                                <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
+                                <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                             </ul>
 
                         </div>
@@ -412,8 +412,8 @@
                     <div class="col text-center">
                         {{--<h1 class="font-montserrat text-g-green">Tours a Machu Picchu Perú Agencia de Viajes y Turismo</h1>--}}
                         {{--<p class="text-secondary">Oficinas: Lima, Cusco, Arequipa.</p>--}}
-                        <p class="h3 my-3 font-weight-bold ">Los mejores testimonios, 10 años de experiencia nos respaldan.</p>
-                        <p class="lead d-none d-sm-block">Desde su llegada al aeropuerto de Lima o Cusco, le demostraremos nuestra pasión por nuestro país, mostrandole lo mejor del Perú con nuestro selecto equipo de guías profesionales de GOTOPERU, siempre con nuestra mejor hospitalidad peruana!</p>
+                        <p class="h3 my-3 font-weight-bold ">Os melhores testemunhos, 10 anos de experiência atrás de nós.</p>
+                        <p class="lead d-none d-sm-block">Desde a sua chegada ao aeroporto em Lima ou Cusco, mostraremos a nossa paixão pelo nosso país, mostrando-lhe o melhor do Peru com a nossa seleta equipe de guias GOTOPERU profissionais, sempre com nossa melhor hospitalidade peruana!</p>
                     </div>
                 </div>
             </div>
@@ -428,9 +428,9 @@
                             <div id="paquetes" class="d-sm-block">
                                 {{--<h3 class="text-secondary pt-5 pb-4 h4"><strong>Paquetes</strong></h3>--}}
                                 <div class="alert alert-g-green py-2 mb-1" role="alert">
-                                    <h5 class="font-weight-bold m-0">Paquetes</h5>
+                                    <h5 class="font-weight-bold m-0">Pacotes</h5>
                                 </div>
-                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
+                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> Hotéis, passeios, traslados, ingressos, café da manha, trene.</h5>
                                 <div class="list-group">
                                     @foreach($paquete->where('estado', 1)->sortBy('duracion') as $paquetes)
                                         @if($paquetes->duracion==8)
@@ -478,7 +478,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col text-right">
-                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Ver todos los paquetes <i class="fa fa-chevron-right"></i></a>
+                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Veja todos os pacotes <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -487,9 +487,9 @@
                             <div id="hotel" class="d-sm-block pt-5">
                                 {{--<h3 class="text-secondary pt-5 pb-4 h4"><strong>Paquetes</strong></h3>--}}
                                 <div class="alert alert-danger py-2 mb-1" role="alert">
-                                    <h5 class="font-weight-bold m-0">Paquetes sin Hotel</h5>
+                                    <h5 class="font-weight-bold m-0">Pacotes sem Hotel</h5>
                                 </div>
-                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> Tours, traslados, entradas, desayunos, trenes.</h5>
+                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> Passeios, traslados, ingressos, café da manha, trenes.</h5>
 
                                 @foreach($paquete->where('s_precio', 1)->sortBy('duracion')->take(6) as $paquetes)
                                         <a href="{{route('sin_hotel_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
@@ -522,7 +522,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col text-right">
-                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Ver todos los paquetes <i class="fa fa-chevron-right"></i></a>
+                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Veja todos os pacotes <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -530,9 +530,9 @@
                         <div class="col">
                             <div id="tours" class="d-sm-block pt-5">
                                 <div class="alert alert-info py-2 mb-1" role="alert">
-                                    <h5 class="font-weight-bold m-0">Solo Tours</h5>
+                                    <h5 class="font-weight-bold m-0">Passeios Individuais</h5>
                                 </div>
-                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
+                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
 
                                 @foreach($tours as $tour)
                                     <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
@@ -589,7 +589,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col text-right">
-                            <a href="{{route('tours_path')}}" class="btn-link font-weight-normal">Ver todos los tours <i class="fa fa-chevron-right"></i></a>
+                            <a href="{{route('tours_path')}}" class="btn-link font-weight-normal">Veja todos os passeios <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -597,9 +597,9 @@
                             <div id="traslados" class="d-sm-block pt-5">
                                 {{--<h3 class="text-secondary pt-5 pb-4 h4"><strong>Paquetes</strong></h3>--}}
                                 <div class="alert alert-g-yellow py-2 mb-1" role="alert">
-                                    <h5 class="font-weight-bold m-0">Solo Traslados</h5>
+                                    <h5 class="font-weight-bold m-0">Transferências Solo</h5>
                                 </div>
-                                <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
+                                {{--<h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>--}}
 
                                 @foreach($traslado as $traslados)
                                     <a href="{{route('transfer_path', str_replace(' ','-',strtolower($traslados->titulo)))}}" class="list-group-item list-group-item-action">
@@ -628,9 +628,9 @@
                     <div class="row pt-5">
                         <div class="col">
                             <div class="alert alert-primary py-2 mb-1" role="alert">
-                                <h5 class="font-weight-bold m-0">Consultanos</h5>
+                                <h5 class="font-weight-bold m-0">Pergunte-nos</h5>
                             </div>
-                            <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> Comentarios, dudas, información de paquetes, etc.</h5>
+                            <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> Comentários, dúvidas, informações sobre pacotes, etc.</h5>
 
                             <div class="card my-4">
                                 <div class="fb-comments" data-href="http://gotoperu.com.pe/" data-width="100%" data-numposts="5" data-mobile="1"></div>
@@ -718,8 +718,8 @@
 
                     <div class="row mt-4">
                         <div class="col">
-                            <h3 class="font-weight-bold">Nuestra Promesa</h3>
-                            <h5 class="text-secondary font-pompiere font-weight-bold">Una aventura distinta cada día.</h5>
+                            <h3 class="font-weight-bold">Nossa promessa</h3>
+                            <h5 class="text-secondary font-pompiere font-weight-bold">Uma aventura diferente a cada dia.</h5>
                         </div>
                     </div>
 
@@ -798,11 +798,11 @@
                     </div>
                     <div class="col">
                         <div class="px-4">
-                            <h3 class="h1 font-weight-light">PORQUE NOS IMPORTA <i class="fa fa-heart text-danger"></i></h3>
-                            <p class="">Retribuimos a nuestras comunidades</p>
+                            <h3 class="h1 font-weight-light">PORQUE NOS IMPORTAMOS<i class="fa fa-heart text-danger"></i></h3>
+                            <p class="">Nós devolvemos às nossas comunidades</p>
                             <hr>
-                            <p class="text-primary"><i>Chaullacota se ubica a 15,000 alimentaciones (4500 mts) 2 horas al noroeste de Cusco.</i></p>
-                            <p class="text-justify font-weight-light">En GOTOPERU estamos comprometidos a hacer negocios de una manera que realmente le devuelva a nuestras comunidades parte de nuestras ganancias especialmente a comunidades ubicadas en lugares remotos. Nuestra planificación y ejecución de uno de nuestros viajes implica una larga cadena de suministro: desde guías y operadores locales hasta proveedores de transporte, hoteles y restaurantes, interactuamos con muchas organizaciones en diferentes lugares, pero también sabemos que algunas comunidades especialmente ubicadas arriba de los Andes a más de 15,000 pies que debido al difícil acceso, no reciben la asistencia que merecen, es por eso que organizamos periódicamente viajes a comunidades tan lejanas para traerles especialmente suéteres y juguetes para niños.</p>
+                            <p class="text-primary"><i>Chaullacota está localizado a 15.000 alimentações (4500 metros) 2 horas a noroeste de Cusco.</i></p>
+                            <p class="text-justify font-weight-light">Na GOTOPERU, estamos comprometidos em fazer negócios de uma maneira que realmente retorne às nossas comunidades parte de nossos lucros, especialmente para comunidades localizadas em locais remotos. Nosso planejamento e execução de uma de nossas viagens envolve uma longa cadeia de suprimentos: de guias e operadores locais a fornecedores de transporte, hotéis e restaurantes, interagimos com muitas organizações em diferentes lugares, mas também sabemos que algumas comunidades estão localizadas acima dos Andes. A mais de 15.000 pés, devido ao difícil acesso, eles não recebem a assistência que merecem, por isso organizamos periodicamente viagens a comunidades tão distantes para trazê-los especialmente suéteres e brinquedos para as crianças.</p>
                         </div>
                     </div>
                 </div>

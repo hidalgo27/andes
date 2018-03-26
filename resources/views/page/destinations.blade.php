@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row content-header-row align-items-center">
                     <div class="col text-center">
-                        <h3 class="text-white text-center h1">DESTINOS EN LA TIERRA DE LOS INCAS</h3>
+                        <h3 class="text-white text-center h1">DESTINOS NA TERRA DOS INCAS</h3>
                         <i class="fa fa-chevron-down text-white h1"></i>
                     </div>
 
@@ -38,14 +38,14 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="text-g-yellow">DESTINOS DE VIAJE EN PERÚ</h1>
+                    <h1 class="text-g-yellow">DESTINOS DE VIAGEM NO PERU</h1>
                     {{--<p class="h2 text-secondary pt-3">USTED TENDRÁ UNA EXPERIENCIA INIMAGINABLE</p>--}}
                     {{--<p class="h4"></p>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mb-0 lead text-secondary text-center"><b>Trabajaremos en torno a su agenda y sus intereses de viaje para construir juntos los planes de viaje más exclusivos. Revise nuestros programas de viajes y explore Perú.</b></p>
+                    <p class="mb-0 lead text-secondary text-center"><b>Entre nossos roteiros estão: Machu Picchu, Maravilha do Mundo, Cusco, capital do império Inca; As linhas de Nazca, um mistério a ser desvendado; Paracas, o encanto da vida marinha, Lago Titicaca, o lago das ilhas flutuantes; Manu, o paraíso da biodiversidade; Lima, imponentes construções coloniais, Arequipa, a famosa cidade branca.</b></p>
                 </div>
 
             </div>
@@ -64,7 +64,7 @@
 
                 <div class="col-12">
                     <div class="alert alert-primary text-center h3" role="alert">
-                        <a href="#tours">Tours en Perú</a> | <a href="#paquetes">Paquetes de Viaje</a>
+                        <a href="#tours">Passeios em Perú</a> | <a href="#paquetes">Pacotes de Viagem</a>
                     </div>
                 </div>
                 {{--<div class="col-12 col-sm-4 mb-4">--}}
@@ -112,7 +112,7 @@
                     {{--</div>--}}
                 {{--</div>--}}
                 <div class="col-12">
-                    <h3 class="font-weight-bold text-g-green pt-4" id="tours">Tours en Perú</h3>
+                    <h3 class="font-weight-bold text-g-green pt-4" id="tours">Passeios em Perú</h3>
                     @foreach($tours as $tour)
                         <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
                             <div class="row no-gutters">
@@ -168,7 +168,7 @@
 
 
                 <div class="col-12 pt-4">
-                    <h3 class="font-weight-bold text-g-green" id="paquetes">Paquetes de viajes en Perú</h3>
+                    <h3 class="font-weight-bold text-g-green" id="paquetes">Pacotes de viagens no Peru</h3>
                     @foreach($paquete->sortBy('duracion') as $paquetes)
                         <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                             <div class="row no-gutters">

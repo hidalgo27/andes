@@ -10,7 +10,7 @@ Breadcrumbs::register('home', function ($breadcrumbs) {
 // Home > About
 Breadcrumbs::register('about', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Acerca de nosotros', route('about_path'));
+    $breadcrumbs->push('Sobre nós', route('about_path'));
 });
 
 // Home > hotel
@@ -22,25 +22,25 @@ Breadcrumbs::register('hotel', function ($breadcrumbs) {
 // Home > social
 Breadcrumbs::register('social', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Responsabilidad Social', route('social_path'));
+    $breadcrumbs->push('Responsabilidade social', route('social_path'));
 });
 
 // Home > tours
 Breadcrumbs::register('tours', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Perú Tours', route('tours_path'));
+    $breadcrumbs->push('Passeios em Perú', route('tours_path'));
 });
 
 // Home > paquetes
 Breadcrumbs::register('paquetes', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Paquetes de Viaje', route('paquetes_path'));
+    $breadcrumbs->push('Pacotes de Viagem', route('paquetes_path'));
 });
 
 // Home > destinos
 Breadcrumbs::register('destino', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Destinos en Perú', route('destinations_path'));
+    $breadcrumbs->push('Destinos no Peru', route('destinations_path'));
 });
 
 // Home > tours > [titulo]

@@ -70,11 +70,11 @@
                             <div class="">
                                 <table class="table table-sm table-bordered m-0">
                                     <tr>
-                                        <td><b>Duración</b></td>
+                                        <td><b>Duração</b></td>
                                         <td>{{$transfer->duracion}}</td>
                                     </tr>
                                     <tr>
-                                        <td><b>Origen</b></td>
+                                        <td><b>Origem</b></td>
                                         <td>{{$transfer->origen}}</td>
                                     </tr>
                                     <tr>
@@ -82,12 +82,12 @@
                                         <td>{{$transfer->destino}}</td>
                                     </tr>
                                     <tr>
-                                        <td><b>Precio por persona (GRUPO)</b></td>
+                                        <td><b>Preço por pessoa (GRUPO)</b></td>
                                         <td><sup>$</sup>{{$transfer->precio_g}} <small>USD</small></td>
                                     </tr>
                                     <tr>
-                                        <td><b>Precio por persona (PRIVADO)</b></td>
-                                        <td><i class="text-danger">Pida Cotización</i></td>
+                                        <td><b>Preço por pessoa (PRIVADO)</b></td>
+                                        <td><i class="text-danger">Solicite um orçamento</i></td>
                                     </tr>
                                 </table>
                                 {{--<a  href="#book-now" type="button" class="btn btn-primary btn-lg btn-avalavility btn-block">--}}

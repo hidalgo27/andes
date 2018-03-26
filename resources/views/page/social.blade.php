@@ -40,8 +40,8 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="text-g-yellow">PORQUE NOS IMPORTA</h1>
-                    <p class="h2 text-secondary">Retribuimos a nuestras comunidades</p>
+                    <h1 class="text-g-yellow">PORQUE NOS IMPORTAMOS</h1>
+                    <p class="h2 text-secondary">Nós devolvemos às nossas comunidades</p>
                     {{--<p class="h4"></p>--}}
                 </div>
             </div>
@@ -51,11 +51,11 @@
                         {{--<p class="mb-0">En GOTOPERU creemos en la excelencia, seguridad, atención personalizada y calidad de los servicios, es nuestro compromiso para con nuestros pasajeros. Por eso, nos esforzamos en satisfacer las necesidades de nuestros clientes al máximo.</p>--}}
                         {{--<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
                     {{--</blockquote>--}}
-                    <p class="lead text-center"><b>Chaullacota se ubica a 15,000 alimentaciones (4500 mts) 2 horas al noroeste de cusco.</b></p>
+                    <p class="lead text-center"><b>Chaullacota está localizado a 15.000 alimentações (4500 mts) 2 horas a noroeste de Cusco.</b></p>
                     <div class="alert alert-primary" role="alert">
-                        <p class="lead text-center"><b>El equipo de GOTOPERU se identifica con los niños de la comunidad de chaullacohca - Cusco. Tenemos en claro nuestra responsabilidad social con los niños de la comunidad de Chaullacohca-Cusco.</b></p>
+                        <p class="lead text-center"><b>A equipe do GOTOPERU se identifica com os filhos da comunidade de Chaullacohca - Cusco. Nós somos claros sobre nossa responsabilidade social com as crianças da comunidade de Chaullacohca-Cusco.</b></p>
                     </div>
-                    <p class="lead"><b>En GOTOPERU estamos comprometidos a hacer negocios de una manera que realmente le devuelva a nuestras comunidades parte de nuestras ganancias especialmente a comunidades  ubicadas en lugares remotos. Nuestra planificación y ejecución de uno de nuestros viajes implica una larga cadena de suministro: desde guías y operadores locales hasta proveedores de transporte, hoteles y restaurantes, interactuamos con muchas organizaciones en diferentes lugares, pero también sabemos que algunas comunidades especialmente ubicadas arriba de los Andes a más de 15,000 pies que debido al difícil acceso, no reciben la asistencia que merecen, es por eso que organizamos periódicamente viajes a comunidades tan lejanas para traerles especialmente suéteres y juguetes para niños.</b></p>
+                    <p class="lead"><b>Na GOTOPERU, estamos comprometidos em fazer negócios de uma maneira que realmente retorne parte de nossos lucros para nossas comunidades, especialmente para comunidades localizadas em locais remotos. Nosso planejamento e execução de uma das nossas viagens implica uma longa cadeia de abastecimento: a partir de guias locais e operadores para o transporte de fornecedores, hotéis e restaurantes, interagir com muitas organizações em diferentes lugares, mas também sabemos que algumas comunidades particularmente localizado acima do Andes A mais de 15.000 pés, devido ao difícil acesso, eles não recebem a assistência que merecem, por isso organizamos periodicamente viagens a comunidades tão distantes para trazê-los especialmente suéteres e brinquedos para as crianças.</b></p>
 
                 </div>
 

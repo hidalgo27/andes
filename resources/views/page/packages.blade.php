@@ -48,20 +48,22 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="text-g-yellow">PAQUETES DE VIAJE A PERÚ</h1>
+                    <h1 class="text-g-yellow">PACOTES DE VIAGEM PARA O PERU</h1>
                     {{--<p class="h2 text-secondary pt-3">USTED TENDRÁ UNA EXPERIENCIA INIMAGINABLE</p>--}}
                     {{--<p class="h4"></p>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mb-0 lead text-secondary text-center"><b>Nuestros paquetes turísticos más populares a Perú. Estos paquetes podrían usarse como referencia para personalizar su propio viaje. En GOTOPERU nos especializamos en crear experiencias personalizadas según sus preferencias; Invitamos a revisar estos programas para tener una idea de los destinos más importantes, por ejemplo, MachuPicchu, Lago Titicaca, Nazca y el Amazonas.</b></p>
+                    <p class="mb-0 lead text-secondary text-center"><b>
+                            374/5000
+                            Nossos pacotes turísticos mais populares para o Peru. Esses pacotes podem ser usados como referência para personalizar sua própria viagem. Na GOTOPERU nos especializamos em criar experiências personalizadas de acordo com suas preferências; Convidamos você a rever esses programas para ter uma idéia dos destinos mais importantes, por exemplo, Machu Picchu, Lago Titicaca, Nazca e Amazônia.</b></p>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col">
                     <div class="alert alert-light text-center h3" role="alert">
-                        <a href="#con-hoteles" class="text-g-green">Paquetes con <b>*Hoteles</b></a> | <a href="#sin-hoteles" class="text-danger">Paquetes <b>*sin Hoteles</b></a>
+                        <a href="#con-hoteles" class="text-g-green">Pacotes com <b>*Hotels</b></a> | <a href="#sin-hoteles" class="text-danger">Pacotes <b>*sem hotéis</b></a>
                     </div>
                 </div>
             </div>
@@ -76,7 +78,7 @@
             <div class="row">
                 <div class="col">
                     <div class="alert alert-g-green py-2 mb-1" role="alert">
-                        <h5 class="font-weight-bold m-0">Todos nuestros paquetes a Perú <small><b>(*con Hoteles incluido)</b></small></h5>
+                        <h5 class="font-weight-bold m-0">Todos os nossos pacotes para o Peru <small><b>(*com hotéis incluídos)</b></small></h5>
                     </div>
                     {{--<h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> ---.</h5>--}}
 
@@ -124,7 +126,7 @@
             <div class="row">
                 <div class="col">
                     <div class="alert alert-danger py-2 mb-1" role="alert">
-                        <h5 class="font-weight-bold m-0">Todos nuestros paquetes a Perú <small><b>(*sin Hoteles incluido)</b></small></h5>
+                        <h5 class="font-weight-bold m-0">Todos os nossos pacotes para o Peru <small><b>(*sem hotéis incluídos)</b></small></h5>
                     </div>
                     {{--<h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> ---.</h5>--}}
 

@@ -25,20 +25,20 @@
                         {{--<i class="fa fa-chevron-down text-white h1"></i>--}}
                     </div>
                     <div class="col col-md-6 col-lg-4 col-xl-3 bg-rgba-white rounded">
-                        <h4 class="text-g-yellow pt-2 pl-2 m-0"><i class="fa fa-map-marker-alt"></i> Resumen</h4>
+                        <h4 class="text-g-yellow pt-2 pl-2 m-0"><i class="fa fa-map-marker-alt"></i> Resumo</h4>
 
                         <div class="pb-4 position-relative">
                             @foreach($paquete_iti as $paquete_itinerary)
                                 @foreach($paquete_itinerary->itinerario->sortBy('dia')->take(6) as $itinerario)
                                     <p class="m-0 p-2">
-                                        <b class="font-weight-bold">Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}
+                                        <b class="font-weight-bold">Dia {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}
                                     </p>
                                 @endforeach
                             @endforeach
 
                             @if($paquete_itinerary->duracion > 6)
                                 <div class="gradient-destinations"></div>
-                                <a href="#" class="btn-link font-weight-normal b-routes p-2" data-toggle="modal" data-target="#route-modal">Full Outline <i class="fa fa-chevron-right"></i></a>
+                                <a href="#" class="btn-link font-weight-normal b-routes p-2" data-toggle="modal" data-target="#route-modal">Esboço Completo <i class="fa fa-chevron-right"></i></a>
                             @endif
                         </div>
 
@@ -47,7 +47,7 @@
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Resumen</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Resumo</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -58,7 +58,7 @@
 
                                                 @foreach($paquete_itinerary->itinerario as $itinerario)
                                                     <p class="m-0 p-2">
-                                                        <b class="font-weight-bold">Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}
+                                                        <b class="font-weight-bold">Dia {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}
                                                     </p>
                                                 @endforeach
 
@@ -92,10 +92,10 @@
                 <div class="col text-center">
                     @foreach($paquete_iti as $paquete_i)
                         @if($paquete_i->duracion == 1)
-                            <h1 class="font-montserrat text-g-green font-weight-bold">TOURS EN PERU {{$paquete_i->duracion}} DÍA: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
+                            <h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIA: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                             @php $s_none = 'd-none'; @endphp
                         @else
-                            <h1 class="font-montserrat text-g-green font-weight-bold">TOURS EN PERU {{$paquete_i->duracion}} DÍAS: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
+                            <h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIAS: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                             @php $s_none = ''; @endphp
                         @endif
                     @endforeach
@@ -123,9 +123,9 @@
                             <div class="d-none d-sm-block">
                                 {{--<h3 class="text-secondary pt-5 pb-4 h4"><strong>Paquetes</strong></h3>--}}
                                 <div class="alert alert-g-green py-2 mb-1" role="alert">
-                                    <h5 class="font-weight-bold m-0">Paquetes</h5>
+                                    <h5 class="font-weight-bold m-0">Pacotes</h5>
                                 </div>
-                                <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</p>
+                                <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> Hotéis, passeios, traslados, ingressos, café da manha, trenes.</p>
                                 <div class="list-group">
                                     @foreach($paquete->where('estado', 1)->sortBy('duracion')->take(6) as $paquetes)
                                         <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action text-primary">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col text-right">
-                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Ver todos los paquetes <i class="fa fa-chevron-right"></i></a>
+                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Veja todos os pacotes <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -157,9 +157,9 @@
                             <div class="d-none d-sm-block pt-5">
                                 {{--<h3 class="text-secondary pt-5 pb-4 h4"><strong>Paquetes</strong></h3>--}}
                                 <div class="alert alert-danger py-2 mb-1" role="alert">
-                                    <h5 class="font-weight-bold m-0">Paquetes sin Hotel</h5>
+                                    <h5 class="font-weight-bold m-0">Pacotes sem Hotel</h5>
                                 </div>
-                                <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> Tours, traslados, entradas, desayunos, trenes.</p>
+                                <p class="text-secondary"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> Passeios, traslados, ingressos, café da manha, trenes.</p>
 
                                 @foreach($paquete->where('s_precio', 1)->sortBy('duracion')->take(6) as $paquetes)
                                     <a href="{{route('sin_hotel_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action text-primary">
@@ -181,7 +181,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col text-right">
-                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Ver todos los paquetes <i class="fa fa-chevron-right"></i></a>
+                            <a href="{{route('paquetes_path')}}" class="btn-link font-weight-normal">Veja todos os pacotes <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -195,8 +195,8 @@
                             <div class="card">
                                 <div class="p-3">
 
-                                        <p class="h1 text-secondary "><b>{{$paquete_i->duracion}} <small>días</small></b></p>
-                                        <h5 class="h1 text-center"><sup class="h3 text-secondary">Desde</sup> <b class="text-g-yellow">
+                                        <p class="h1 text-secondary "><b>{{$paquete_i->duracion}} <small>dias</small></b></p>
+                                        <h5 class="h1 text-center"><sup class="h3 text-secondary">De</sup> <b class="text-g-yellow">
                                                 @foreach($paquete_iti as $paquetes)
                                                     @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
                                                         @if($precio->estrellas == 2)
@@ -209,7 +209,7 @@
                                                     @endforeach
                                                 @endforeach
                                             </b> <span class="h6 text-secondary">USD</span></h5>
-                                    <p class="m-0"><b>Trip Code: {{$paquete_i->codigo}}</b></p>
+                                    <p class="m-0"><b>Código de viagem: {{$paquete_i->codigo}}</b></p>
 
 
                                     {{--<a href="" class="btn btn-primary btn-lg btn-avalavility margin-top-10">Check Availability</a>--}}
@@ -223,7 +223,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <h3 class="font-weight-bold mt-4">Itinerario:</h3>
+                            <h3 class="font-weight-bold mt-4">Roteiro:</h3>
                             <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#resumen" role="tab" aria-controls="resumen" aria-selected="true">Resumen</a>
@@ -236,7 +236,7 @@
                                 <div class="tab-pane fade show active" id="resumen" role="tabpanel" aria-labelledby="home-tab">
                                     @foreach($paquete_iti as $paquete_itinerary)
                                         @foreach($paquete_itinerary->itinerario as $itinerario)
-                                            <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
+                                            <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Dia {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
                                             @php echo $itinerario->resumen; @endphp
                                         @endforeach
                                     @endforeach
@@ -244,7 +244,7 @@
                                 <div class="tab-pane fade" id="detalle" role="tabpanel" aria-labelledby="profile-tab">
                                     @foreach($paquete_iti as $paquete_itinerary)
                                         @foreach($paquete_itinerary->itinerario as $itinerario)
-                                            <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Day {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
+                                            <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Dia {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
                                             @php echo $itinerario->descripcion; @endphp
                                         @endforeach
                                     @endforeach
@@ -256,12 +256,12 @@
 
                     <div class="row {{$s_none}}">
                         <div class="col">
-                            <h3 class="font-weight-bold mt-4">Precios:</h3>
+                            <h3 class="font-weight-bold mt-4">Preços:</h3>
                             <table class="table table-bordered table-responsive mb-0">
                                 {{--<caption>Price per person</caption>--}}
                                 <thead>
                                 <tr>
-                                    <th colspan="5">Precios basados en doble acomodación</th>
+                                    <th colspan="5">Preco por pessoa tendo em conta acomodacao quarto duplo</th>
                                 </tr>
                                 <tr class="bg-primary text-white">
                                     <th class="text-center">Económico  <span class="d-block text-warning">2 <i class="fa fa-star" aria-hidden="true"></i></span></th>
@@ -307,20 +307,20 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <small>*Si tiene algún hotel en especifico con gusto lo prepararemos una cotización personalizada.
+                            <small>*Se você tem um hotel específico, teremos o prazer de preparar uma cotação personalizada.
                                 <a href="#book-now">Pregunte aquí.</a></small>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <h3 class="font-weight-bold mt-4">Incluye:</h3>
+                            <h3 class="font-weight-bold mt-4">Incluso:</h3>
                             @php echo $paquetes->incluye; @endphp
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <h3 class="font-weight-bold mt-4">No Incluye:</h3>
+                            <h3 class="font-weight-bold mt-4">Não Incluso:</h3>
                             @php echo $paquetes->noincluye; @endphp
                         </div>
                     </div>
@@ -386,7 +386,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-9 col-md-9 col-lg-8 text-center">
-                    <span class="text-secondary font-weight-bold">PAQUETE DE VIAJE</span>
+                    <span class="text-secondary font-weight-bold">PACOTE DE VIAGEM</span>
                     <h2 class="text-primary font-weight-bold">{{$paquetes->titulo}} {{$paquetes->duracion}} DIAS</h2>
                     {{--<h5 class="text-secondary">{{$paquetes->duracion}} Days</h5>--}}
                     <hr>
@@ -396,7 +396,7 @@
                 <div class="col-12 col-sm-9 col-md-9 col-lg-8">
                     <form id="i_form" role="form">
                         {{csrf_field()}}
-                        <h3 class="text-secondary mt-4">Acomodación</h3>
+                        <h3 class="text-secondary mt-4">Acomodação</h3>
 
                         <div class="row">
                             <div class="col-6 col-sm" data-toggle="buttons">
@@ -443,7 +443,7 @@
                             </div>
                         </div>
 
-                        <h3 class="text-secondary mt-4">Numero de Pasajeros</h3>
+                        <h3 class="text-secondary mt-4">Numero de Passageiros</h3>
 
                         <div class="row no-gutters" data-toggle="buttons">
                             <label class="btn col btn-outline-primary">
@@ -468,34 +468,34 @@
 
                         <div class="row">
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Fecha de Viaje</h3>
-                                <input type="text" class="form-control" id="i_date" placeholder="Fecha de Viaje">
+                                <h3 class="text-secondary mt-4">Data de Viagem</h3>
+                                <input type="text" class="form-control" id="i_date" placeholder="Data de Viagem">
                                 <input type="hidden" id="i_package" value="{{$paquetes->codigo}}: {{$paquetes->titulo}} {{$paquetes->duracion}} DAYS">
                             </div>
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Telefono</h3>
-                                <input type="tel" class="form-control" id="i_tel" placeholder="Ingrese su numero">
+                                <h3 class="text-secondary mt-4">Telefone</h3>
+                                <input type="tel" class="form-control" id="i_tel" placeholder="Telefone">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Nombre</h3>
-                                <input type="text" class="form-control" id="i_name" placeholder="Nombre completo">
+                                <h3 class="text-secondary mt-4">Nome</h3>
+                                <input type="text" class="form-control" id="i_name" placeholder="Nome completo">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
                                 <h3 class="text-secondary mt-4">Email</h3>
-                                <input type="email" class="form-control" id="i_email" placeholder="Ingrese su email">
+                                <input type="email" class="form-control" id="i_email" placeholder="Digite seu email">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <h3 class="text-secondary mt-4">Algun Duda?</h3>
-                                <textarea class="form-control" id="i_comment" rows="3" placeholder="Como usted imagina un viaje inolvidable al Perú, sugerencias especiales, preguntas, comentarios"></textarea>
+                                <h3 class="text-secondary mt-4">Dúvidas?</h3>
+                                <textarea class="form-control" id="i_comment" rows="3" placeholder="Como você imagina uma viagem inesquecivel ao Perú, sugestões especiais, perguntas, comentários"></textarea>
                             </div>
                         </div>
 
@@ -506,7 +506,7 @@
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                 </button>
                                 <ul class="fa-ul pull-right d-none" id="loader2">
-                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
+                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                                 </ul>
                             </div>
                         </div>
@@ -516,7 +516,7 @@
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                    <strong>Muchas</strong> por contactar con GOTOPERU, un agente de viajes se pondrá en contacto con usted en las próximas 24 horas para ayudarle con la planificación de su viaje. :)
+                                    <strong>Muito obrigado</strong> por entrar em contato com a GOTOPERU, um agente de viagens entrará em contato com você nas próximas 24 horas para ajudá-lo a planejar sua viagem. :)
                                 </div>
                             </div>
                         </div>

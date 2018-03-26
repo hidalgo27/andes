@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    {{Breadcrumbs::render('about')}}
+                    {{Breadcrumbs::render('tours')}}
                 </div>
             </div>
         </div>
@@ -55,14 +55,14 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="text-g-yellow">TOURS EN PERÚ</h1>
+                    <h1 class="text-g-yellow">PASSEIOS EM PERU</h1>
                     {{--<p class="h2 text-secondary pt-3">USTED TENDRÁ UNA EXPERIENCIA INIMAGINABLE</p>--}}
                     {{--<p class="h4"></p>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mb-0 lead text-secondary text-center"><b>Nuestros Tours más populares en Perú. Estos Tours podrían usarse como referencia para personalizar su propio viaje. En GOTOPERU nos especializamos en crear experiencias personalizadas según sus preferencias; Invitamos a revisar estos programas para tener una idea de los destinos más importantes, por ejemplo: Cusco, MachuPicchu, Lago Titicaca, Nazca y el Amazonas.</b></p>
+                    <p class="mb-0 lead text-secondary text-center"><b>Nossos passeios mais populares no Peru. Estes Tours podem ser usados como referência para personalizar sua própria viagem. Na GOTOPERU nos especializamos em criar experiências personalizadas de acordo com suas preferências; Convidamos você a rever esses programas para ter uma idéia dos destinos mais importantes, por exemplo: Cusco, Machu Picchu, Lago Titicaca, Nazca e Amazônia.</b></p>
                 </div>
 
             </div>
@@ -75,7 +75,7 @@
                 <div class="col">
                     <div id="tours" class="d-sm-block pt-5">
                         <div class="alert alert-info py-2 mb-1" role="alert">
-                            <h5 class="font-weight-bold m-0">Solo Tours</h5>
+                            <h5 class="font-weight-bold m-0">Passeios Individuais</h5>
                         </div>
                         {{--<h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>--}}
 
