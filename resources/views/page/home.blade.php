@@ -20,16 +20,16 @@
         {{--<div class="position-absolute bottom-n-1">--}}
         {{--<img src="{{asset('images/pce.png')}}" alt="" class="img-fluid">--}}
         {{--</div>--}}
-        {{--<div class="position-absolute top-0 w-100 d-none d-lg-block">--}}
-        {{--<div class="container">--}}
-        {{--<div class="row">--}}
-        {{--<div class="col mt-10-p text-white">--}}
-        {{--<p class="display-4 font-weight-normal m-0 mt-1">Visite Peru</p>--}}
-        {{--<i class="h4 font-weight-light">Tierra de los incas</i>--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        {{--</div>--}}
+        <div class="position-absolute bottom-0 w-100 d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col text-white">
+                        {{--<p class="display-4 font-weight-normal m-0 mt-1">Visite Peru</p>--}}
+                        <i class="h5 font-weight-light">Especialistas em Viagens ao Peru & Machupicchu</i>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="content-header">
             <div class="container">
@@ -42,11 +42,11 @@
                                         <div class="col-9">
                                             <a href="peru-tours/machu-picchu-todo-el-dia">
                                                 <div class="banner-header rounded text-white py-2 px-4">
-                                                    <h2 class="text-center h1 text-g-yellow m-0">Machu Picchu</h2>
-                                                    <p class="m-0 h4 font-weight-normal text-center">Tours a Machu Picchu de 1 dia</p>
-                                                    <p class="m-0 text-center">desde solo <span class="h1 text-info"><sup>$</sup>290</span> p.p</p>
-                                                    <hr class="my-1">
-                                                    <small class="m-0">Incluye: Traslados, trenes, entradas, buses, guiado, asistencias.</small>
+                                                    {{--<h2 class="text-center h1 text-g-yellow m-0">Já comprou vôo e hotéis por </h2>--}}
+                                                    <p class="m-0 h3 font-weight-normal text-info">Já comprou vôo e hotéis por conta própria? <span class="text-warning">não se preocupe, nós cuidamos do resto.</span> <span class="d-block text-white">Solicite sua cotação agora!</span></p>
+                                                    {{--<p class="m-0 text-center">desde solo <span class="h1 text-info"><sup>$</sup>290</span> p.p</p>--}}
+                                                    {{--<hr class="my-1">--}}
+                                                    {{--<small class="m-0">Incluye: Traslados, trenes, entradas, buses, guiado, asistencias.</small>--}}
                                                 </div>
                                             </a>
                                         </div>
@@ -670,12 +670,12 @@
 
                     <div class="row">
                         <div class="col">
-                            <a href="mailto:grupos@gotoperu.com.pe"><img src="{{asset('images/grupos.jpg')}}" alt="" class="img-fluid rounded"></a>
+                            <a href="paquetes-de-viaje-peru/classico-inca"><img src="{{asset('images/grupos.jpg')}}" alt="" class="img-fluid rounded"></a>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
-                            <a href="peru-tours/machu-picchu-todo-el-dia"><img src="{{asset('images/oferta.jpg')}}" alt="" class="img-fluid rounded"></a>
+                            <a href="peru-tours/tour-a-machu-picchu"><img src="{{asset('images/oferta.jpg')}}" alt="" class="img-fluid rounded"></a>
                         </div>
                     </div>
 

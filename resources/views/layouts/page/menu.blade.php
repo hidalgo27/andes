@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-4 col-sm-2 position-relative">
                 <div class="logo-goto position-absolute w-100 top-0 p-3 border rounded border-dark bg-dark">
-                    <a href="/"><img src="{{asset('images/logo-andes-b.png')}}" alt="" class="img-fluid"></a>
+                    <a href="/"><img src="{{asset('images/logo-andes-d.png')}}" alt="" class="img-fluid"></a>
                 </div>
             </div>
             <div class="col col-sm">
@@ -29,6 +29,7 @@
                             <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light" href="{{route('destinations_path')}}">DESTINOS</a>
                             <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-sm-none  d-md-inline" href="{{route('hoteles_path')}}">HOTÉIS</a>
                             <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-sm-none  d-xl-inline" href="{{route("about_path")}}">SOBRE NÓS</a>
+                            <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-sm-none  d-xl-inline" href="{{route("dicas_path")}}">DICAS</a>
                             <a class="nav-item nav-link border border-left-0 border-top-0 border-bottom-0 text-dark bg-light d-none d-lg-inline" href="{{route('social_path')}}">RESPONSABILIDADE SOCIAL</a>
                         </nav>
                     </div>

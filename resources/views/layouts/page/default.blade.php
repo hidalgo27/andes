@@ -51,7 +51,7 @@
 
         <div class="row py-5 justify-content-center">
             <div class="col-12 col-sm-8 col-md-8 col-lg-5">
-                <img src="{{asset('images/logo-gotoperu.png')}}" alt="" class="img-fluid">
+                <img src="{{asset('images/logo-andes-c.png')}}" alt="" class="img-fluid">
             </div>
         </div>
 
@@ -158,7 +158,29 @@
         </div>
     </div>
 </section>
+<section class="bg-dark d-none d-sm-block py-5">
+    <div class="container">
 
+        <div class="row justify-content-center">
+            <div class="col-3 py-2">
+                <img src="{{asset('images/logo-andes.png')}}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col">
+                <img src="{{asset("images/group.jpg")}}" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col text-center">
+                <h5 class="font-weight-bold mt-4 text-white">CONFIANÇA</h5>
+                {{--<h3>Andes Viagens</h3>--}}
+                <p class="py-3 text-white lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
+                <a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
+                <a href="https://m.me/ANDESVIAGENS/" target="_blank" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> Fale com nós agora</a>
+            </div>
+        </div>
+
+    </div>
+</section>
 <footer class="bg-g-dark">
     <img src="{{asset("images/footer.jpg")}}" alt="" class="w-100">
     <div class="container">

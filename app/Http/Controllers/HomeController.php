@@ -395,6 +395,30 @@ class HomeController extends Controller
         $hoteles = THotel::all();
         return view('page.hotels', ['hoteles'=>$hoteles]);
     }
+
+    public function dicas()
+    {
+        SEOMeta::setTitle('Dicas | Andes Viagens');
+        SEOMeta::setDescription('Nuestro equipo puede reservar cualquier hotel en Perú. Explore nuestras mejores opciones de alojamiento en Machu Picchu, Cusco, Arequipa, Lago Titicaca y más.');
+//        SEOMeta::setCanonical('http://gotoperu.com.pe/');
+        SEOMeta::addKeyword(['hoteles en peru', 'reserva de hoteles en peru', 'hoteles baratos en peru', 'hoteles en machu pichu', 'hoteles en cusco']);
+
+        OpenGraph::setDescription('Nuestro equipo puede reservar cualquier hotel en Perú. Explore nuestras mejores opciones de alojamiento en Machu Picchu, Cusco, Arequipa, Lago Titicaca y más.');
+        OpenGraph::setTitle('Dicas | Andes Viagens');
+        OpenGraph::setUrl('http://gotoperu.com.pe/hoteles-peru');
+        OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/hotels.jpg']);
+        OpenGraph::setSiteName('Hoteles en Perú');
+        OpenGraph::addProperty('type', 'website');
+
+        \Twitter::setType('summary');
+        \Twitter::setTitle('Dicas | Andes Viagens');
+        \Twitter::setSite('@GOTOPERUCOM');
+        \Twitter::addImage('http://gotoperu.com.pe/images/hotels.jpg');
+
+        return view('page.dicas');
+    }
+
+
     public function transfer($titulo)
     {
         SEOMeta::setTitle('Transportes en Perú | GotoPeru');

@@ -77,6 +77,11 @@ Route::get('/hoteles-peru', [
     'uses' => 'HomeController@hoteles',
     'as' => 'hoteles_path',
 ]);
+//dicas
+Route::get('/dicas', [
+    'uses' => 'HomeController@dicas',
+    'as' => 'dicas_path',
+]);
 //traslados
 Route::get('/traslados/{titulo}', [
     'uses' => 'HomeController@transfer',
