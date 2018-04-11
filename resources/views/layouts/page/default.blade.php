@@ -181,16 +181,50 @@
 
     </div>
 </section>
-<footer class="bg-g-dark">
-    <img src="{{asset("images/footer.jpg")}}" alt="" class="w-100">
+{{--<footer class="bg-g-dark">--}}
+    {{--<img src="{{asset("images/footer.jpg")}}" alt="" class="w-100">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row pt-4">--}}
+            {{--<div class="col text-center text-white">--}}
+                {{--<p>OS MELHORES FERIADOS AO PERU COM O MELHOR OPERADOR DE VIAGEM</p>--}}
+                {{--<p>&copy; GOTOPERU COMPANY</p>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</footer>--}}
+<footer class="pt-4 pb-2 bg-dark">
     <div class="container">
-        <div class="row pt-4">
-            <div class="col text-center text-white">
-                <p>OS MELHORES FERIADOS AO PERU COM O MELHOR OPERADOR DE VIAGEM</p>
-                <p>&copy; GOTOPERU COMPANY</p>
+        <div class="row justify-content-center">
+            <div class="col-6 border border-left-0 border-bottom-0 border-right-0 border-light">
+                <div class="row mt-5">
+                    <div class="col my-2">
+                        <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col text-center font-montserrat">
+                        <p class="text-white m-0"><i class="fa fa-phone"></i> (11) 4349 6191</p>
+                        <p class="text-white m-2"><i class="fa fa-whatsapp"></i> (51) 992051190</p>
+                        <a href="/" class="btn btn-warning btn-lg btn-block">Solicitar un Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <p class="text-center text-white"><img src="{{asset("images/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
+                <p class="m-0 text-center text-white"><img src="{{asset("images/logo-andes.png")}}" width="120" alt="logo andesviagens"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+                <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Miravalle - Cusco - Cusco - Perú</p>
             </div>
         </div>
     </div>
+    <!-- /.container -->
+    {{--<p class="totop">--}}
+        {{--<a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank"><img src="{{asset('images/icons/whatsapp-c.png')}}" alt="" width="40" class="d-block"></a>--}}
+        {{--<a href="https://m.me/ANDESVIAGENS/" target="_blank"><img src="{{asset('images/icons/messenger-c.png')}}" alt="" width="40" class="d-block my-3"></a>--}}
+        {{--<a href="#top" class="top">--}}
+            {{--<img src="{{asset('images/icons/circle-arrow.png')}}" alt="" width="40">--}}
+        {{--</a>--}}
+    {{--</p>--}}
 </footer>
 {{--scripts--}}
 <script src="{{asset("js/app.js")}}"></script>
