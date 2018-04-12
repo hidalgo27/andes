@@ -20,16 +20,16 @@
         {{--<div class="position-absolute bottom-n-1">--}}
         {{--<img src="{{asset('images/pce.png')}}" alt="" class="img-fluid">--}}
         {{--</div>--}}
-        <div class="position-absolute bottom-0 w-100 d-none d-lg-block">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col text-white">
+        {{--<div class="position-absolute bottom-0 w-100 d-none d-lg-block">--}}
+            {{--<div class="container-fluid">--}}
+                {{--<div class="row mb-2">--}}
+                    {{--<div class="col text-white">--}}
                         {{--<p class="display-4 font-weight-normal m-0 mt-1">Visite Peru</p>--}}
-                        <i class="h5 font-weight-light">Especialistas em Viagens ao Peru & Machupicchu</i>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        {{--<i class="h5 font-weight-light">Especialistas em Viagens ao Peru & Machupicchu</i>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
         <div class="content-header">
             <div class="container">
@@ -40,7 +40,7 @@
                                 <div class="carousel-item active">
                                     <div class="row justify-content-center">
                                         <div class="col-9">
-                                            <a href="peru-tours/machu-picchu-todo-el-dia">
+                                            <a href="#" data-toggle="modal" data-target="#design_m">
                                                 <div class="banner-header rounded text-white py-2 px-4">
                                                     {{--<h2 class="text-center h1 text-g-yellow m-0">Já comprou vôo e hotéis por </h2>--}}
                                                     <p class="m-0 h3 font-weight-normal text-info">Já comprou vôo e hotéis por conta própria? <span class="text-warning">não se preocupe, nós cuidamos do resto.</span> <span class="d-block text-white">Solicite sua cotação agora!</span></p>
@@ -109,8 +109,8 @@
                         {{--</div>--}}
                         <div class="row my-3 justify-content-center">
                             <div class="col">
-                                <p class="text-white mb-3 h5"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> <b>Os melhores preços:</b> <small>Somos operadores locais.</small></p>
-                                <p class="text-white mb-3 h5"><span class="bg-g-yellow p-1 rounded-circle px-3 text-white">2</span> <b>Flexivéis:</b> <small>Pacotes completos ou só traslados.</small></p>
+                                <p class="text-white mb-3 h5"><span class="bg-g-yellow p-1 rounded-circle px-3 text-white">1</span> <b>Especialistas:</b> <small>Em viagens ao Perú & Machupicchu.</small></p>
+                                <p class="text-white mb-3 h5"><span class="bg-g-green p-1 rounded-circle px-3 text-white">2</span> <b>Os melhores preços:</b> <small>Somos operadores locais.</small></p>
                                 <p class="text-white mb-3 h5"><span class="bg-g-dark p-1 rounded-circle px-3 text-white">3</span> <b>Qualidade:</b> <small>Muitos testemunhos nos acreditam.</small></p>
                             </div>
                         </div>
