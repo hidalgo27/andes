@@ -1,9 +1,10 @@
 <section id="title" class="header-menu-g bg-dark">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-4 col-sm-2 position-relative">
-                <div class="logo-goto position-absolute w-100 top-0 p-3 border rounded border-dark bg-dark">
+                <div class="logo-goto position-absolute w-100 top-0 p-3 border rounded border-dark bg-dark text-center">
                     <a href="/"><img src="{{asset('images/logo-andes-d.png')}}" alt="" class="img-fluid"></a>
+                    <small class="text-white m-0">Operador de viagens no Perú</small>
                 </div>
             </div>
             <div class="col col-sm">
