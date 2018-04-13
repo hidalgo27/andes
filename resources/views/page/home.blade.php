@@ -59,7 +59,7 @@
                                                 <div class="banner-header rounded text-white py-2 px-4">
                                                     <h2 class="text-center h1 text-g-yellow m-0">PERÚ MAGIA</h2>
                                                     <p class="m-0 h4 font-weight-normal text-center">perú magia 6 dias</p>
-                                                    <p class="m-0 text-center">desde solo <span class="h1 text-info"><sup>$</sup>479</span> p.p</p>
+                                                    <p class="m-0 text-center">desde solo <span class="h1 text-info"><sup>$</sup>749</span> p.p</p>
                                                     <hr class="my-1">
                                                     <small class="m-0">Incluye: Transferências, trens, passagens, ônibus, guiados, assistências.</small>
                                                 </div>

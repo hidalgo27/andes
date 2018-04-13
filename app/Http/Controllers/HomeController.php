@@ -207,13 +207,13 @@ class HomeController extends Controller
      */
     public function show($titulo)
     {
-        SEOMeta::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | GotoPeru');
+        SEOMeta::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | AndesViagens');
         SEOMeta::setDescription('Nuestro paquete de viaje '.str_replace('-',' ', ucwords(strtolower($titulo))).' organizado con un auténtico operador peruano.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/');
         SEOMeta::addKeyword(['detinos de viaje a peru', 'turismo en  peru', 'destinos de viaje en peru', 'viajes a machu picchu', 'vacaiones en peru']);
 
         OpenGraph::setDescription('Nuestro paquete de viaje '.str_replace('-',' ', ucwords(strtolower($titulo))).' organizado con un auténtico operador peruano.');
-        OpenGraph::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | GotoPeru');
+        OpenGraph::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/paquetes-de-viaje-peru/'.strtolower($titulo).'');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/sliders/cusco.jpg']);
         OpenGraph::setSiteName('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).'');
@@ -239,13 +239,13 @@ class HomeController extends Controller
 
     public function sin_hotel($titulo)
     {
-        SEOMeta::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | GotoPeru');
+        SEOMeta::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | AndesViagens');
         SEOMeta::setDescription('Nuestro paquete de viaje '.str_replace('-',' ', ucwords(strtolower($titulo))).' organizado con un auténtico operador peruano.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/paquetes-de-viaje-peru/');
         SEOMeta::addKeyword(['detinos de viaje a peru', 'turismo en  peru', 'destinos de viaje en peru', 'viajes a machu picchu', 'vacaiones en peru']);
 
         OpenGraph::setDescription('Nuestro paquete de viaje '.str_replace('-',' ', ucwords(strtolower($titulo))).' organizado con un auténtico operador peruano.');
-        OpenGraph::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | GotoPeru');
+        OpenGraph::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/paquetes-de-viaje-peru/'.strtolower($titulo).'/sin-hotel');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/sliders/cusco.jpg']);
         OpenGraph::setSiteName('Paquete de viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).'');
@@ -275,13 +275,13 @@ class HomeController extends Controller
         $tours = TTour::with('tours_destinos')->where('titulo', $title)->get();
         $tours_destinos = TTourDestino::with('destinos')->get();
 
-        SEOMeta::setTitle('Tours en Perú: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | GotoPeru');
+        SEOMeta::setTitle('Tours en Perú: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | AndesViagens');
         SEOMeta::setDescription('Nuestro tours '.str_replace('-',' ', ucwords(strtolower($titulo))).' organizado con un auténtico operador peruano.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/paquetes-de-viaje-peru');
         SEOMeta::addKeyword(['detinos de viaje a peru', 'turismo en  peru', 'destinos de viaje en peru', 'viajes a machu picchu', 'vacaiones en peru']);
 
         OpenGraph::setDescription('Nuestro tours '.str_replace('-',' ', ucwords(strtolower($titulo))).' organizado con un auténtico operador peruano.');
-        OpenGraph::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | GotoPeru');
+        OpenGraph::setTitle('Paquete de Viaje: '.str_replace('-',' ', ucwords(strtolower($titulo))).' | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/peru-tours/'.strtolower($titulo).'');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/sliders/cusco.jpg']);
         OpenGraph::setSiteName('Tours en Perú: '.str_replace('-',' ', ucwords(strtolower($titulo))).'');
@@ -332,20 +332,20 @@ class HomeController extends Controller
 
     public function about()
     {
-        SEOMeta::setTitle('Acerca de Nosotros | GotoPeru');
+        SEOMeta::setTitle('Acerca de Nosotros | AndesViagens');
         SEOMeta::setDescription('Somos especialistas en viajes y tours en Perú, creemos que la calidad de servicio y nuestra experiencia hará de su viaje a Perú una experiencia inolvidable.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/');
         SEOMeta::addKeyword(['hoteles en peru', 'reserva de hoteles en peru', 'hoteles baratos en peru', 'hoteles en machu pichu', 'hoteles en cusco']);
 
         OpenGraph::setDescription('Somos especialistas en viajes y tours en Perú, creemos que la calidad de servicio y nuestra experiencia hará de su viaje a Perú una experiencia inolvidable.');
-        OpenGraph::setTitle('Acerca de Nosotros | GotoPeru');
+        OpenGraph::setTitle('Acerca de Nosotros | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/acerca-de-nosotros');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/about.jpg']);
         OpenGraph::setSiteName('Acerca de Nosotros');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Acerca de Nosotros | GotoPeru');
+        \Twitter::setTitle('Acerca de Nosotros | AndesViagens');
         \Twitter::setSite('@GOTOPERUCOM');
         \Twitter::addImage('http://gotoperu.com.pe/images/about.jpg');
 
@@ -354,20 +354,20 @@ class HomeController extends Controller
 
     public function social()
     {
-        SEOMeta::setTitle('Responsabilidad Social | GotoPeru');
+        SEOMeta::setTitle('Responsabilidad Social | AndesViagens');
         SEOMeta::setDescription('Nos hacemos cargo de personas y comunidades alejadas en Perú, el apoyo social es organizado por nuestro equipo, destinando parte de nuestras ganancias para los que más lo necesitan.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/');
 //        SEOMeta::addKeyword(['hoteles en peru', 'reserva de hoteles en peru', 'hoteles baratos en peru', 'hoteles en machu pichu', 'hoteles en cusco']);
 
         OpenGraph::setDescription('Nos hacemos cargo de personas y comunidades alejadas en Perú, el apoyo social es organizado por nuestro equipo, destinando parte de nuestras ganancias para los que más lo necesitan.');
-        OpenGraph::setTitle('Responsabilidad Social | GotoPeru');
+        OpenGraph::setTitle('Responsabilidad Social | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/responsabilidad-social');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/social.jpg']);
         OpenGraph::setSiteName('Responsabilidad Social');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Responsabilidad Social | GotoPeru');
+        \Twitter::setTitle('Responsabilidad Social | AndesViagens');
         \Twitter::setSite('@GOTOPERUCOM');
         \Twitter::addImage('http://gotoperu.com.pe/images/social.jpg');
 
@@ -375,20 +375,20 @@ class HomeController extends Controller
     }
     public function hoteles()
     {
-        SEOMeta::setTitle('Hoteles en Perú | GotoPeru');
+        SEOMeta::setTitle('Hoteles en Perú | AndesViagens');
         SEOMeta::setDescription('Nuestro equipo puede reservar cualquier hotel en Perú. Explore nuestras mejores opciones de alojamiento en Machu Picchu, Cusco, Arequipa, Lago Titicaca y más.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/');
         SEOMeta::addKeyword(['hoteles en peru', 'reserva de hoteles en peru', 'hoteles baratos en peru', 'hoteles en machu pichu', 'hoteles en cusco']);
 
         OpenGraph::setDescription('Nuestro equipo puede reservar cualquier hotel en Perú. Explore nuestras mejores opciones de alojamiento en Machu Picchu, Cusco, Arequipa, Lago Titicaca y más.');
-        OpenGraph::setTitle('Hoteles en Perú | GotoPeru');
+        OpenGraph::setTitle('Hoteles en Perú | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/hoteles-peru');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/hotels.jpg']);
         OpenGraph::setSiteName('Hoteles en Perú');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Hoteles en Perú | GotoPeru');
+        \Twitter::setTitle('Hoteles en Perú | AndesViagens');
         \Twitter::setSite('@GOTOPERUCOM');
         \Twitter::addImage('http://gotoperu.com.pe/images/hotels.jpg');
 
@@ -421,20 +421,20 @@ class HomeController extends Controller
 
     public function transfer($titulo)
     {
-        SEOMeta::setTitle('Transportes en Perú | GotoPeru');
+        SEOMeta::setTitle('Transportes en Perú | AndesViagens');
         SEOMeta::setDescription('Tenemos una variedad de servicios de transporte compartido o privado a los mejores precios.');
         SEOMeta::setCanonical('http://gotoperu.com.pe/traslados');
 //        SEOMeta::addKeyword(['hoteles en peru', 'reserva de hoteles en peru', 'hoteles baratos en peru', 'hoteles en machu pichu', 'hoteles en cusco']);
 
         OpenGraph::setDescription('Tenemos una variedad de servicios de transporte compartido o privado a los mejores precios.');
-        OpenGraph::setTitle('Transportes en Perú | GotoPeru');
+        OpenGraph::setTitle('Transportes en Perú | AndesViagens');
         OpenGraph::setUrl('http://gotoperu.com.pe/traslados');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/destinations/puno.jpg']);
         OpenGraph::setSiteName('Transportes en Perú');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Transportes en Perú | GotoPeru');
+        \Twitter::setTitle('Transportes en Perú | AndesViagens');
         \Twitter::setSite('@GOTOPERUCOM');
         \Twitter::addImage('http://gotoperu.com.pe/images/destinations/puno.jpg');
 
@@ -445,7 +445,7 @@ class HomeController extends Controller
 
     public function design()
     {
-        $from = 'doriam@gotoperu.com';
+        $from = 'contato@andesviagens.com';
         $from2 = 'emails.gotoperu@gmail.com';
 
         $destinations = $_POST['txt_destinations'];
@@ -463,9 +463,9 @@ class HomeController extends Controller
         try {
             Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
                 $messaje->to($email, $name)
-                    ->subject('GotoPeru')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -480,10 +480,10 @@ class HomeController extends Controller
                 'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -498,10 +498,10 @@ class HomeController extends Controller
                 'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from2, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -517,7 +517,7 @@ class HomeController extends Controller
 
     public function contact()
     {
-        $from = 'doriam@gotoperu.com';
+        $from = 'contato@andesviagens.com';
         $from2 = 'emails.gotoperu@gmail.com';
 
         $name = $_POST['txt_name'];
@@ -528,9 +528,9 @@ class HomeController extends Controller
         try {
             Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
                 $messaje->to($email, $name)
-                    ->subject('GotoPeru')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -539,10 +539,10 @@ class HomeController extends Controller
                 'email' => $email,
                 'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -552,10 +552,10 @@ class HomeController extends Controller
                 'comment' => $comment
 //                'comment' => $comment
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from2, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -571,7 +571,7 @@ class HomeController extends Controller
 
     public function tel()
     {
-        $from = 'doriam@gotoperu.com';
+        $from = 'contato@andesviagens.com';
         $from2 = 'emails.gotoperu@gmail.com';
 
         $name = $_POST['txt_name'];
@@ -583,9 +583,9 @@ class HomeController extends Controller
         try {
             Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
                 $messaje->to($email, $name)
-                    ->subject('GotoPeru')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -595,10 +595,10 @@ class HomeController extends Controller
                 'city' => $city,
                 'tel' => $tel
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -608,10 +608,10 @@ class HomeController extends Controller
                 'city' => $city,
                 'tel' => $tel
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from2, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -628,7 +628,7 @@ class HomeController extends Controller
 
     public function inquire()
     {
-        $from = 'doriam@gotoperu.com';
+        $from = 'contato@andesviagens.com';
         $from2 = 'emails.gotoperu@gmail.com';
 
         $accommodation = $_POST['txt_accommodation'];
@@ -646,9 +646,9 @@ class HomeController extends Controller
         try {
             Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
                 $messaje->to($email, $name)
-                    ->subject('GotoPeru ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -663,10 +663,10 @@ class HomeController extends Controller
                 'package' => $package,
                 'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
@@ -681,10 +681,10 @@ class HomeController extends Controller
                 'package' => $package,
                 'comment' => $comment
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'GotoPeru ES')
-                    ->subject('GotoPeru ES')
+                $messaje->to($from2, 'AndesViagens ES')
+                    ->subject('AndesViagens ES')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com.pe', 'GotoPeru ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens ES');
             });
 
 
