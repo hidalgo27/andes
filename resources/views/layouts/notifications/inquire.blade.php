@@ -25,7 +25,7 @@
             <tr>
                 <td style="text-align:center;font-size:12px;padding:5px 15px;color:#999999">
                     <p>
-                        100% OPERADORES DE VIAJES PERUANOS CON SEDE PRINCIPAL EN CUSCO Y SEDES EN LIMA, PUNO Y AREQUIPA.
+                        100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA
                     </p>
                     <p><a href="http://andesviagens.com/" style="color:blue" target="_blank">GotoPeru</a></p>
                 </td>

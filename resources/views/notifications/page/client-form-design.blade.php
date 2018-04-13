@@ -4,7 +4,7 @@
     <tr>
         <td style="padding:0px 50px 0px 50px">
             <p style="font-size:18px">{{$name}}</p>
-            <p>Muchas gracias por contactar con GOTOPERU, un agente de viajes se pondrá en contacto con usted en las próximas 24 horas para ayudarle con la planificación de su viaje. :)</p>
+            <p>Muito obrigados por seu contato com ANDES VIAGENS,nas proximas 24 houras voce tera uma resposta de nossos agentes de viagens para ajuda-lo com o planejamento de sua viagem. :)</p>
         </td>
     </tr>
 
