@@ -41,7 +41,8 @@
         <div class="container">
             <div class="row pb-5">
                 <div class="col text-center">
-                    <p class="h2 text-secondary pt-3">VOCÊ TERÁ A EXPERIÊNCIA DE UM PERUANO</p>
+                    {{--<p class="h2 text-secondary pt-3">VOCÊ TERÁ A EXPERIÊNCIA DE UM PERUANO</p>--}}
+                    <p class="text-center h2 pt-3"><img src="{{asset("images/logo-gotoperu.png")}}" width="150" alt="logo gotoperu"> É a Divisão de <img src="{{asset("images/logo-andes-bc.png")}}" width="150" alt="logo andesviagens"> para os viajantes de língua portuguesa</p>
                     {{--<p class="h4"></p>--}}
                 </div>
             </div>

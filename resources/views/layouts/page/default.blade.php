@@ -202,7 +202,7 @@
                     </div>
                     <div class="col text-center font-montserrat">
                         <p class="text-white m-0"><i class="fa fa-phone"></i> (11) 4349 6191</p>
-                        <p class="text-white m-2"><i class="fab fa-whatsapp"></i> (51) 992051190</p>
+                        <p class="text-white m-2"><i class="fab. fa-whatsapp"></i> (51) 992051190</p>
                         <a href="#" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#design_m">Solicitar un Orçamento</a>
                     </div>
                 </div>
@@ -211,8 +211,8 @@
 
         <div class="row mt-5">
             <div class="col">
-                <p class="text-center text-white"><img src="{{asset("images/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
-                <p class="m-0 text-center text-white"><img src="{{asset("images/logo-andes.png")}}" width="120" alt="logo andesviagens"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+                <p class="text-center text-white"><img src="{{asset("images/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> É a Divisão de <img src="{{asset("images/logo-andes.png")}}" width="120" alt="logo andesviagens"> para os viajantes de língua portuguesa</p>
+                {{--<p class="m-0 text-center text-white"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>--}}
                 <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Miravalle - Cusco - Cusco - Perú</p>
             </div>
         </div>
@@ -231,21 +231,13 @@
 @stack('scripts')
 
 <div id="fb-root"></div>
-<script>
-
-    (function(d, s, id) {
+<script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10&appId=1712869952328301';
+        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1712869952328301&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    function CrearEnlace(url) {
-        location.href=url;
-    }
-
-</script>
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <script>
     $(document).ready(function () {

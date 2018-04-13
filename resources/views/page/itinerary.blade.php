@@ -264,11 +264,11 @@
                                     <th colspan="5">Preco por pessoa tendo em conta acomodacao quarto duplo</th>
                                 </tr>
                                 <tr class="bg-primary text-white">
-                                    <th class="text-center">Económico  <span class="d-block text-warning">2 <i class="fa fa-star" aria-hidden="true"></i></span></th>
+                                    <th class="text-center w-25">Económico  <span class="d-block text-warning">2 <i class="fa fa-star" aria-hidden="true"></i></span></th>
                                     {{--<th class="text-center">Tourista 3 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>--}}
-                                    <th class="text-center">Turista <span class="d-block text-warning">3 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
-                                    <th class="text-center">Superior <span class="d-block text-warning">4 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
-                                    <th class="text-center">Lujo <span class="d-block text-warning">5 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
+                                    <th class="text-center w-25">Turista <span class="d-block text-warning">3 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
+                                    <th class="text-center w-25">Superior <span class="d-block text-warning">4 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
+                                    <th class="text-center w-25">Lujo <span class="d-block text-warning">5 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
