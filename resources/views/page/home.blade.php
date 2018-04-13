@@ -690,6 +690,11 @@
                             <a href="peru-tours/tour-a-machu-picchu"><img src="{{asset('images/oferta.jpg')}}" alt="" class="img-fluid rounded"></a>
                         </div>
                     </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <img src="{{asset('images/banner.jpg')}}" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
 
                     {{--<img src="{{asset('images/banner-restaurante.jpg')}}" alt="" class="img-fluid my-4">--}}
                     {{--<div class="my-4">--}}
