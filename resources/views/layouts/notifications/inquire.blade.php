@@ -8,7 +8,7 @@
                         <tbody>
                         <tr bgcolor="#ffffff">
                             <td valign="top" style="padding:10px 35px 0 35px;color:#ffffff">
-                                <img class="CToWUd" width="350" alt="logo gotoperu" src="http://gotoperu.com.pe/images/logo.png" style="vertical-align:top;max-width:220px">
+                                <img class="CToWUd" width="350" alt="logo andesviagens" src="http://www.andesviagens.com/images/logo-andes-c.png" style="vertical-align:top;max-width:220px">
                             </td>
 
                         </tr>
@@ -27,10 +27,10 @@
                     <p>
                         100% OPERADORES DE VIAJES PERUANOS CON SEDE PRINCIPAL EN CUSCO Y SEDES EN LIMA, PUNO Y AREQUIPA.
                     </p>
-                    <p><a href="http://gotoperu.com.pe/" style="color:blue" target="_blank">GotoPeru</a></p>
+                    <p><a href="http://andesviagens.com/" style="color:blue" target="_blank">GotoPeru</a></p>
                 </td>
                 <td>
-                    <img class="CToWUd" width="250" alt="logo gotoperu" src="http://gotoperu.com.pe/images/logo.png" style="vertical-align:top;max-width:220px">
+                    <img class="CToWUd" width="250" alt="logo andesviagens" src="http://www.andesviagens.com/images/logo-andes-c.png" style="vertical-align:top;max-width:220px">
                 </td>
             </tr>
             </tbody>
