@@ -52,21 +52,21 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>Envié la información requerida y nos pondremos en contacto dentro de las 24 horas garantizado.</p>
+                <p>Envie as informações necessárias e entraremos em contato com você dentro de 24 horas garantidas.</p>
                 <form id="c_form">
                     {{csrf_field()}}
                     <div class="form-group">
-                        <label for="c_nombre">Nombres</label>
-                        <input type="text" class="form-control" id="c_nombre" placeholder="Nombre completo">
+                        <label for="c_nombre">Nome Completo</label>
+                        <input type="text" class="form-control" id="c_nombre" placeholder="Nome Completo">
                     </div>
 
                     <div class="form-group">
                         <label for="c_email">Email</label>
-                        <input type="email" class="form-control" id="c_email" placeholder="Email">
+                        <input type="email" class="form-control" id="c_email" placeholder="Seu Email">
                     </div>
 
                     <div class="form-group">
-                        <label for="c_comentario">Comentario</label>
+                        <label for="c_comentario">Comentário</label>
                         <textarea id="c_comentario" class="form-control" cols="10" rows="3"></textarea>
                     </div>
 
@@ -74,7 +74,7 @@
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <strong>Muchas</strong> por contactar con GOTOPERU, un agente de viajes se pondrá en contacto con usted en las próximas 24 horas para ayudarle con la planificación de su viaje. :)
+                        Muito obrigados por seu contato com ANDES VIAGENS,nas proximas 24 houras voce tera uma resposta de nossos agentes de viagens para ajuda-lo com o planejamento de sua viagem. :)
                     </div>
 
                 </form>
@@ -84,7 +84,7 @@
                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
                 <ul class="fa-ul pull-right d-none" id="loader3">
-                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
+                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                 </ul>
             </div>
         </div>

@@ -645,7 +645,7 @@
                             <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> Comentários, dúvidas, informações sobre pacotes, etc.</h5>
 
                             <div class="card my-4">
-                                <div class="fb-comments" data-href="http://gotoperu.com.pe/" data-width="100%" data-numposts="5" data-mobile="1"></div>
+                                <div class="fb-comments" data-href="http://www.andesviagens.com/" data-width="100%" data-numposts="5" data-mobile="1"></div>
                             </div>
                         </div>
                     </div>
