@@ -211,7 +211,7 @@
 
         <div class="row mt-5">
             <div class="col">
-                <p class="text-center text-white"><img src="{{asset("images/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> É a Divisão de <img src="{{asset("images/logo-andes.png")}}" width="120" alt="logo andesviagens"> para os viajantes de língua portuguesa</p>
+                <p class="text-center text-white"><img src="{{asset("images/logo-andes.png")}}" width="100" alt="logo gotoperu"> É a Divisão de <img src="{{asset("images/logo-gotoperu.png")}}" width="100" alt="logo andesviagens"> para os viajantes de língua portuguesa</p>
                 {{--<p class="m-0 text-center text-white"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>--}}
                 <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Miravalle - Cusco - Cusco - Perú</p>
             </div>

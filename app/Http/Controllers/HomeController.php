@@ -33,22 +33,22 @@ class HomeController extends Controller
         $tours_destinos = TTourDestino::with('destinos')->get();
         $traslado = TTraslado::all();
 
-        SEOMeta::setTitle('Agencia de Viajes en Peru | Tours Machu Picchu');
-        SEOMeta::setDescription('Paquetes de viaje a Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.');
-        SEOMeta::setCanonical('http://gotoperu.com.pe/');
-        SEOMeta::addKeyword(['paquetes de viaje a peru', 'tours a peru', 'peru tours', 'viajes a machu picchu', 'vacaiones en peru', 'paquetes de vacaiones en peru', 'ofertas para machu picchu', 'ofertas de viaje a peru', 'paquetes turisticos a Machu Picchu', 'personalizar paquetes de viaje en peru', 'solo tours en peru']);
+        SEOMeta::setTitle('Machu Picchu | Pacotes de Viagem e Tour ao Peru');
+        SEOMeta::setDescription('Pacotes de Viagens para o Peru com um operador peruano autêntico, escritórios em Lima, Cusco, Arequipa e Puno. Em Machupicchu oferecemos saidas diarias.');
+        SEOMeta::setCanonical('http://www.andesviagens.com/');
+        SEOMeta::addKeyword(['pacotes de viagem Peru', 'Cusco passeios', 'pacotes de viagem para o Peru', 'férias em Peru', 'Passeios a peru', 'ofertas para Machu Picchu']);
 
-        OpenGraph::setDescription('Paquetes de viaje a Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.');
-        OpenGraph::setTitle('Agencia de Viajes en Peru | Tours Machu Picchu');
-        OpenGraph::setUrl('http://gotoperu.com.pe/');
+        OpenGraph::setDescription('Pacotes de Viagens para o Peru com um operador peruano autêntico, escritórios em Lima, Cusco, Arequipa e Puno. Em Machupicchu oferecemos saidas diarias.');
+        OpenGraph::setTitle('Machu Picchu | Pacotes de Viagem e Tour ao Peru');
+        OpenGraph::setUrl('http://www.andesviagens.com/');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/sliders/cusco.jpg']);
-        OpenGraph::setSiteName('Paquetes de Viaje a Perú');
+        OpenGraph::setSiteName('Pacotes de Viagem e Tour ao Peru');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Agencia de Viajes en Peru | Tours Machu Picchu');
-        \Twitter::setSite('@GOTOPERUCOM');
-        \Twitter::addImage('http://gotoperu.com.pe/images/sliders/cusco.jpg');
+        \Twitter::setTitle('Machu Picchu | Pacotes de Viagem e Tour ao Peru');
+        \Twitter::setSite('@AndesViagens');
+        \Twitter::addImage('http://www.andesviagens.com/images/sliders/cusco.jpg');
 
 
         return view('page.home', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'categoria'=>$categoria, 'tours'=>$tours, 'tours_destinos'=>$tours_destinos, 'traslado'=>$traslado]);
@@ -60,22 +60,22 @@ class HomeController extends Controller
         $tours_destinos = TTourDestino::with('destinos')->get();
 
 
-        SEOMeta::setTitle('Tours a Machu Picchu Perú | Tours en Perú');
-        SEOMeta::setDescription('Tours de un día a más en Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.');
+        SEOMeta::setTitle('Tour ao Peru');
+        SEOMeta::setDescription('Pacotes de Viagens para o Peru com um operador peruano autêntico, escritórios em Lima, Cusco, Arequipa e Puno. Em Machupicchu oferecemos saidas diarias.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/peru-tours');
         SEOMeta::addKeyword(['tours de un dia en peru', 'tours en peru', 'peru tours', 'viajes a machu picchu']);
 
-        OpenGraph::setDescription('Tours de un día a más en Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.');
-        OpenGraph::setTitle('Tours a Machu Picchu Perú | Tours en Perú');
-        OpenGraph::setUrl('http://gotoperu.com.pe/peru-tours');
-        OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/destinations/machu-picchu.jpg']);
-        OpenGraph::setSiteName('Tours en Perú');
+        OpenGraph::setDescription('Pacotes de Viagens para o Peru com um operador peruano autêntico, escritórios em Lima, Cusco, Arequipa e Puno. Em Machupicchu oferecemos saidas diarias.');
+        OpenGraph::setTitle('Machu Picchu | Tour ao Peru');
+        OpenGraph::setUrl('http://www.andesviagens.com/');
+        OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/sliders/machupicchu.jpg']);
+        OpenGraph::setSiteName('Tour ao Peru');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Tours a Machu Picchu Perú | Tours en Perú');
-        \Twitter::setSite('@GOTOPERUCOM');
-        \Twitter::addImage('http://gotoperu.com.pe/images/destinations/machu-picchu.jpg');
+        \Twitter::setTitle('Machu Picchu | Tour ao Peru');
+        \Twitter::setSite('@AndesViagens');
+        \Twitter::addImage('http://www.andesviagens.com/images/sliders/machupicchu.jpg');
 
 
         return view('page.tours', ['tours'=>$tours, 'tours_destinos'=>$tours_destinos]);
@@ -86,7 +86,7 @@ class HomeController extends Controller
         SEOMeta::setTitle('Paquetes de Viajes en Perú | Tours en Perú');
         SEOMeta::setDescription('Paquetes de viaje y tours en Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/');
-        SEOMeta::addKeyword(['paquetes de viaje a peru', 'tours a peru', 'peru tours', 'viajes a machu picchu', 'vacaiones en peru', 'paquetes de vacaiones en peru', 'ofertas para machu picchu', 'ofertas de viaje a peru', 'paquetes turisticos a Machu Picchu', 'personalizar paquetes de viaje en peru', 'solo tours en peru']);
+        SEOMeta::addKeyword(['pacotes de viagem Peru', 'Cusco passeios', 'pacotes de viagem para o Peru', 'férias em Peru', 'Passeios a peru', 'ofertas para Machu Picchu']);
 
         OpenGraph::setDescription('Paquetes de viaje y tours en Perú con un auténtico operador peruano, oficinas en Lima, Cusco, Arequipa y Puno. Ofrecemos salidas diarias a Machu Picchu.');
         OpenGraph::setTitle('Paquetes de Viajes en Perú | Tours en Perú');
@@ -398,20 +398,20 @@ class HomeController extends Controller
 
     public function dicas()
     {
-        SEOMeta::setTitle('Dicas | Andes Viagens');
+        SEOMeta::setTitle('Dicas e Recomendações de Viagem');
         SEOMeta::setDescription('Nuestro equipo puede reservar cualquier hotel en Perú. Explore nuestras mejores opciones de alojamiento en Machu Picchu, Cusco, Arequipa, Lago Titicaca y más.');
 //        SEOMeta::setCanonical('http://gotoperu.com.pe/');
         SEOMeta::addKeyword(['hoteles en peru', 'reserva de hoteles en peru', 'hoteles baratos en peru', 'hoteles en machu pichu', 'hoteles en cusco']);
 
         OpenGraph::setDescription('Nuestro equipo puede reservar cualquier hotel en Perú. Explore nuestras mejores opciones de alojamiento en Machu Picchu, Cusco, Arequipa, Lago Titicaca y más.');
-        OpenGraph::setTitle('Dicas | Andes Viagens');
+        OpenGraph::setTitle('Dicas e Recomendações de Viagem');
         OpenGraph::setUrl('http://gotoperu.com.pe/hoteles-peru');
         OpenGraph::addImages(['url'=>'http://gotoperu.com.pe/images/hotels.jpg']);
         OpenGraph::setSiteName('Hoteles en Perú');
         OpenGraph::addProperty('type', 'website');
 
         \Twitter::setType('summary');
-        \Twitter::setTitle('Dicas | Andes Viagens');
+        \Twitter::setTitle('Dicas e Recomendações de Viagem');
         \Twitter::setSite('@GOTOPERUCOM');
         \Twitter::addImage('http://gotoperu.com.pe/images/hotels.jpg');
 
