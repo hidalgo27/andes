@@ -167,25 +167,25 @@
                         <h3>Personalize sua viagem</h3>
                         <p>Sem cumpromisso</p>
                         <button type="button" class="btn btn-g-green" data-toggle="modal" data-target="#design_m">
-                            Mi viaje ideal seria ...
+                            Minha viagem sonhada seria ...
                         </button>
                     </div>
                     <div class="col-12 col-sm text-center mb-4 border border-top-0 border-bottom-0">
-                        <h3>Contate com nós</h3>
-                        <p>Telefono: <i class="fa fa-phone"></i>51(84)262555</p>
+                        <h3>Contáte-nos</h3>
+                        <p>Telefone: <i class="fa fa-phone"></i>51(84)262555</p>
                         {{--<a href="" class="btn btn-g-yellow">Contáctenos</a>--}}
                         <button type="button" class="btn btn-g-yellow btn-sm mb-2" data-toggle="modal" data-target="#contant_m">
-                            Contáctenos
+                            Contáte-nos
                         </button>
 
                         <button type="button" class="btn btn-dark btn-sm mb-2" data-toggle="modal" data-target="#llamada_m">
-                            Nosotros te llamamos
+                            Nós te ligamos
                         </button>
                         {{--<a href="" class="btn btn-dark">Nosotros te llamamos</a>--}}
                     </div>
                     <div class="col-12 col-sm text-center mb-3">
                         <h3>Fale com nós agora</h3>
-                        <p>Contacte mediante:</p>
+                        <p>Entre em contato:</p>
                         <a href="https://m.me/GOTOPERUcom/" class="btn btn-primary mb-2" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
                         <a href="https://api.whatsapp.com/send?phone=5184262555" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
                     </div>
@@ -202,13 +202,13 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Nós ligamos para você</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Nós te ligamos</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Digite as informações necessárias e nós ligaremos para você.</p>
+                            <p>Digite as informações necessárias e Nós te ligamos.</p>
                             <form id="t_form">
                                 {{csrf_field()}}
                                 <div class="form-group">
