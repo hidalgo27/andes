@@ -480,10 +480,10 @@ class HomeController extends Controller
                 'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -498,10 +498,10 @@ class HomeController extends Controller
                 'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from2, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -539,10 +539,10 @@ class HomeController extends Controller
                 'email' => $email,
                 'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -552,10 +552,10 @@ class HomeController extends Controller
                 'comment' => $comment
 //                'comment' => $comment
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from2, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -595,10 +595,10 @@ class HomeController extends Controller
                 'city' => $city,
                 'tel' => $tel
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -608,10 +608,10 @@ class HomeController extends Controller
                 'city' => $city,
                 'tel' => $tel
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from2, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -646,9 +646,9 @@ class HomeController extends Controller
         try {
             Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
                 $messaje->to($email, $name)
-                    ->subject('AndesViagens ES')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -663,10 +663,10 @@ class HomeController extends Controller
                 'package' => $package,
                 'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -681,10 +681,10 @@ class HomeController extends Controller
                 'package' => $package,
                 'comment' => $comment
             ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens ES')
-                    ->subject('AndesViagens ES')
+                $messaje->to($from2, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens ES');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
