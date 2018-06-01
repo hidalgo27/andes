@@ -432,7 +432,7 @@
 
                         <div class="row">
                             <div class="col text-right">
-                                <p class="">info@gotoperu.com</p>
+                                <p class="">contato@andesviagens.com</p>
                             </div>
                         </div>
 
