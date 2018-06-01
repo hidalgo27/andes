@@ -403,7 +403,7 @@
                                             Foi tudo otimo e conforme o planejado, eles cumpriram com tudo que prometeram, foram bem confiáveis e pontuais nos horários dos passeios. Recomendo!!! O atendimento tambem foi otimo e o pessoal foi bastante simpático.
                                             <i class="fa fa-quote-right fa-2x float-right text-g-green pl-2"></i>
                                         </p>
-                                        <i class="float-right text-g-yellow">Jim T. New York City, New</i>
+                                        <i class="float-right text-g-yellow">Tapiratiba, SP</i>
 
                                 </div>
 
@@ -441,6 +441,7 @@
                     </div>
                     <div class="col">
                         <img src="{{asset('images/banner-moises.jpg')}}" alt="moises" class="w-100 rounded">
+                        <p><i>Sergio & Guilherme : Grato pela confiança em ANDESVIAGENS /  Agosto 2017</i></p>
                     </div>
                 </div>
                 <div class="row justify-content-between align-items-center">
