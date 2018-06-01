@@ -101,7 +101,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-sm-8">
                 <div class="alert bg-rgba-dark my-4 text-white text-center" role="alert">
-                    O ÚNICO <strong class="text-g-yellow">Operador de Viagem Peruano</strong> com Escritórios de Vendas Diretas nos USA
+                    O ÚNICO <strong class="text-g-yellow">Operador de Viagem Peruano</strong>
 
                 </div>
             </div>
