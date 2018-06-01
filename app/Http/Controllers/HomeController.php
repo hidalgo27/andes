@@ -521,7 +521,7 @@ class HomeController extends Controller
 
     public function design_inquire()
     {
-        $from = 'info@gotoperu.com';
+        $from = 'contato@andesviagens.com';
         $from2 = 'paul@gotoperu.com';
 
         $accommodation = $_POST['txt_accommodation'];
@@ -540,9 +540,9 @@ class HomeController extends Controller
         try {
             Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
                 $messaje->to($email, $name)
-                    ->subject('GotoPeru')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com', 'GotoPeru');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
@@ -559,10 +559,10 @@ class HomeController extends Controller
                 'email' => $email,
                 'comment' => $comment
             ], function ($messaje) use ($from) {
-                $messaje->to($from, 'GotoPeru')
-                    ->subject('GotoPeru')
+                $messaje->to($from, 'AndesViagens')
+                    ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@gotoperu.com', 'GotoPeru');
+                    ->from('contato@andesviagens.com', 'AndesViagens');
             });
 
 
