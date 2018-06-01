@@ -235,7 +235,7 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="resumen" role="tabpanel" aria-labelledby="home-tab">
                                     @foreach($paquete_iti as $paquete_itinerary)
-                                        @foreach($paquete_itinerary->itinerario as $itinerario)
+                                        @foreach($paquete_itinerary->itinerario->sortBy('dia') as $itinerario)
                                             <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Dia {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
                                             @php echo $itinerario->resumen; @endphp
                                         @endforeach
@@ -243,7 +243,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="detalle" role="tabpanel" aria-labelledby="profile-tab">
                                     @foreach($paquete_iti as $paquete_itinerary)
-                                        @foreach($paquete_itinerary->itinerario as $itinerario)
+                                        @foreach($paquete_itinerary->itinerario->sortBy('dia') as $itinerario)
                                             <h4 class="font-weight-bold mt-4 text-g-yellow"><b>Dia {{$itinerario->dia}}: </b> {{ucwords(strtolower($itinerario->titulo))}}</h4>
                                             @php echo $itinerario->descripcion; @endphp
                                         @endforeach

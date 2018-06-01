@@ -25,6 +25,21 @@
 .bg-rgba-white {
   background: hsla(0,0%,100%,.8);
 }
+.bg-rgba-dark{
+  background: rgba(0,0,0,.7);
+}
+.bg-rgba-dark-1{
+  background: rgba(0,0,0,.1);
+}
+.bg-rgba-dark-3{
+  background: rgba(0,0,0,.3);
+}
+.bg-rgba-dark-5{
+  background: rgba(0,0,0,.5);
+}
+.bg-rgba-white{
+  background: rgba(255,255,255,.8);
+}
 .nav-peru-top{
   z-index: 2;
 }
@@ -69,6 +84,18 @@
   -o-column-gap: 1.5em;
   padding: 15px 0 15px 60px;
 }
+.card-img-overlay-packages{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+//overlay
+.card-img-overlay{
+  bottom: auto !important;
+}
+
 .gradient-destinations{
   background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(255,255,255,1) 100%);
   background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));
@@ -98,11 +125,11 @@
 /* Video Overlay */
 .header-video{
   width: 100%;
-  height: 85vh;
+  height: 100vh;
 }
 #overlay {
   background-color:rgba(0,0,0,.5);
-  height:85vh;
+  height:100vh;
   left:0;
   position:relative;
   top:0;
@@ -176,3 +203,238 @@
 //.header-video-default, .header-video-default #overlay{
 //  height: 100vh;
 //}
+.header-expedia {
+  position: absolute;
+  margin-bottom: 7.1vh;
+  bottom: 0;
+}
+.nav-goto{
+  position: sticky;
+  margin-top: -7.1vh;
+  font-size: 18px;
+  background: rgba(255,255,255,.97) !important;
+  z-index: 99;
+  height: 7.1vh;
+}
+.nav-goto a{
+  padding: 2vh 0;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0 !important;
+}
+
+
+
+//variables
+$slider-height: 420px;
+$text-block-width: 400px;
+
+$dark-font-color: #212121;
+$accent-font-color: #CA9CE1;
+$light-font-color: #fff;
+$text-overlay-color: #000;
+$text-overlay-opacity: 0.6;
+$slide-overlay-color: #fff;
+$slide-overlay-opacity: 0.6;
+
+//transitions and mixins
+
+//transitions mixin
+@mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
+}
+
+//position absolute mixin
+@mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+/*common styles !!!YOU DON'T NEED THEM */
+
+
+.slider-containers {
+  width: 100%;
+  //margin-top: 60px;
+}
+
+.slider-container {
+  //margin-bottom: 60px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.flexbox-slider {
+  //margin-top: 50px;
+}
+
+/*slide styles !!!YOU NEED THEM */
+.flexbox-slider {
+  display: flex;
+  width: 100%;
+  height: $slider-height;
+  visibility: hidden;
+
+  .flexbox-slide {
+    @include transition-mix($duration: .3s);
+
+    width: 20%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    visibility: visible;
+
+    //overlay
+    &:after {
+      @include position-absolute($top: 0, $left: 0);
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($slide-overlay-color, $slide-overlay-opacity);
+      z-index: 2;
+
+      opacity: 0;
+    }
+
+    img {
+      @include position-absolute($top: 50%, $left: 50%);
+      height: auto;
+      width: auto;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .text-block {
+      @include position-absolute($bottom: 30px, $left: 30px);
+      max-width: $text-block-width;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: rgba($text-overlay-color, $text-overlay-opacity);
+      color: $light-font-color;
+
+      z-index: 4;
+
+      visibility: hidden;
+      opacity: 0;
+
+      h3 {
+        font: {
+          size: 20px;
+          weight: 700;
+        }
+      }
+    }
+  }
+
+  &:hover {
+
+    .flexbox-slide:hover {
+      flex-shrink: 0;
+      width: 60%;
+    }
+  }
+}
+
+/* effect 1 styles */
+.flexbox-slider.flexbox-slider-1 {
+
+  .flexbox-slide {
+
+    .text-block {
+      bottom: 60px;
+    }
+  }
+
+  &:hover {
+
+    .flexbox-slide:hover {
+
+      .text-block {
+        @include transition-mix($delay: .5s);
+        bottom: 30px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 578px;
+}
+.swiper-slide {
+  font-size: 18px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+
+//paralax
+.jumbotron-slider{
+  background: url("/images/slider/machupicchu-2.jpg");
+  background-size: 100%;
+}
+
+.jumbotron-divider-1{
+  background: url("/images/divider/slider-1.jpg");
+  background-size: 100%;
+}
+
+.jumbotron-slider-1{
+  background: url("/images/banners/slider-1.jpg");
+  background-size: 100%;
+}
+
+.jumbotron {
+  padding: 2rem 2rem !important;
+}
+
+.footer-logo{
+  margin-top: -15%;
+}
+img.img-lazy {
+  display: block;
+  border: 0;
+  opacity: 0;
+}
+img.img-lazy:not(.initial) {
+  transition: opacity 1s;
+}
+img.img-lazy.initial,
+img.img-lazy.loaded,
+img.img-lazy.error {
+  opacity: 1;
+}
+
+img.img-lazy:not([src]) {
+  visibility: hidden;
+}
+
+.number-hover:hover, .number-hover.active{
+  color: #ffffff !important;
+  background-color: #f9a825 !important;
+  border-color: #f9a825 !important;
+}
+
+.number-hover:hover i, .number-hover.active i{
+  color: #000000 !important;
+}
+
+.number-hover.focus, .number-hover.active:focus{
+  -webkit-box-shadow: 0 0 0 0.05rem rgba(249, 168, 37, 0.5) !important;
+  box-shadow: 0 0 0 0.05rem rgba(249, 168, 37, 0.5) !important;
+}

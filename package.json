@@ -29,6 +29,8 @@
     "font-awesome-sass": "^4.7.0",
     "fontawesome-scss": "^2.0.4",
     "fontawesome5-webfont": "^5.0.4",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "swiper": "^4.3.0",
+    "vanilla-lazyload": "^8.7.1"
   }
 }

@@ -46,141 +46,33 @@
 
 
 
-<section class="bg-white py-5">
-    <div class="container">
 
-        <div class="row py-5 justify-content-center">
-            <div class="col-12 col-sm-8 col-md-8 col-lg-5">
-                <img src="{{asset('images/logo-andes-c.png')}}" alt="" class="img-fluid">
-            </div>
-        </div>
 
-        <div class="row pt-4">
-            <div class="col-12 col-sm-4 mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
-                        <img src="{{asset('images/icons/group.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        Grupos pequenos e passeios privados
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
-                        <img src="{{asset('images/icons/assistance.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        Moramos no perú, porém oferecemos assistencia 24/7
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
-                        <img src="{{asset('images/icons/customize.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        Escolha de programas prontos para comprar ou personalizar suas férias
-                    </div>
-                </div>
-            </div>
+{{--<section class="py-5 bg-light d-none d-sm-block">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col">--}}
+                {{--<img src="{{asset("images/sponsor/logo-facebook.png")}}" alt="" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col">--}}
+                {{--<img src="{{asset("images/sponsor/logo-asta.png")}}" alt="" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col">--}}
+                {{--<img src="{{asset("images/sponsor/logo-newyorktimes.png")}}" alt="" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col">--}}
+                {{--<img src="{{asset("images/sponsor/logo-apotur.png")}}" alt="" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col">--}}
+                {{--<img src="{{asset("images/sponsor/logo-promperu.png")}}" alt="" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col">--}}
+                {{--<img src="{{asset("images/sponsor/logo-meetup.png")}}" alt="" class="img-fluid">--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
 
-            {{--<div class="w-100 py-4"></div>--}}
-            <div class="col-12 col-sm-4 mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
-                        <img src="{{asset('images/icons/location.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        Custos menores, somos uma agencia local
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
-                        <img src="{{asset('images/icons/trip.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        Excelentes coméntarios na tripadvisor
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
-                        <img src="{{asset('images/icons/departure.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        Temos passeios todos os dias do ano
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5 bg-light d-none d-sm-block">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="{{asset("images/sponsor/logo-facebook.png")}}" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="{{asset("images/sponsor/logo-asta.png")}}" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="{{asset("images/sponsor/logo-newyorktimes.png")}}" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="{{asset("images/sponsor/logo-apotur.png")}}" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="{{asset("images/sponsor/logo-promperu.png")}}" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="{{asset("images/sponsor/logo-meetup.png")}}" alt="" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="bg-dark d-none d-sm-block py-5">
-    <div class="container">
-
-        <div class="row justify-content-center">
-            <div class="col-3 py-2">
-                <img src="{{asset('images/logo-andes.png')}}" alt="" class="img-fluid">
-            </div>
-        </div>
-        <div class="row pt-3">
-            <div class="col">
-                <img src="{{asset("images/group.jpg")}}" alt="" class="img-fluid rounded">
-            </div>
-            <div class="col text-center">
-                <h5 class="font-weight-bold mt-4 text-white">CONFIANÇA</h5>
-                {{--<h3>Andes Viagens</h3>--}}
-                <p class="py-3 text-white lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
-                <a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
-                <a href="https://m.me/ANDESVIAGENS/" target="_blank" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> Fale com nós agora</a>
-            </div>
-        </div>
-
-    </div>
-</section>
 {{--<footer class="bg-g-dark">--}}
     {{--<img src="{{asset("images/footer.jpg")}}" alt="" class="w-100">--}}
     {{--<div class="container">--}}
@@ -192,44 +84,153 @@
         {{--</div>--}}
     {{--</div>--}}
 {{--</footer>--}}
-<footer class="pt-4 pb-2 bg-dark">
-    <div class="container">
+<footer class="bg-g-dark">
+    <img src="{{asset('images/footer.jpg')}}" alt="footer gotoperu" class="w-100">
+    <div class="container footer-logo">
         <div class="row justify-content-center">
-            <div class="col-6 border border-left-0 border-bottom-0 border-right-0 border-light">
-                <div class="row mt-5">
-                    <div class="col my-2">
-                        <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <img src="{{asset('images/logo-andes.png')}}" alt="logo gotoperu" class="w-100">
                     </div>
-                    <div class="col text-center font-montserrat">
-                        <p class="text-white m-0"><i class="fa fa-phone"></i> (11) 4349 6191</p>
-                        <p class="text-white m-2"><i class="fab. fa-whatsapp"></i> (51) 992051190</p>
-                        <a href="#" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#design_m">Solicitar un Orçamento</a>
-                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8">
+                <div class="alert bg-rgba-dark my-4 text-white text-center" role="alert">
+                    O ÚNICO <strong class="text-g-yellow">Operador de Viagem Peruano</strong> com Escritórios de Vendas Diretas nos USA
+
                 </div>
             </div>
         </div>
-
-        <div class="row mt-5">
-            <div class="col">
-                <p class="text-center text-white"><img src="{{asset("images/logo-andes.png")}}" width="100" alt="logo gotoperu"> É a Divisão de <img src="{{asset("images/logo-gotoperu.png")}}" width="100" alt="logo andesviagens"> para os viajantes de língua portuguesa</p>
-                {{--<p class="m-0 text-center text-white"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>--}}
-                <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Miravalle - Cusco - Cusco - Perú</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row py-4">
+            <div class="col-6 col-sm mb-3 text-white">
+                <h3 class="h6 text-g-yellow">Pacotes</h3>
+                <ul class="m-0 text-g-yellow list-unstyled">
+                    {{--<li><a href="{{route('deals_path')}}" class="text-white">Travel Deals</a></li>--}}
+                    <li><a href="{{route('paquetes_path')}}" class="text-white">Pacotes de Viagem</a></li>
+                    <li><a href="{{route('tours_path')}}" class="text-white">Perú Passeios</a></li>
+                </ul>
+            </div>
+            {{--<div class="col-6 col-sm mb-3 text-white">--}}
+            {{--<h3 class="h6 text-g-yellow">Tour Packages</h3>--}}
+            {{--<ul class="m-0 text-g-yellow list-unstyled">--}}
+            {{--<li><a href="{{route('destinations_path')}}" class="text-white">1-3 Days</a></li>--}}
+            {{--<li><a href="{{route('deals_path')}}" class="text-white">4-6 Days</a></li>--}}
+            {{--</ul>--}}
+            {{--</div>--}}
+            <div class="col-6 col-sm mb-3 text-white">
+                <h3 class="h6 text-g-yellow">Destinations</h3>
+                <ul class="m-0 text-g-yellow list-unstyled">
+                    <li><a href="{{route('destinations_path')}}" class="text-white">Perú destinos</a></li>
+                </ul>
+            </div>
+            {{--<div class="col-6 col-sm mb-3 text-white">--}}
+            {{--<h3 class="h6 text-g-yellow">Hotels</h3>--}}
+            {{--<ul class="m-0 text-g-yellow list-unstyled">--}}
+            {{--<li><a href="" class="text-white">2 Stars</a></li>--}}
+            {{--<li><a href="" class="text-white">3 Stars</a></li>--}}
+            {{--<li><a href="" class="text-white">4 Stars</a></li>--}}
+            {{--<li><a href="" class="text-white">5 Stars</a></li>--}}
+            {{--</ul>--}}
+            {{--</div>--}}
+            <div class="col-6 col-sm mb-3 text-white">
+                <h3 class="h6 text-g-yellow">Sobre Nós</h3>
+                <ul class="m-0 text-g-yellow list-unstyled">
+                    <li><a href="{{route('about_path')}}" class="text-white">Sobre Nós</a></li>
+                    <li><a href="{{route('social_path')}}" class="text-white">Responsibilidade Social</a></li>
+                </ul>
+            </div>
+            {{--<div class="col-6 col-sm mb-3 text-white">--}}
+            {{--<h3 class="h6 text-g-yellow">Offices</h3>--}}
+            {{--<ul class="m-0 text-g-yellow list-unstyled">--}}
+            {{--<li>PERU: Av. Collasuyo 986 Cusco-Peru</li>--}}
+            {{--<li>USA: 1440 G St NW, Washington DC, 20005</li>--}}
+            {{--</ul>--}}
+            {{--</div>--}}
+            <div class="col-6 col-sm mb-3 text-white">
+                <h3 class="h6 text-g-yellow">FAQ</h3>
+                <ul class="m-0 text-g-yellow list-unstyled">
+                    {{--<li><a href="" class="text-white">Getting To Peru</a></li>--}}
+                    <li><a href="{{route('dicas_path')}}" class="text-white">Perguntas Mais Frequentes</a></li>
+                </ul>
+            </div>
+            {{--<div class="col-6 col-sm mb-3 text-white">--}}
+                {{--<h3 class="h6 text-g-yellow">Testimonials</h3>--}}
+                {{--<ul class="m-0 text-g-yellow list-unstyled">--}}
+                    {{--<li><a href="#" class="text-white"></a></li>--}}
+                    {{--<li><a href="" class="text-white">Reviews & Testmonials</a></li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
+            <div class="col-6 col-sm mb-3 text-white">
+                <h3 class="h6 text-g-yellow">Contato</h3>
+                <ul class="m-0 text-g-yellow list-unstyled">
+                    {{--<li><a href="" class="text-white" data-toggle="modal" data-target="#modal-contact">Email</a></li>--}}
+                    <li><a href="tel:+2029963000">(202) 996-3000</a></li>
+                    {{--<li><a href="" class="text-white">Address</a></li>--}}
+                </ul>
+            </div>
+            <div class="col-6 col-sm mb-3 text-white">
+                <h3 class="h6 text-g-yellow">Hotéis</h3>
+                <ul class="m-0 text-g-yellow list-unstyled">
+                    <li><a href="{{route('hoteles_path')}}" class="text-white">Hotéis</a></li>
+                </ul>
+            </div>
+        </div>
+        {{--<div class="row bg-light pt-3">--}}
+            {{--<div class="col-12 col-sm mb-3">--}}
+                {{--<h6 class="mt-2">GOTOPERU GROUP:</h6>--}}
+            {{--</div>--}}
+            {{--<div class="col-6 col-sm mb-3">--}}
+                {{--<img src="{{asset('images/logos/logo-gotoperu-footer.png')}}" alt="logo gotoperu" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col-6 col-sm mb-3">--}}
+                {{--<img src="{{asset('images/logos/logo-andes-footer.png')}}" alt="logo andes viagens" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col-6 col-sm mb-3">--}}
+                {{--<img src="{{asset('images/logos/logo-latinamerica-footer.png')}}" alt="logo gotolatinamerica" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col-6 col-sm mb-3">--}}
+                {{--<img src="{{asset('images/logos/logo-mapi-galapagos-footer.png')}}" alt="logo machupicchu galapagos" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col-12 col-sm text-center">--}}
+                {{--<b>PERU LOCAL TIME: 7:38PM</b>--}}
+                {{--<a href="{{asset('pdf/terms-conditions.pdf')}}" target="_blank" class="btn btn-link d-block">Services Terms & Conditions</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        <div class="row">
+            <div class="col text-center text-white">
+                <small><i><b>PERU:</b> Av. Collasuyo 986 Cusco-Peru | <b>USA:</b> 1440 G St NW, Washington DC, 20005</i></small>
             </div>
         </div>
     </div>
-    <!-- /.container -->
-    {{--<p class="totop">--}}
-        {{--<a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank"><img src="{{asset('images/icons/whatsapp-c.png')}}" alt="" width="40" class="d-block"></a>--}}
-        {{--<a href="https://m.me/ANDESVIAGENS/" target="_blank"><img src="{{asset('images/icons/messenger-c.png')}}" alt="" width="40" class="d-block my-3"></a>--}}
-        {{--<a href="#top" class="top">--}}
-            {{--<img src="{{asset('images/icons/circle-arrow.png')}}" alt="" width="40">--}}
-        {{--</a>--}}
-    {{--</p>--}}
 </footer>
 {{--scripts--}}
 <script src="{{asset("js/app.js")}}"></script>
+<script src="{{asset("js/plugins.js")}}"></script>
 @stack('scripts')
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        freeMode: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        mousewheel: true,
+    });
 
+    (function () {
+        var ll = new LazyLoad({
+            threshold: 0
+        });
+    }());
+</script>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -516,6 +517,104 @@
         }
 
 
+
+
+
+        function designInquire(){
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('[name="_token"]').val()
+                }
+            });
+
+            $("#submit_tip").attr("disabled", true);
+
+            var filter=/^[A-Za-z][A-Za-z0-9_.]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;
+
+
+            var s_accommodation = document.getElementsByName('accommodation[]');
+            var $accommodation = "";
+            for (var i = 0, l = s_accommodation.length; i < l; i++) {
+                if (s_accommodation[i].checked) {
+                    $accommodation += s_accommodation[i].value+' , ';
+                }
+            }
+            s_accommodation = $accommodation.substring(0,$accommodation.length-3);
+
+            var s_destinations = document.getElementsByName('destinations[]');
+            var $destinations = "";
+            for (var i = 0, l = s_destinations.length; i < l; i++) {
+                if (s_destinations[i].checked) {
+                    $destinations += s_destinations[i].value+' , ';
+                }
+            }
+            s_destinations = $destinations.substring(0,$destinations.length-3);
+
+            var s_number = $(".number:checked").val();
+            var s_number_t = $("#h_number").val();
+            var s_duration = $(".duration:checked").val();
+            var s_duration_t = $("#h_duration").val();
+            var s_date = $('#h_date').val();
+            var s_tel = $('#h_tel').val();
+            var s_name = $('#h_name').val();
+            var s_email = $('#h_email').val();
+            var s_comment = $('#h_comment').val();
+
+
+            if (filter.test(s_email)){
+                sendMail = "true";
+            } else{
+                $('#h_email').css("border-bottom", "2px solid #FF0000");
+                sendMail = "false";
+            }
+            if (s_name.length == 0 ){
+                $('#h_name').css("border-bottom", "2px solid #FF0000");
+                var sendMail = "false";
+            }
+
+            if(sendMail == "true"){
+                var datos = {
+
+                    "txt_accommodation" : s_accommodation,
+                    "txt_destinations" : s_destinations,
+                    "txt_number" : s_number,
+                    "txt_number_t" : s_number_t,
+                    "txt_duration" : s_duration,
+                    "txt_duration_t" : s_duration_t,
+                    "txt_date" : s_date,
+                    "txt_tel" : s_tel,
+                    "txt_name" : s_name,
+                    "txt_email" : s_email,
+                    "txt_comment" : s_comment,
+
+                };
+                $.ajax({
+                    data:  datos,
+                    url:   "{{route('design_inquire_path')}}",
+                    type:  'post',
+
+                    beforeSend: function () {
+
+                        // $('#de_send').removeClass('show');
+                        $("#submit_tip").addClass('d-none');
+                        $("#h_load").removeClass('d-none');
+                    },
+                    success:  function (response) {
+                        $('#h_form')[0].reset();
+                        $('#submit_tip').removeClass('d-none');
+                        $("#h_load").addClass('d-none');
+                        $('#h_alert').removeClass('d-none');
+                        // $("#h_alert b").html(response);
+                        $("#h_alert").fadeIn('slow');
+                        $("#submit_tip").removeAttr("disabled");
+                    }
+                });
+            } else{
+                $("#submit_tip").removeAttr("disabled");
+            }
+        }
+
+
         $('#d_date').datepicker({
             dateFormat: 'yy-mm-dd',
             changeMonth: true,
@@ -525,6 +624,16 @@
         function startOlark() {
             olark('api.box.expand');
         }
+
+
+        function estado() {
+            $(".duration_ch").removeClass('active');
+        }
+        function estado2() {
+            $(".number_ch").removeClass('active');
+        }
+
+
 
     </script>
 

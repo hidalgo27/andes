@@ -9,6 +9,7 @@ use App\THotelDestino;
 use App\TPaquete;
 use App\TPaqueteCategoria;
 use App\TPaqueteDestino;
+use App\TTestimonio;
 use App\TTour;
 use App\TTourDestino;
 use App\TTraslado;
@@ -32,6 +33,8 @@ class HomeController extends Controller
         $tours = TTour::with('tours_destinos')->get();
         $tours_destinos = TTourDestino::with('destinos')->get();
         $traslado = TTraslado::all();
+        $testimonial = TTestimonio::all();
+
 
         SEOMeta::setTitle('Machu Picchu | Pacotes de Viagem e Tour ao Peru');
         SEOMeta::setDescription('Pacotes de Viagens para o Peru com um operador peruano autêntico, escritórios em Lima, Cusco, Arequipa e Puno. Em Machupicchu oferecemos saidas diarias.');
@@ -51,7 +54,7 @@ class HomeController extends Controller
         \Twitter::addImage('http://www.andesviagens.com/images/sliders/cusco.jpg');
 
 
-        return view('page.home', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'categoria'=>$categoria, 'tours'=>$tours, 'tours_destinos'=>$tours_destinos, 'traslado'=>$traslado]);
+        return view('page.home', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos, 'categoria'=>$categoria, 'tours'=>$tours, 'tours_destinos'=>$tours_destinos, 'traslado'=>$traslado, 'testimonial'=>$testimonial]);
     }
 
     public function tours()
@@ -503,6 +506,82 @@ class HomeController extends Controller
                     /*->attach('ruta')*/
                     ->from('contato@andesviagens.com', 'AndesViagens');
             });
+
+
+            return 'Thank you.';
+
+        }
+        catch (Exception $e){
+            return $e;
+        }
+
+//        return view('page.itinerary', ['paquete'=>$paquete, 'paquete_destinos'=>$paquete_destinos]);
+    }
+
+
+    public function design_inquire()
+    {
+        $from = 'info@gotoperu.com';
+        $from2 = 'paul@gotoperu.com';
+
+        $accommodation = $_POST['txt_accommodation'];
+        $destinations = $_POST['txt_destinations'];
+        $number = $_POST['txt_number'];
+        $number_t = $_POST['txt_number_t'];
+        $duration = $_POST['txt_duration'];
+        $duration_t = $_POST['txt_duration_t'];
+        $date = $_POST['txt_date'];
+        $tel = $_POST['txt_tel'];
+        $name = $_POST['txt_name'];
+        $email = $_POST['txt_email'];
+        $comment = $_POST['txt_comment'];
+
+
+        try {
+            Mail::send(['html' => 'notifications.page.client-form-design'], ['name' => $name], function ($messaje) use ($email, $name) {
+                $messaje->to($email, $name)
+                    ->subject('GotoPeru')
+                    /*->attach('ruta')*/
+                    ->from('info@gotoperu.com', 'GotoPeru');
+            });
+
+
+            Mail::send(['html' => 'notifications.page.admin-form-design-inquire'], [
+                'accommodation' => $accommodation,
+                'destinations' => $destinations,
+                'number' => $number,
+                'number_t' => $number_t,
+                'duration' => $duration,
+                'duration_t' => $duration_t,
+                'date' => $date,
+                'tel' => $tel,
+                'name' => $name,
+                'email' => $email,
+                'comment' => $comment
+            ], function ($messaje) use ($from) {
+                $messaje->to($from, 'GotoPeru')
+                    ->subject('GotoPeru')
+                    /*->attach('ruta')*/
+                    ->from('info@gotoperu.com', 'GotoPeru');
+            });
+
+
+//            Mail::send(['html' => 'notifications.page.admin-form-design'], [
+//                'destinations' => $destinations,
+//                'other' => $other,
+//                'duration' => $duration,
+//                'number' => $number,
+//                'date' => $date,
+//                'name' => $name,
+//                'email' => $email,
+//                'tel' => $tel
+////                'comment' => $comment
+//            ], function ($messaje) use ($from2) {
+//                $messaje->to($from2, 'Andes Viagens')
+//                    ->subject('AndesViagens')
+//                    /*->attach('ruta')*/
+//                    ->from('diana@andesviagens.com', 'andesviagens.com');
+//            });
 
 
             return 'Thank you.';

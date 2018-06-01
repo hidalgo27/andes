@@ -44,7 +44,7 @@ Route::get('/destinos-peru/{titulo}', [
 ]);
 
 //detail promgram
-Route::get('/paquetes-de-viaje-peru/{titulo}', [
+Route::get('/pacotes-de-viagem-peru/{titulo}', [
     'uses' => 'HomeController@show',
     'as' => 'home_show_path',
 ]);
@@ -107,4 +107,8 @@ Route::post('/tel', [
 Route::post('/inquire', [
     'uses' => 'HomeController@inquire',
     'as' => 'inquire_path',
+]);
+Route::post('/design_inquire', [
+    'uses' => 'HomeController@design_inquire',
+    'as' => 'design_inquire_path',
 ]);

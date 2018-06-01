@@ -209,28 +209,7 @@
                             </div>
 
                         </div>
-                        {{--<div class="col border-secondary border-left-0 m-0 d-none">--}}
 
-                        {{--<div class="form-group">--}}
-                        {{--<div class="d-block mb-3">--}}
-                        {{--<span class="text-secondary align-bottom">Dúvidas?</span>--}}
-                        {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
-                        {{--</div>--}}
-                        {{--<textarea class="form-control" id="d_comment" rows="5" placeholder="Como você imagina uma viagem inesquecivel ao Perú, sugestões especiais, perguntas, comentários"></textarea>--}}
-                        {{--</div>--}}
-                        {{--<div class="my-3">--}}
-                        {{--<button type="submit" class="btn btn-lg btn-block btn-warning">Submit</button>--}}
-
-                        {{--<button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Enviar--}}
-                        {{--<i class="fa fa-paper-plane" aria-hidden="true"></i>--}}
-                        {{--</button>--}}
-                        {{--<ul class="fa-ul pull-right d-none" id="loader2">--}}
-                        {{--<li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>--}}
-                        {{--</ul>--}}
-
-                        {{--</div>--}}
-
-                        {{--</div>--}}
 
                         <div class="alert alert-success alert-dismissible fade d-none" id="d_alert" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -241,7 +220,7 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col">
-                            {{--<button type="submit" class="btn btn-lg btn-block btn-warning">Submit</button>--}}
+
 
                             <button class="btn btn-lg btn-block btn-g-green" id="d_send" type="button" onclick="design()">Enviar
                                 <i class="fa fa-paper-plane" aria-hidden="true"></i>

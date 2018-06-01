@@ -244,13 +244,13 @@
                     <div class="row">
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Incluso:</h3>
-                            @php echo $paquetes->incluye; @endphp
+                            @php echo $paquetes->incluye_sh; @endphp
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Não Incluso:</h3>
-                            @php echo $paquetes->noincluye; @endphp
+                            @php echo $paquetes->noincluye_sh; @endphp
                         </div>
                     </div>
                     <div class="row">
