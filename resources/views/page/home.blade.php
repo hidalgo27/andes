@@ -278,9 +278,9 @@
                         <div class="row align-items-center">
                             <div class="col-12 text-center">
                                 <h6 class="text-secondary">
-                                    <img src="{{asset('images/logo-gotoperu.png')}}" alt="" width="100">
-                                    <span class="mt-1">É a Divisão de</span>
                                     <img src="{{asset('images/logo-andes-bc.png')}}" alt="" width="120">
+                                    <span class="mt-1">É a Divisão de</span>
+                                    <img src="{{asset('images/logo-gotoperu.png')}}" alt="" width="100">
                                 </h6>
 
                             </div>
@@ -604,7 +604,7 @@
         <section class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md mb-5">
                         <div class="alert bg-g-yellow py-2 mb-1" role="alert">
                             <h5 class="font-weight-bold m-0 text-white">Pacotes Sem Hotel</h5>
                         </div>
@@ -649,7 +649,7 @@
                             {{--</div>--}}
                         {{--</div>--}}
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md mb-5">
                         <div class="alert bg-g-green py-2 mb-1" role="alert">
                             <h5 class="font-weight-bold m-0 text-white">Passeios Individuais</h5>
                         </div>
