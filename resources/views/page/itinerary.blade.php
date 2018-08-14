@@ -502,10 +502,8 @@
                         <div class="row">
                             <div class="col my-3">
 
-                                <button class="btn btn-g-green btn-block btn-lg btn-next" id="i_send" type="button" onclick="inquire()">Enviar
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                </button>
-                                <ul class="fa-ul pull-right d-none" id="loader2">
+                              
+                                <ul class="fa-ul pull-right " id="loader2">
                                     <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                                 </ul>
                             </div>

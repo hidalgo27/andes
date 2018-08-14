@@ -1183,7 +1183,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col">
-                            Excelentes coméntarios na tripadvisor
+                            Excelentes coméntarios na tripadvisor 
                         </div>
                     </div>
                 </div>
