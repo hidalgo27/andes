@@ -553,7 +553,7 @@
                                 <div class="swiper-slide">
                                     <div class="list-group position-relative">
                                         @foreach($paquete->random(10) as $paquetes)
-                                            <a href="" class="list-group-item list-group-item-action">
+                                            <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                                                 <div class="media">
                                                     <img data-src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" width="60" height="60" class="rounded-circle align-self-center mr-3 img-lazy" data-toggle="tooltip" data-placement="top" title="{{(strtolower($paquetes->titulo))}}">
                                                     <div class="media-body">
