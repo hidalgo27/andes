@@ -141,7 +141,7 @@
                                                         {{--<label class="btn btn-outline-secondary btn-block rounded-circle py-3 popover-hover position-relative">--}}
                                                         {{--<i class="fa fa-home d-block fa-2x" aria-hidden="true"></i>--}}
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
-                                                            <input type="checkbox" autocomplete="off" name="accommodation[]" value="Econômico"> Budget
+                                                            <input type="checkbox" autocomplete="off" name="accommodation[]" value="Econômico"> Econômico
                                                             <div class="d-block">
                                                                 <small><i class="fa fa-star text-g-yellow"></i></small>
                                                                 <small><i class="fa fa-star text-g-yellow"></i></small>
@@ -158,7 +158,7 @@
                                                         {{--<label class="btn btn-outline-secondary btn-block rounded-circle py-3 popover-hover position-relative">--}}
                                                         {{--<i class="fa fa-home d-block fa-2x" aria-hidden="true"></i>--}}
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
-                                                            <input type="checkbox" autocomplete="off" name="accommodation[]" value="Turista"> Best Value
+                                                            <input type="checkbox" autocomplete="off" name="accommodation[]" value="Turista"> Turista
                                                             <div class="d-block">
                                                             <small><i class="fa fa-star text-g-yellow"></i></small>
                                                             <small><i class="fa fa-star text-g-yellow"></i></small>
@@ -193,7 +193,7 @@
                                                         {{--<label class="btn btn-outline-secondary btn-block rounded-circle py-3 popover-hover position-relative">--}}
                                                         {{--<i class="fa fa-building d-block fa-2x" aria-hidden="true"></i>--}}
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
-                                                            <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxury
+                                                            <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxo
                                                             <div class="d-block">
                                                             <small><i class="fa fa-star text-g-yellow"></i></small>
                                                             <small><i class="fa fa-star text-g-yellow"></i></small>
