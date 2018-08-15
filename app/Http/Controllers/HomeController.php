@@ -449,7 +449,7 @@ class HomeController extends Controller
     public function design()
     {
         $from = 'contato@andesviagens.com';
-        $from2 = 'sales.andesviagens@gmail.com';
+//        $from2 = 'sales.andesviagens@gmail.com';
 
         $destinations = $_POST['txt_destinations'];
         $other = $_POST['txt_other'];
@@ -490,22 +490,22 @@ class HomeController extends Controller
             });
 
 
-            Mail::send(['html' => 'notifications.page.admin-form-design'], [
-                'destinations' => $destinations,
-                'other' => $other,
-                'duration' => $duration,
-                'number' => $number,
-                'date' => $date,
-                'name' => $name,
-                'email' => $email,
-                'tel' => $tel
-//                'comment' => $comment
-            ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens')
-                    ->subject('AndesViagens')
-                    /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens');
-            });
+//            Mail::send(['html' => 'notifications.page.admin-form-design'], [
+//                'destinations' => $destinations,
+//                'other' => $other,
+//                'duration' => $duration,
+//                'number' => $number,
+//                'date' => $date,
+//                'name' => $name,
+//                'email' => $email,
+//                'tel' => $tel
+////                'comment' => $comment
+//            ], function ($messaje) use ($from2) {
+//                $messaje->to($from2, 'AndesViagens')
+//                    ->subject('AndesViagens')
+//                    /*->attach('ruta')*/
+//                    ->from('contato@andesviagens.com', 'AndesViagens');
+//            });
 
 
             return 'Thank you.';
@@ -522,7 +522,7 @@ class HomeController extends Controller
     public function design_inquire()
     {
         $from = 'contato@andesviagens.com';
-        $from2 = 'paul@gotoperu.com';
+//        $from2 = 'paul@gotoperu.com';
 
         $accommodation = $_POST['txt_accommodation'];
         $destinations = $_POST['txt_destinations'];
@@ -597,7 +597,7 @@ class HomeController extends Controller
     public function contact()
     {
         $from = 'contato@andesviagens.com';
-        $from2 = 'sales.andesviagens@gmail.com';
+//        $from2 = 'sales.andesviagens@gmail.com';
 
         $name = $_POST['txt_name'];
         $email = $_POST['txt_email'];
@@ -625,17 +625,17 @@ class HomeController extends Controller
             });
 
 
-            Mail::send(['html' => 'notifications.page.admin-from-contact'], [
-                'name' => $name,
-                'email' => $email,
-                'comment' => $comment
+//            Mail::send(['html' => 'notifications.page.admin-from-contact'], [
+//                'name' => $name,
+//                'email' => $email,
 //                'comment' => $comment
-            ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens')
-                    ->subject('AndesViagens')
-                    /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens');
-            });
+////                'comment' => $comment
+//            ], function ($messaje) use ($from2) {
+//                $messaje->to($from2, 'AndesViagens')
+//                    ->subject('AndesViagens')
+//                    /*->attach('ruta')*/
+//                    ->from('contato@andesviagens.com', 'AndesViagens');
+//            });
 
 
             return 'Thank you.';
@@ -651,7 +651,7 @@ class HomeController extends Controller
     public function tel()
     {
         $from = 'contato@andesviagens.com';
-        $from2 = 'sales.andesviagens@gmail.com';
+//        $from2 = 'sales.andesviagens@gmail.com';
 
         $name = $_POST['txt_name'];
         $email = $_POST['txt_email'];
@@ -681,17 +681,17 @@ class HomeController extends Controller
             });
 
 
-            Mail::send(['html' => 'notifications.page.admin-form-tel'], [
-                'name' => $name,
-                'email' => $email,
-                'city' => $city,
-                'tel' => $tel
-            ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens')
-                    ->subject('AndesViagens')
-                    /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens');
-            });
+//            Mail::send(['html' => 'notifications.page.admin-form-tel'], [
+//                'name' => $name,
+//                'email' => $email,
+//                'city' => $city,
+//                'tel' => $tel
+//            ], function ($messaje) use ($from2) {
+//                $messaje->to($from2, 'AndesViagens')
+//                    ->subject('AndesViagens')
+//                    /*->attach('ruta')*/
+//                    ->from('contato@andesviagens.com', 'AndesViagens');
+//            });
 
 
             return 'Thank you.';
@@ -708,7 +708,7 @@ class HomeController extends Controller
     public function inquire()
     {
         $from = 'contato@andesviagens.com';
-        $from2 = 'sales.andesviagens@gmail.com';
+//        $from2 = 'sales.andesviagens@gmail.com';
 
         $accommodation = $_POST['txt_accommodation'];
         $number = $_POST['txt_number'];
@@ -749,22 +749,22 @@ class HomeController extends Controller
             });
 
 
-            Mail::send(['html' => 'notifications.page.admin-form-inquire'], [
-                'accommodation' => $accommodation,
-                'number' => $number,
-
-                'date' => $date,
-                'tel' => $tel,
-                'name' => $name,
-                'email' => $email,
-                'package' => $package,
-                'comment' => $comment
-            ], function ($messaje) use ($from2) {
-                $messaje->to($from2, 'AndesViagens')
-                    ->subject('AndesViagens')
-                    /*->attach('ruta')*/
-                    ->from('contato@andesviagens.com', 'AndesViagens');
-            });
+//            Mail::send(['html' => 'notifications.page.admin-form-inquire'], [
+//                'accommodation' => $accommodation,
+//                'number' => $number,
+//
+//                'date' => $date,
+//                'tel' => $tel,
+//                'name' => $name,
+//                'email' => $email,
+//                'package' => $package,
+//                'comment' => $comment
+//            ], function ($messaje) use ($from2) {
+//                $messaje->to($from2, 'AndesViagens')
+//                    ->subject('AndesViagens')
+//                    /*->attach('ruta')*/
+//                    ->from('contato@andesviagens.com', 'AndesViagens');
+//            });
 
 
             return 'Thank you.';
