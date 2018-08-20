@@ -500,12 +500,16 @@
                         </div>
 
                         <div class="row">
-                            <div class="col my-3">
+                            <div class="col my-3 text-center">
 
-                              
-                                <ul class="fa-ul pull-right " id="loader2">
-                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
-                                </ul>
+                                <button class="btn btn-g-green btn-block btn-lg btn-next" id="i_send" type="button" onclick="inquire()">Enviar
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                                <div class="text-center d-none text-primary" id="loader_sin">
+                                    <div class="fa-3x">
+                                        <i class="fas fa-spinner fa-pulse"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -596,15 +600,15 @@
                             $('#i_send').removeClass('show');
                             $("#i_send").addClass('d-none');
 
-                            $("#loader2").removeClass('d-none');
-                            $("#loader2").addClass('show');
+                            $("#loader_sin").removeClass('d-none');
+                            $("#loader_sin").addClass('show');
                         },
                         success:  function (response) {
                             $('#i_form')[0].reset();
                             $('#i_send').removeClass('d-none');
                             $('#i_send').addClass('show');
-                            $("#loader2").removeClass('show');
-                            $("#loader2").addClass('d-none');
+                            $("#loader_sin").removeClass('show');
+                            $("#loader_sin").addClass('d-none');
                             $('#i_alert').removeClass('d-none');
                             $("#i_alert").addClass('show');
                             $("#i_alert b").html(response);

@@ -89,7 +89,7 @@
                                     <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                 </div>
                                 <div class="col">
-                                    <i class="fa fa-map-marker-alt pl-2 pr-1 text-g-green"></i>
+                                    <i class="fa fa-map-marker-alt text-g-green"></i>
                                     @php
                                         $i = 1;
                                         $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
@@ -138,7 +138,7 @@
                                     <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                 </div>
                                 <div class="col">
-                                    <i class="fa fa-map-marker-alt pl-2 pr-1 text-g-green"></i>
+                                    <i class="fa fa-map-marker-alt text-g-green"></i>
                                     @php
                                         $i = 1;
                                         $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));

@@ -28,7 +28,7 @@
             </div>
         </div>
         <div id="overlay" class="position-relative">
-            <video class="" id="hero-vid" poster="{{asset('images/slider/package-1.jpg')}}" autoplay loop muted>
+            <video class="" id="hero-vid" poster="{{asset('images/sliders/package-1.jpg')}}" autoplay loop muted>
                 <source src="{{asset('media/video6.mp4')}}" />
                 <source src="{{asset('media/video6.m4v')}}" type="video/mp4" />
                 <source src="{{asset('media/video6.webm')}}" type="video/webm" />
@@ -666,7 +666,7 @@
                                                             <b>{{ucwords(strtolower($tour->titulo))}}</b>
                                                         </div>
                                                         <div class="col d-none d-sm-inline">
-                                                            <i class="fa fa-map-marker-alt pl-2 pr-1 text-g-green"></i>
+                                                            <i class="fa fa-map-marker-alt  text-g-green"></i>
                                                             @php
                                                                 $i = 1;
                                                                 $num_des = count($tours_destinos->where('idtours',$tour->id));
@@ -743,7 +743,7 @@
                                                 <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                             </div>
                                             <div class="col d-none d-sm-inline">
-                                                <i class="fa fa-map-marker-alt pl-2 pr-1 text-g-green"></i>
+                                                <i class="fa fa-map-marker-alt  text-g-green"></i>
                                                 @php
                                                     $i = 1;
                                                     $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
@@ -797,7 +797,7 @@
                                                 <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                             </div>
                                             <div class="col d-none d-sm-inline">
-                                                <i class="fa fa-map-marker-alt pl-2 pr-1 text-danger"></i>
+                                                <i class="fa fa-map-marker-alt  text-danger"></i>
                                                 @php
                                                     $i = 1;
                                                     $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
@@ -840,10 +840,10 @@
                                                 <b>{{ucwords(strtolower($tour->titulo))}}</b>
                                             </div>
                                             {{--<div class="col">--}}
-                                                {{--<i class="fa fa-clock pl-2 pr-1 text-info"></i> {{$tour->duracion}}--}}
+                                                {{--<i class="fa fa-clock  text-info"></i> {{$tour->duracion}}--}}
                                             {{--</div>--}}
                                             <div class="col d-none d-sm-inline">
-                                                <i class="fa fa-map-marker-alt pl-2 pr-1 text-info"></i>
+                                                <i class="fa fa-map-marker-alt  text-info"></i>
                                                 @php
                                                     $i = 1;
                                                     $num_des = count($tours_destinos->where('idtours',$tour->id));

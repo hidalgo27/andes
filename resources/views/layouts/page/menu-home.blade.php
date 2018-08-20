@@ -13,9 +13,9 @@
 
 <section class=" d-md-none">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row my-2">
             <div class="col">
-                <a href="{{route('home_path')}}"><img src="{{asset('images/logos/logo-gotoperu-ave.png')}}" alt="" class="img-fluid"></a>
+                <a href="{{route('home_path')}}"><img src="{{asset('images/logo-andes-bc.png')}}" alt="" class="img-fluid"></a>
             </div>
         </div>
     </div>

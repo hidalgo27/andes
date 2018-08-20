@@ -87,10 +87,10 @@
                                     </div>
 
                                     <div class="col d-none d-md-inline">
-                                    <i class="fa fa-clock pl-2 pr-1 text-info"></i> {{$tour->duracion}}
+                                    <i class="fa fa-clock text-info"></i> {{$tour->duracion}}
                                     </div>
                                     <div class="col d-none d-sm-inline">
-                                        <i class="fa fa-map-marker-alt pl-2 pr-1 text-info"></i>
+                                        <i class="fa fa-map-marker-alt text-info"></i>
                                         @php
                                             $i = 1;
                                             $num_des = count($tours_destinos->where('idtours',$tour->id));
