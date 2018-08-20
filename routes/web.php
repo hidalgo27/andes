@@ -27,7 +27,7 @@ Route::get('/peru-tours', [
 ]);
 
 //paquetes
-Route::get('/paquetes-de-viaje-peru', [
+Route::get('/pacotes-de-viagem-peru', [
     'uses' => 'HomeController@paquetes',
     'as' => 'paquetes_path',
 ]);
@@ -50,7 +50,7 @@ Route::get('/pacotes-de-viagem-peru/{titulo}', [
 ]);
 
 //detail promgram
-Route::get('/paquetes-de-viaje-peru/{titulo}/sin-hotel', [
+Route::get('/pacotes-de-viagem-peru/{titulo}/sin-hotel', [
     'uses' => 'HomeController@sin_hotel',
     'as' => 'sin_hotel_show_path',
 ]);
