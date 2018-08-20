@@ -32,7 +32,7 @@ Route::get('/pacotes-de-viagem-peru', [
     'as' => 'paquetes_path',
 ]);
 
-//destios
+//destinos
 Route::get('/destinos-peru', [
     'uses' => 'HomeController@destinations',
     'as' => 'destinations_path',
@@ -43,13 +43,13 @@ Route::get('/destinos-peru/{titulo}', [
     'as' => 'destinations_show_path',
 ]);
 
-//detail promgram
+//detail program
 Route::get('/pacotes-de-viagem-peru/{titulo}', [
     'uses' => 'HomeController@show',
     'as' => 'home_show_path',
 ]);
 
-//detail promgram
+//detail program
 Route::get('/pacotes-de-viagem-peru/{titulo}/sin-hotel', [
     'uses' => 'HomeController@sin_hotel',
     'as' => 'sin_hotel_show_path',

@@ -178,9 +178,6 @@
                     @endforeach
                 </div>
 
-
-
-
             </div>
         </div>
     </section>
