@@ -147,10 +147,10 @@
                                         <b>{{ucwords(strtolower($tour2->titulo))}}</b>
                                     </div>
                                     <div class="col">
-                                    <i class="fa fa-clock pl-2 pr-1 text-info"></i> {{$tour2->duracion}}
+                                    <i class="fa fa-clock text-info"></i> {{$tour2->duracion}}
                                     </div>
                                     <div class="col">
-                                        <i class="fa fa-map-marker-alt pl-2 pr-1 text-info"></i>
+                                        <i class="fa fa-map-marker-alt text-info"></i>
                                         @php
                                             $i = 1;
                                             $num_des = count($tours_destinos->where('idtours',$tour2->id));
@@ -318,7 +318,7 @@
                                 <button class="btn btn-g-green btn-block btn-lg btn-next" id="i_send" type="button" onclick="inquire()">Enviar
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                 </button>
-                                <ul class="fa-ul pull-right d-none" id="loader2">
+                                <ul class="fa-ul pull-right d-none" id="loader_tours">
                                     <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>
                                 </ul>
                             </div>
@@ -411,15 +411,15 @@
                             $('#i_send').removeClass('show');
                             $("#i_send").addClass('d-none');
 
-                            $("#loader2").removeClass('d-none');
-                            $("#loader2").addClass('show');
+                            $("#loader_tours").removeClass('d-none');
+                            $("#loader_tours").addClass('show');
                         },
                         success:  function (response) {
                             $('#i_form')[0].reset();
                             $('#i_send').removeClass('d-none');
                             $('#i_send').addClass('show');
-                            $("#loader2").removeClass('show');
-                            $("#loader2").addClass('d-none');
+                            $("#loader_tours").removeClass('show');
+                            $("#loader_tours").addClass('d-none');
                             $('#i_alert').removeClass('d-none');
                             $("#i_alert").addClass('show');
                             $("#i_alert b").html(response);
