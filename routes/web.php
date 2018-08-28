@@ -61,19 +61,19 @@ Route::get('/peru-tours/{titulo}', [
     'as' => 'itinerario_tours_show_path',
 ]);
 //nosotros
-Route::get('/acerca-de-nosotros', [
+Route::get('/sobre-nos', [
     'uses' => 'HomeController@about',
     'as' => 'about_path',
 ]);
 
 //social
-Route::get('/responsabilidad-social', [
+Route::get('/responsabilidade-social', [
     'uses' => 'HomeController@social',
     'as' => 'social_path',
 ]);
 
 //hoteles
-Route::get('/hoteles-peru', [
+Route::get('/hoteis-peru', [
     'uses' => 'HomeController@hoteles',
     'as' => 'hoteles_path',
 ]);

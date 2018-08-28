@@ -100,7 +100,7 @@
             </div>
             {{--<div class="header-expedia text-white p-3">As local travel operators our programs start daily</div>--}}
             <div class="header-expedia p-3 w-100 text-center d-none d-xl-inline">
-                <p class="text-white h6"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> Compartilhe seus planos de viagem <span class="bg-g-yellow p-1 rounded-circle px-3 text-white ml-5">2</span> Reciba um roteiro personalizado e cotacao <span class="bg-g-dark p-1 rounded-circle px-3 text-white ml-5">3</span> Descobra o melhor do Perú com GOTOPERU</p>
+                <p class="text-white h6"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> Compartilhe seus planos de viagem <span class="bg-g-yellow p-1 rounded-circle px-3 text-white ml-5">2</span> Reciba um roteiro personalizado e cotacao <span class="bg-g-dark p-1 rounded-circle px-3 text-white ml-5">3</span> Descobra o melhor do Perú com ANDESVIAGENS</p>
             </div>
         </div>
         <div class="content-header">
@@ -273,13 +273,13 @@
                         <img data-src="{{asset('images/about.jpg')}}" alt="" class="w-100 rounded img-lazy">
                     </div>
                     <div class="col">
-                        <h1>Pacotes de Viagem o Peru</h1>
+                        <h1>Pacotes de Viagem ao Peru</h1>
                         <p>Somos <b>ANDESVIAGENS</b>, especialistas em viagens locais! Nossos guias, motoristas e representantes locais terão prazer em compartilhar o melhor do nosso país em nossos mais de 12 anos de experiência criando viagens inesquecíveis para a terra dos Incas! Temos uma grande reputação, incluindo parceiros globais como Expedia, Travelocity e Tripadvisor, que também reconheceram nossos esforços citando-nos como os melhores especialistas locais.</p>
                         <div class="row align-items-center">
                             <div class="col-12 text-center">
                                 <h6 class="text-secondary">
                                     <img src="{{asset('images/logo-andes-bc.png')}}" alt="" width="120">
-                                    <span class="mt-1">É a Divisão de</span>
+                                    <span class="mt-1">é a divisão de</span>
                                     <img src="{{asset('images/logo-gotoperu.png')}}" alt="" width="100">
                                 </h6>
 
@@ -552,7 +552,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="list-group position-relative">
-                                        @foreach($paquete->random(10) as $paquetes)
+                                        @foreach($paquete->random(8) as $paquetes)
                                             <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                                                 <div class="media">
                                                     <img data-src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" width="60" height="60" class="rounded-circle align-self-center mr-3 img-lazy" data-toggle="tooltip" data-placement="top" title="{{(strtolower($paquetes->titulo))}}">
@@ -927,7 +927,7 @@
                     <div class="row pt-5">
                         <div class="col">
                             <div class="alert alert-primary py-2 mb-1" role="alert">
-                                <h5 class="font-weight-bold m-0">Pergunte-nos</h5>
+                                <h5 class="font-weight-bold m-0">Pregunte-nos</h5>
                             </div>
                             <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> Comentários, dúvidas, informações sobre pacotes, etc.</h5>
 

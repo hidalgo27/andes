@@ -7,7 +7,7 @@
     <a class="nav-item text-g-dark font-weight-normal" href="{{route("about_path")}}">SOBRE NÓS</a>
     <a class="nav-item text-g-dark font-weight-normal" href="{{route("dicas_path")}}">DICAS</a>
     <a class="nav-item text-g-dark font-weight-normal d-none d-xl-inline" href="{{route('social_path')}}">RESPONSABILIDADE SOCIAL</a>
-    <a class="nav-item text-g-dark font-weight-normal bg-g-yellow" href="#Inquire">PREGUNTAR</a>
+    <a class="nav-item text-g-dark font-weight-normal bg-g-yellow" href="#Inquire">PERGUNTAR</a>
     {{--<a class="nav-item nav-link disabled" href="#">Disabled</a>--}}
 </nav>
 
@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-6">
-                <a href="#Inquire" class="btn btn-block btn-g-yellow">PREGUNTAR</a>
+                <a href="#Inquire" class="btn btn-block btn-g-yellow">PERGUNTAR</a>
             </div>
             {{--<div class="col">--}}
                 {{--<a href="tel:+2029963000" class="mx-3 h4"><i class="fa fa-phone text-white"></i></a>--}}

@@ -268,7 +268,7 @@
                                     {{--<th class="text-center">Tourista 3 <i class="fa fa-star text-warning" aria-hidden="true"></i></th>--}}
                                     <th class="text-center w-25">Turista <span class="d-block text-warning">3 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
                                     <th class="text-center w-25">Superior <span class="d-block text-warning">4 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
-                                    <th class="text-center w-25">Lujo <span class="d-block text-warning">5 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
+                                    <th class="text-center w-25">Luxo <span class="d-block text-warning">5 <i class="fa fa-star text-warning" aria-hidden="true"></i></span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -431,7 +431,7 @@
                             </div>
                             <div class="col-6 col-sm" data-toggle="buttons">
                                 <label class="btn btn-outline-primary btn-block">
-                                    <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Lujo
+                                    <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxo
                                     <div class="d-block text-warning">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>

@@ -396,7 +396,11 @@ class HomeController extends Controller
         \Twitter::addImage('http://gotoperu.com.pe/images/hotels.jpg');
 
         $hoteles = THotel::all();
-        return view('page.hotels', ['hoteles'=>$hoteles]);
+        $hoteles_destinos = THotelDestino::all();
+        $paquete_categoria = TPaqueteCategoria::all();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        $destinos = TDestino::all();
+        return view('page.hotels', ['hoteles'=>$hoteles, 'hoteles_destinos'=>$hoteles_destinos, 'paquete_categoria'=>$paquete_categoria, 'paquete_destinos'=>$paquete_destinos, 'destinos'=>$destinos]);
     }
 
     public function dicas()

@@ -229,21 +229,22 @@
                                                     Machu Picchu
                                                 </label>
                                                 <label class="col-6 col-sm col-md-6 col-lg ml-sm-2 ml-md-0 ml-xl-2 btn btn-outline-secondary text-secondary mb-2 number-hover">
-                                                    <input type="checkbox" name="destinations[]" autocomplete="off" value="Sacred Valley">
+                                                    <input type="checkbox" name="destinations[]" autocomplete="off" value="Vale Sagrado">
                                                     {{--<img src="{{asset('images/destinations/destinations/sacred-valley.jpg')}}" alt="" width="40" height="40" class="rounded-circle">--}}
-                                                    Sacred Valley
+                                                    Vale Sagrado
                                                 </label>
                                             </div>
 
                                             <div class="row no-gutters btn-group-toggle" data-toggle="buttons">
                                                 <label class="col-6 col-sm col-md-6 col-xl mb-2 mb-sm-0 mb-md-2 btn btn-outline-secondary text-secondary number-hover">
-                                                    <input type="checkbox" name="destinations[]" autocomplete="off" value="Lake Titicaca">
+                                                    <input type="checkbox" name="destinations[]" autocomplete="off" value="Lago Titicaca">
                                                     {{--<img src="{{asset('images/destinations/destinations/puno-and-lake-titicaca.jpg')}}" alt="" width="40" height="40" class="rounded-circle">--}}
-                                                    Lake Titicaca
+                                                    Lago Titicaca
                                                 </label>
                                                 <label class="col-6 col-sm col-md-6 col-xl mx-sm-2 mx-md-0 mx-xl-2 mb-2 mb-sm-0 mb-md-2 btn btn-outline-secondary text-secondary number-hover">
                                                     <input type="checkbox" name="destinations[]" autocomplete="off" value="Nazca & Ballestas">
                                                     {{--<img src="{{asset('images/destinations/destinations/nazca-lines.jpg')}}" alt="" width="40" height="40" class="rounded-circle">--}}
+                                                    <small>Nazca & Ballestas</small>
                                                     <small>Nazca & Ballestas</small>
                                                 </label>
                                                 <label class="col-6 col-sm col-md-6 col-xl mx-sm-2 mx-md-0 btn btn-outline-secondary text-secondary number-hover">
@@ -401,7 +402,7 @@
                                                                 <div class="input-group-prepend">
                                                                     <span class="input-group-text"><i class="fa fa-comment"></i></span>
                                                                 </div>
-                                                                <textarea class="form-control" id="h_comment" aria-label="With textarea" placeholder="Como você imagina uma viagem perfeita ao Peru, Pedidos Especiais, Perguntas, Comentários Como você"></textarea>
+                                                                <textarea class="form-control" id="h_comment" aria-label="With textarea" placeholder="Como você imagina uma viagem perfeita ao Peru, Pedidos Especiais, Preguntas, Comentários Como você"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>

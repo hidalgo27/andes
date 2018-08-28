@@ -314,7 +314,7 @@
                             </div>
                             <div class="col-6 col-sm" data-toggle="buttons">
                                 <label class="btn btn-outline-primary btn-block">
-                                    <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Lujo
+                                    <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxo
                                     <div class="d-block text-warning">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>

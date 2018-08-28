@@ -42,7 +42,7 @@
             <div class="row pb-5">
                 <div class="col text-center">
                     {{--<p class="h2 text-secondary pt-3">VOCÊ TERÁ A EXPERIÊNCIA DE UM PERUANO</p>--}}
-                    <p class="text-center h2 pt-3"><img src="{{asset("images/logo-andes-bc.png")}}" width="170" alt="logo gotoperu"> É a Divisão de <img src="{{asset("images/logo-gotoperu.png")}}" width="150" alt="logo andesviagens"> para os viajantes de língua portuguesa</p>
+                    <p class="text-center h2 pt-3"><img src="{{asset("images/logo-andes-bc.png")}}" width="170" alt="logo gotoperu"> é a divisão de <img src="{{asset("images/logo-gotoperu.png")}}" width="150" alt="logo andesviagens"> para os clientes de língua portuguesa</p>
                     {{--<p class="h4"></p>--}}
                 </div>
             </div>
@@ -87,7 +87,7 @@
                 <div class="col-12 col-md">
                     <div class="border-0 p-2 text-center">
                         <h3 class="text-primary">MISSÃO</h3>
-                        <p>Oferecer aos nossos clientes os melhores recursos Peruanos para uma aventura inesquecível.</p>
+                        <p>Oferecer aos nossos clientes as melhores experiecias para uma aventura inesquecível no Perú.</p>
                     </div>
                 </div>
             </div>

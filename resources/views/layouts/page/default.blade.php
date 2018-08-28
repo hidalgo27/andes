@@ -157,7 +157,7 @@
                 <h3 class="h6 text-g-yellow">FAQ</h3>
                 <ul class="m-0 text-g-yellow list-unstyled">
                     {{--<li><a href="" class="text-white">Getting To Peru</a></li>--}}
-                    <li><a href="{{route('dicas_path')}}" class="text-white">Perguntas Mais Frequentes</a></li>
+                    <li><a href="{{route('dicas_path')}}" class="text-white">Preguntas Mais Frequentes</a></li>
                 </ul>
             </div>
             {{--<div class="col-6 col-sm mb-3 text-white">--}}

@@ -45,7 +45,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mb-0 lead text-secondary text-center"><b>Entre nossos roteiros estão: Machu Picchu, Maravilha do Mundo, Cusco, capital do império Inca; As linhas de Nazca, um mistério a ser desvendado; Paracas, o encanto da vida marinha, Lago Titicaca, o lago das ilhas flutuantes; Manu, o paraíso da biodiversidade; Lima, imponentes construções coloniais, Arequipa, a famosa cidade branca.</b></p>
+                    <p class="mb-0 lead text-secondary text-center"><b>Entre nossos roteiros estão: Machu Picchu, Maravilha do Mundo, Cusco, capital do império Inca; As linhas de Nazca, um mistério a ser desvendado; Paracas, o encanto da vida marinha, Lago Titicaca, o lago das ilhas flutuantes; Lima, imponentes construções coloniais, Arequipa, a famosa cidade branca.</b></p>
                 </div>
 
             </div>
@@ -117,7 +117,7 @@
                         <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
                             <div class="row no-gutters">
                                 <div class="col-5 text-primary">
-                                    <b>{{ucwords(strtolower($tour->titulo))}}</b>
+                                    <b>{{$tour->titulo}}</b>
                                 </div>
 
                                 <div class="col">
@@ -130,14 +130,14 @@
                                         $num_des = count($tours_destinos->where('idtours',$tour->id));
                                     @endphp
                                     @foreach($tours_destinos->where('idtours',$tour->id) as $tour_destino)
-                                        {{ucwords(strtolower($tour_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                        {{$tour_destino->destinos->nombre}}@if($i < $num_des),@endif
                                         @php $i++; @endphp
                                     @endforeach
                                 </div>
                                 <div class="col-2 text-right">
                                     <b>
                                         @if($tour->precio < 0)
-                                            <span class="text-danger">Pida una cotización</span>
+                                            <span class="text-danger">Solicite um Orçamento</span>
                                         @else
                                             <sup>$</sup>{{$tour->precio_g}}<small>USD</small>
                                         @endif
@@ -145,7 +145,7 @@
                                         {{--@foreach($paquetes->precio_paquetes as $precio)--}}
                                         {{--@if($precio->estrellas == 2)--}}
                                         {{--@if($precio->precio == 0)--}}
-                                        {{--<span class="text-danger">Pida una cotización</span>--}}
+                                        {{--<span class="text-danger">Solicite um Orçamento</span>--}}
                                         {{--@else--}}
                                         {{--<sup>$</sup>{{$precio->precio}}<small>USD</small>--}}
                                         {{--@endif--}}
@@ -153,7 +153,7 @@
                                         {{--@endforeach--}}
                                         {{--@else--}}
                                         {{--@if($paquetes->precio < 0)--}}
-                                        {{--<span class="text-danger">Pida una cotización</span>--}}
+                                        {{--<span class="text-danger">Solicite um Orçamento</span>--}}
                                         {{--@else--}}
                                         {{--<sup>$</sup>{{$paquetes->precio}}<small>USD</small>--}}
                                         {{--@endif--}}
@@ -182,7 +182,7 @@
                                         $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
                                     @endphp
                                     @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                        {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                        {{$paquete_destino->destinos->nombre}}@if($i < $num_des),@endif
                                         @php $i++; @endphp
                                     @endforeach
                                 </div>
@@ -191,7 +191,7 @@
                                         @foreach($paquetes->precio_paquetes as $precio)
                                             @if($precio->estrellas == 2)
                                                 @if($precio->precio == 0)
-                                                    <span class="text-danger">Pida una cotización</span>
+                                                    <span class="text-danger">Solicite um Orçamento</span>
                                                 @else
                                                     <sup>$</sup>{{$precio->precio}}<small>USD</small>
                                                 @endif

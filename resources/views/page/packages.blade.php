@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="row content-header-row align-items-center">
                     <div class="col text-center">
-                        <h3 class="text-white text-center h1">PAQUETES & TOURS</h3>
+                        <h3 class="text-white text-center h1">PACOTES & PASSEIOS </h3>
                         <i class="fa fa-chevron-down text-white h1"></i>
                     </div>
 
@@ -56,8 +56,8 @@
             <div class="row">
                 <div class="col">
                     <p class="mb-0 lead text-secondary text-center"><b>
-                            374/5000
-                            Nossos pacotes turísticos mais populares para o Peru. Esses pacotes podem ser usados como referência para personalizar sua própria viagem. Na GOTOPERU nos especializamos em criar experiências personalizadas de acordo com suas preferências; Convidamos você a rever esses programas para ter uma idéia dos destinos mais importantes, por exemplo, Machu Picchu, Lago Titicaca, Nazca e Amazônia.</b></p>
+                            Nossos pacotes turísticos mais populares para o Peru. Esses pacotes podem ser usados como referência para personalizar sua própria viagem. Na ANDESVIAGENS nos especializamos em criar experiências personalizadas de acordo com suas preferências; Convidamos você a rever esses programas para ter uma idéia dos destinos mais importantes, por exemplo, Machu Picchu, Lago Titicaca, Nazca e Amazônia.</b>
+                    </p>
                 </div>
             </div>
             <div class="row mt-5">
@@ -95,7 +95,7 @@
                                         $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
                                     @endphp
                                     @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                        {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                        {{$paquete_destino->destinos->nombre}}@if($i < $num_des),@endif
                                         @php $i++; @endphp
                                     @endforeach
                                 </div>
@@ -138,13 +138,13 @@
                                     <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
                                 </div>
                                 <div class="col">
-                                    <i class="fa fa-map-marker-alt text-g-green"></i>
+                                    <i class="fa fa-map-marker-alt text-danger"></i>
                                     @php
                                         $i = 1;
                                         $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
                                     @endphp
                                     @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                        {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                        {{$paquete_destino->destinos->nombre}}@if($i < $num_des),@endif
                                         @php $i++; @endphp
                                     @endforeach
                                 </div>

@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row content-header-row align-items-center">
                     <div class="col text-center">
-                        <h3 class="text-white text-center h1">SOLO TOURS</h3>
+                        <h3 class="text-white text-center h1">SÓ PASSEIOS</h3>
                         <i class="fa fa-chevron-down text-white h1"></i>
                     </div>
 
@@ -83,11 +83,11 @@
                             <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
                                 <div class="row no-gutters">
                                     <div class="col-7 col-sm-5 text-primary">
-                                        <b>{{ucwords(strtolower($tour->titulo))}}</b>
+                                        <b>{{$tour->titulo}}</b>
                                     </div>
 
                                     <div class="col d-none d-md-inline">
-                                    <i class="fa fa-clock text-info"></i> {{$tour->duracion}}
+                                    <i class="fa fa-clock text-info"></i> {{ucwords(strtolower($tour->duracion))}}
                                     </div>
                                     <div class="col d-none d-sm-inline">
                                         <i class="fa fa-map-marker-alt text-info"></i>
@@ -96,7 +96,7 @@
                                             $num_des = count($tours_destinos->where('idtours',$tour->id));
                                         @endphp
                                         @foreach($tours_destinos->where('idtours',$tour->id) as $tour_destino)
-                                            {{ucwords(strtolower($tour_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                            {{$tour_destino->destinos->nombre}}@if($i < $num_des),@endif
                                             @php $i++; @endphp
                                         @endforeach
                                     </div>

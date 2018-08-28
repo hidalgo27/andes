@@ -16,7 +16,7 @@ Breadcrumbs::register('about', function ($breadcrumbs) {
 // Home > hotel
 Breadcrumbs::register('hotel', function ($breadcrumbs) {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('Hoteles', route('hoteles_path'));
+    $breadcrumbs->push('Hotéis', route('hoteles_path'));
 });
 
 // Home > social
