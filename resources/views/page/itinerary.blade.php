@@ -189,7 +189,7 @@
                 <div class="col-12 col-sm">
                     <div class="row">
                         <div class="col-12 col-sm-7 d-none d-sm-block">
-                            <img src="{{asset('images/machu-picchu.jpg')}}" alt="" class="img-fluid w-100 rounded">
+                            <img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" class="img-fluid w-100 rounded">
                         </div>
                         <div class="col-12 col-sm">
                             <div class="card">
@@ -218,6 +218,11 @@
                                     Consultas
                                 </a>
                             </div>
+                            <h5 class="my-2">Destinos:</h5>
+                            @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
+                                {{--<p class="font-weight-bold text-secondary"><i class="fa fa-check"></i> {{ucwords(strtolower($paquete_destino->destinos->nombre))}}</p>--}}
+                                <a href="{{route('destinations_show_path', str_replace(' ', '-', strtolower($paquete_destino->destinos->nombre)))}}"><img src="{{asset('images/destinations/destinations/'.str_replace(' ','-', strtolower($paquete_destino->destinos->nombre)).'.jpg')}}" alt="" width="60" height="60" class="rounded-circle" data-toggle="tooltip" data-placement="top" title="{{ucwords(strtolower($paquete_destino->destinos->nombre))}}"></a>
+                            @endforeach
                         </div>
                     </div>
 
