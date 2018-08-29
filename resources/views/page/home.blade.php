@@ -363,11 +363,11 @@
                     </div>
                     <div class="col col-md-4 col-xl-3 d-flex align-items-center bg-g-dark">
                         <div class="text-white p-3">
-                            <h3 class="display-4">5 DIAS</h3>
+                            <h3 class="display-4">6 DIAS</h3>
                             <p class="lead">Cusco, Machu Picchu, Maras & Moray, Vale Sagrado.</p>
                             <p class="d-block text-g-yellow py-2">Passeios, traslados, ingressos, café da manha, trene.</p>
-                            <p class="h1 text-right my-3"><sup>de</sup> $499</p>
-                            <a href="paquetes-de-viaje-peru/imperio-dos-incas/sin-hotel" class="btn btn-g-yellow btn-block">Olhe Mais</a>
+                            <p class="h1 text-right my-3"><sup>de</sup> $619</p>
+                            <a href="pacotes-de-viagem-peru/imperio-dos-incas" class="btn btn-g-yellow btn-block">Olhe Mais</a>
                         </div>
                     </div>
                 </div>
