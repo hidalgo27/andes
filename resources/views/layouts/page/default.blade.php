@@ -171,7 +171,7 @@
                 <h3 class="h6 text-g-yellow">Contato</h3>
                 <ul class="m-0 text-g-yellow list-unstyled">
                     {{--<li><a href="" class="text-white" data-toggle="modal" data-target="#modal-contact">Email</a></li>--}}
-                    <li><a href="tel:+2029963000">(202) 996-3000</a></li>
+                    <li><a href="tel:+551131982239">+55 (11) 3198-2239</a></li>
                     {{--<li><a href="" class="text-white">Address</a></li>--}}
                 </ul>
             </div>
@@ -205,7 +205,7 @@
         {{--</div>--}}
         <div class="row">
             <div class="col text-center text-white">
-                <small><i><b>PERU:</b> Av. Collasuyo 986 Cusco-Peru | <b>USA:</b> 1440 G St NW, Washington DC, 20005</i></small>
+                <small><i><b>PERU:</b> Av. Sol 948 , Cusco - Cusco | <b>USA:</b> 1440 G St NW, Washington DC, 20005</i></small>
             </div>
         </div>
     </div>

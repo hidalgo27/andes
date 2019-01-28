@@ -2,27 +2,53 @@
 
 @section('content')
     <section class="header-video d-none d-md-block">
+        {{--<div id="title" class="text-white">--}}
+            {{--<div class="container-fluid">--}}
+                {{--<div class="row align-items-center mt-2">--}}
+                    {{--<div class="col-md-6 col-lg-3">--}}
+                        {{--<a href="{{route('home_path')}}"><img src="{{asset('images/logo-andes.png')}}" alt="" class="img-fluid"></a>--}}
+                    {{--</div>--}}
+                    {{--<div class="d-none d-lg-inline col-lg">--}}
+                        {{--<div class="row align-items-center">--}}
+                            {{--<div class="col-9">--}}
+                                {{--<i class="text-g-yellow">Operador de viagens no Perú & Machu Picchu</i>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-3">--}}
+                                {{--<img src="{{asset('images/logos/logo-expedia2.png')}}" alt="" class="img-fluid">--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md col-lg-auto text-right sticky-top">--}}
+                        {{--<a href="tel:+2029963000" class="mx-3 h4">(202) 996-3000</a>--}}
+                        {{--<span class="text-white">Parte do grupo GOTOPERU</span>--}}
+                        {{--<a href="#" class="mx-3 h2"  data-toggle="modal" data-target="#modal-menu"><i class="fa fa-bars"></i></a>--}}
+                        {{--<!-- Button trigger modal -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         <div id="title" class="text-white">
             <div class="container-fluid">
                 <div class="row align-items-center mt-2">
                     <div class="col-md-6 col-lg-3">
-                        <a href="{{route('home_path')}}"><img src="{{asset('images/logo-andes.png')}}" alt="" class="img-fluid"></a>
+                        <a href="{{route('home_path')}}"><img src="{{asset('images/logo-andes.png')}}" alt="logo andesviagens" class="img-fluid"></a>
+                        {{--<i class="text-g-yellow text-right">Operador de viajes en Perú y Machu Picchu</i>--}}
                     </div>
                     <div class="d-none d-lg-inline col-lg">
                         <div class="row align-items-center">
-                            <div class="col-9">
-                                <i class="text-g-yellow">Operador de viagens no Perú & Machu Picchu</i>
+                            <div class="col-9 text-right">
+                                <span class="text-g-yellow text-right font-weight-bold">+55 (11) 31982239</span>
                             </div>
                             <div class="col-3">
-                                <img src="{{asset('images/logos/logo-expedia2.png')}}" alt="" class="img-fluid">
+                                <img src="{{asset('images/logos/logo-expedia2.png')}}" alt="Logo expedia" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="col-md col-lg-auto text-right sticky-top">
                         {{--<a href="tel:+2029963000" class="mx-3 h4">(202) 996-3000</a>--}}
                         <span class="text-white">Parte do grupo GOTOPERU</span>
-                        {{--<a href="#" class="mx-3 h2"  data-toggle="modal" data-target="#modal-menu"><i class="fa fa-bars"></i></a>--}}
-                        <!-- Button trigger modal -->
+                    {{--<a href="#" class="mx-3 h2"  data-toggle="modal" data-target="#modal-menu"><i class="fa fa-bars"></i></a>--}}
+                    <!-- Button trigger modal -->
                     </div>
                 </div>
             </div>
