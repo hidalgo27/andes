@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-lg  text-center mb-4 border border-top-0 border-bottom-0">
                         <h3>Contáte-nos</h3>
-                        <p>Telefone: <i class="fa fa-phone"></i>51(84)262555</p>
+                        <p>Telefone: <i class="fa fa-phone"></i> 55(11)31982239</p>
                         {{--<a href="" class="btn btn-g-yellow">Contáctenos</a>--}}
                         <button type="button" class="btn btn-g-yellow btn-sm mb-2" data-toggle="modal" data-target="#contant_m">
                             Contáte-nos
@@ -225,7 +225,7 @@
                         <h3>Fale com nós agora</h3>
                         <p>Entre em contato:</p>
                         <a href="https://m.me/GOTOPERUcom/" class="btn btn-primary mb-2" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
-                        <a href="https://api.whatsapp.com/send?phone=51992051190" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                        <a href="https://api.whatsapp.com/send?phone=+51994954566" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
                     </div>
                 </div>
             </div>
