@@ -225,7 +225,7 @@
                         <h3>Fale com nós agora</h3>
                         <p>Entre em contato:</p>
                         <a href="https://m.me/GOTOPERUcom/" class="btn btn-primary mb-2" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
-                        <a href="https://api.whatsapp.com/send?phone=+51994954566" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                        <a href="https://api.whatsapp.com/send?phone=51994954566" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
                     </div>
                 </div>
             </div>
