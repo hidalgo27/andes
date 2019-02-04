@@ -262,8 +262,16 @@
                         </div>
                     </div>
 
+                    @foreach($paquete_iti as $paquete_i)
+                        @if($paquete_i->duracion == 1)
+                            <div class="row d-none">
+                        @else
 
-                    <div class="row {{$s_none}}">
+                            <div class="row d-none">
+                        @endif
+                    @endforeach
+
+
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Preços:</h3>
                             <table class="table table-bordered table-responsive mb-0">
