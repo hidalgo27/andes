@@ -180,13 +180,16 @@
                 <div class="col-12 col-sm">
                     <div class="row">
                         <div class="col-12 col-sm-7 d-none d-sm-block">
+                            @foreach($paquete_iti as $paquete_i)
                             <img src="{{asset('images/packages/'.$paquete_i->codigo.'.jpg')}}" alt="{{ucwords(strtolower($title))}}" class="img-fluid w-100 rounded">
+                            @endforeach
                         </div>
                         <div class="col-12 col-sm">
                             <div class="card">
                                 <div class="p-3">
-
+                                    @foreach($paquete_iti as $paquete_i)
                                     <p class="h1 text-secondary "><b>{{$paquete_i->duracion}} <small>dias</small></b></p>
+                                    @endforeach
                                     <h5 class="h1 text-center"> <b class="text-g-yellow">
                                             @foreach($paquete_iti as $paquetes)
                                                 @if($paquetes->precio == 0)
@@ -196,7 +199,9 @@
                                                 @endif
                                             @endforeach
                                         </b> <span class="h6 text-secondary">USD</span></h5>
+                                        @foreach($paquete_iti as $paquete_i)
                                     <p class="m-0"><b>Código de viagem: {{$paquete_i->codigo}}</b></p>
+                                        @endforeach
 
 
                                     {{--<a href="" class="btn btn-primary btn-lg btn-avalavility margin-top-10">Check Availability</a>--}}
