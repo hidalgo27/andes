@@ -91,22 +91,22 @@
             <div class="row">
                 <div class="col text-center">
                     @foreach($paquete_iti as $paquete_i)
-                        {{--@if($paquete_i->duracion == 1)--}}
-                            {{--<h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIA: {{strtoupper(str_replace('-', ' ', $title))}}</h1>--}}
+                        @if($paquete_i->duracion == 1)
+                            <h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIA: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                             @php $s_none = 'd-none'; @endphp
-                        {{--@else--}}
-                            {{--<h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIAS: {{strtoupper(str_replace('-', ' ', $title))}}</h1>--}}
+                        @else
+                            <h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIAS: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                             @php $s_none = ''; @endphp
-                        {{--@endif--}}
+                        @endif
                     @endforeach
 
-                    @foreach($paquete_categoria->where('idpaquetes', $paquete_i->id) as $categoria)
-                        @if($categoria)
-                                @php $s_none = 'd-none'; @endphp
-                            @else
-                                @php $s_none = ''; @endphp
-                            @endif
-                    @endforeach
+                    {{--@foreach($paquete_categoria->where('idpaquetes', $paquete_i->id) as $categoria)--}}
+                        {{--@if($categoria)--}}
+                                {{--@php $s_none = 'd-none'; @endphp--}}
+                            {{--@else--}}
+                                {{--@php $s_none = ''; @endphp--}}
+                            {{--@endif--}}
+                    {{--@endforeach--}}
                     {{--<p class="h3 my-3 font-weight-bold ">Lorem elit. Accusamus asperiores commodi</p>--}}
                     {{--<p class="lead">L orem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad assumenda blanditiis consectetur cumque, debitis enim eveniet id <b>labore nam necessitatibus</b> repellat? Consectetur doloremque harum necessitatibus quis repellendus sit veniam.</p>--}}
                 </div>
