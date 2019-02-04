@@ -189,7 +189,9 @@
                 <div class="col-12 col-sm">
                     <div class="row">
                         <div class="col-12 col-sm-7 d-none d-sm-block">
-                            <img src="{{asset('images/packages/'.$paquete_i->codigo.'.jpg')}}" alt="{{ucwords(strtolower($title))}}" class="img-fluid w-100 rounded">
+                            @foreach($paquete_iti as $paquete_i)
+                                <img src="{{asset('images/packages/'.$paquete_i->codigo.'.jpg')}}" alt="{{ucwords(strtolower($title))}}" class="img-fluid w-100 rounded">
+                            @endforeach
                         </div>
                         <div class="col-12 col-sm">
                             <div class="card">
