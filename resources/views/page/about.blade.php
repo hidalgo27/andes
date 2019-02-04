@@ -95,7 +95,7 @@
                 <div class="col text-white text-center">
                     <div class="row justify-content-center">
                         <div class="col-12 my-3">
-                            <img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('images/logos/logo-andes-bc.png')}}" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12">
@@ -130,7 +130,7 @@
                 <div class="col text-white text-justify">
                     <div class="row justify-content-center">
                         <div class="col-3 mb-4">
-                            <img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('images/logos/logo-andes-bc.png')}}" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col">
