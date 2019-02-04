@@ -196,8 +196,9 @@
                         <div class="col-12 col-sm">
                             <div class="card">
                                 <div class="p-3">
-
+                                    @foreach($paquete_iti as $paquete_i)
                                         <p class="h1 text-secondary "><b>{{$paquete_i->duracion}} <small>dias</small></b></p>
+                                    @endforeach
                                         <h5 class="h1 text-center"><sup class="h3 text-secondary">De</sup> <b class="text-g-yellow">
                                                 @foreach($paquete_iti as $paquetes)
                                                     @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
@@ -211,8 +212,9 @@
                                                     @endforeach
                                                 @endforeach
                                             </b> <span class="h6 text-secondary">USD</span></h5>
+                                        @foreach($paquete_iti as $paquete_i)
                                     <p class="m-0"><b>Código de viagem: {{$paquete_i->codigo}}</b></p>
-
+                                        @endforeach
 
                                     {{--<a href="" class="btn btn-primary btn-lg btn-avalavility margin-top-10">Check Availability</a>--}}
                                 </div>
