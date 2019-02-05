@@ -307,21 +307,21 @@
                                         @endforeach
                                     @endforeach
                                 </tr>
-                                <tr>
-                                    @foreach($paquete_iti as $paquetes)
-                                        @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
-                                            <td>
-                                                @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                                    @foreach($hoteles_destinos->where('iddestinos', $paquete_destino->destinos->id) as $hoteles_destino)
-                                                        @foreach($hoteles->where('id', $hoteles_destino->hotel->id)->where('estrellas', $precio->estrellas) as $hotel)
-                                                            <a href="{{$hoteles_destino->hotel->url}}" target="_blank" data-toggle="tooltip" data-placement="top" title="{{$hotel->servicios}}"><small class="d-block"><i class="fas fa-angle-right"></i> {{ucwords(strtolower($hotel->nombre))}} <i class="text-secondary">({{ucwords(strtolower($paquete_destino->destinos->nombre))}})</i></small></a>
-                                                        @endforeach
-                                                    @endforeach
-                                                @endforeach
-                                            </td>
-                                        @endforeach
-                                    @endforeach
-                                </tr>
+                                {{--<tr>--}}
+                                    {{--@foreach($paquete_iti as $paquetes)--}}
+                                        {{--@foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)--}}
+                                            {{--<td>--}}
+                                                {{--@foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)--}}
+                                                    {{--@foreach($hoteles_destinos->where('iddestinos', $paquete_destino->destinos->id) as $hoteles_destino)--}}
+                                                        {{--@foreach($hoteles->where('id', $hoteles_destino->hotel->id)->where('estrellas', $precio->estrellas) as $hotel)--}}
+                                                            {{--<a href="{{$hoteles_destino->hotel->url}}" target="_blank" data-toggle="tooltip" data-placement="top" title="{{$hotel->servicios}}"><small class="d-block"><i class="fas fa-angle-right"></i> {{ucwords(strtolower($hotel->nombre))}} <i class="text-secondary">({{ucwords(strtolower($paquete_destino->destinos->nombre))}})</i></small></a>--}}
+                                                        {{--@endforeach--}}
+                                                    {{--@endforeach--}}
+                                                {{--@endforeach--}}
+                                            {{--</td>--}}
+                                        {{--@endforeach--}}
+                                    {{--@endforeach--}}
+                                {{--</tr>--}}
                                 </tbody>
                             </table>
                             <small>*Se você tem um hotel específico, teremos o prazer de preparar uma cotação personalizada.
