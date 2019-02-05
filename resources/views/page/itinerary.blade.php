@@ -267,7 +267,7 @@
                             <div class="row d-none">
                         @else
 
-                            <div class="row d-none">
+                            <div class="row">
                         @endif
                     @endforeach
 
