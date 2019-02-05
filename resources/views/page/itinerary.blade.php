@@ -274,7 +274,7 @@
 
                         <div class="col">
                             <h3 class="font-weight-bold mt-4">Preços:</h3>
-                            <table class="table table-bordered table-responsive mb-0">
+                            <table class="table table-bordered mb-0">
                                 {{--<caption>Price per person</caption>--}}
                                 <thead>
                                 <tr>
