@@ -90,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    @foreach($paquete_iti as  )
+                    @foreach($paquete_iti as  $paquete_i)
                         @if($paquete_i->duracion == 1)
                             <h1 class="font-montserrat text-g-green font-weight-bold">PACOTES NO PERU {{$paquete_i->duracion}} DIA: {{strtoupper(str_replace('-', ' ', $title))}}</h1>
                             @php $s_none = 'd-none'; @endphp
