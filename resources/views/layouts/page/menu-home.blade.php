@@ -1,7 +1,7 @@
 <nav class="nav nav-pills nav-fill nav-goto navbar-expand-lg d-none d-md-flex sticky-top" id="content-page">
     {{--<a class="nav-item nav-link active" href="#">Active</a>--}}
-    <a class="nav-item text-g-dark font-weight-normal" href="{{route('tours_path')}}">PERÚ PASSEIOS</a>
-    <a class="nav-item text-g-dark font-weight-normal" href="{{route('paquetes_path')}}">PACOTES DE VIAGEM</a>
+    <a class="nav-item text-g-dark font-weight-normal" href="{{route('tours_path')}}">PERU PASSEIOS</a>
+    <a class="nav-item text-g-dark font-weight-normal" href="{{route('paquetes_path')}}">PACOTES DE VIAGENS</a>
     <a class="nav-item text-g-dark font-weight-normal " href="{{route('destinations_path')}}">DESTINOS</a>
     <a class="nav-item text-g-dark font-weight-normal" href="{{route('hoteles_path')}}">HOTÉIS</a>
     <a class="nav-item text-g-dark font-weight-normal" href="{{route("about_path")}}">SOBRE NÓS</a>

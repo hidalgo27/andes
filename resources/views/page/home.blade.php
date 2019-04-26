@@ -11,7 +11,7 @@
                     {{--<div class="d-none d-lg-inline col-lg">--}}
                         {{--<div class="row align-items-center">--}}
                             {{--<div class="col-9">--}}
-                                {{--<i class="text-g-yellow">Operador de viagens no Perú & Machu Picchu</i>--}}
+                                {{--<i class="text-g-yellow">Operador de viagens no Peru & Machu Picchu</i>--}}
                             {{--</div>--}}
                             {{--<div class="col-3">--}}
                                 {{--<img src="{{asset('images/logos/logo-expedia2.png')}}" alt="" class="img-fluid">--}}
@@ -32,7 +32,7 @@
                 <div class="row align-items-center mt-2">
                     <div class="col-md-6 col-lg-3">
                         <a href="{{route('home_path')}}"><img src="{{asset('images/logo-andes.png')}}" alt="logo andesviagens" class="img-fluid"></a>
-                        {{--<i class="text-g-yellow text-right">Operador de viajes en Perú y Machu Picchu</i>--}}
+                        {{--<i class="text-g-yellow text-right">Operador de viajes en Peru y Machu Picchu</i>--}}
                     </div>
                     <div class="d-none d-lg-inline col-lg">
                         <div class="row align-items-center">
@@ -126,7 +126,7 @@
             </div>
             {{--<div class="header-expedia text-white p-3">As local travel operators our programs start daily</div>--}}
             <div class="header-expedia p-3 w-100 text-center d-none d-xl-inline">
-                <p class="text-white h6"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> Compartilhe seus planos de viagem <span class="bg-g-yellow p-1 rounded-circle px-3 text-white ml-5">2</span> Reciba um roteiro personalizado e cotacao <span class="bg-g-dark p-1 rounded-circle px-3 text-white ml-5">3</span> Descobra o melhor do Perú com ANDESVIAGENS</p>
+                <p class="text-white h6"><span class="bg-g-green p-1 rounded-circle px-3 text-white">1</span> Compartilhe seus planos de viagem <span class="bg-g-yellow p-1 rounded-circle px-3 text-white ml-5">2</span> Reciba um roteiro personalizado e cotacao <span class="bg-g-dark p-1 rounded-circle px-3 text-white ml-5">3</span> Descobra o melhor do Peru com ANDESVIAGENS</p>
             </div>
         </div>
         <div class="content-header">
@@ -139,7 +139,7 @@
                             <div class="">
                                 <div class="content-video-1 text-white">
                                     {{--<img src="images/travel/video-1.jpg" alt="video">--}}
-                                    <h3 class="font-weight-light">Montemos juntos sua proxima aventura no Perú</h3>
+                                    <h3 class="font-weight-light">Montemos juntos sua proxima aventura no Peru</h3>
                                     <a href="#Inquire" class="btn btn-g-yellow btn-lg h2 font-weight-bold mt-3">Minha viagem ideal</a>
                                     {{--<div class="content-video-btn-1 mt-4">--}}
                                     {{--<a href="https://www.youtube.com/watch?v=pNe-NtXIULs"  class="html5lightbox text-white" title=""><i class="fa fa-play-circle fa-4x"></i></a>--}}
@@ -169,8 +169,8 @@
                 <div class="col">
                     <ul class="list-group">
                         <li class="list-group-item"><span class="bg-g-green p-1 rounded-circle px-2 text-white">1</span> Compartilhe seus planos de viagem</li>
-                        <li class="list-group-item"><span class="bg-g-yellow p-1 rounded-circle px-2 text-white">2</span> Reciba um roteiro personalizado e cotacao</li>
-                        <li class="list-group-item"><span class="bg-g-dark p-1 rounded-circle px-2 text-white">3</span> Descobra o melhor do Perú com GOTOPERU</li>
+                        <li class="list-group-item"><span class="bg-g-yellow p-1 rounded-circle px-2 text-white">2</span> Reciba um roteiro personalizado e cotação</li>
+                        <li class="list-group-item"><span class="bg-g-dark p-1 rounded-circle px-2 text-white">3</span> Descubra o melhor do Peru com GOTOPERU</li>
                     </ul>
 
                 </div>
@@ -203,17 +203,17 @@
                 <div class="row no-gutters">
                     <div class="col-12 col-sm-12 col-lg  text-center mb-4">
                         <h3>Personalize sua viagem</h3>
-                        <p>Sem cumpromisso</p>
+                        <p>Sem compromisso</p>
                         <button type="button" class="btn btn-g-green" data-toggle="modal" data-target="#design_m">
                             Minha viagem sonhada seria ...
                         </button>
                     </div>
                     <div class="col-12 col-sm-12 col-lg  text-center mb-4 border border-top-0 border-bottom-0">
-                        <h3>Contáte-nos</h3>
+                        <h3>Contate-nos</h3>
                         <p>Telefone: <i class="fa fa-phone"></i> 55(11)31982239</p>
                         {{--<a href="" class="btn btn-g-yellow">Contáctenos</a>--}}
                         <button type="button" class="btn btn-g-yellow btn-sm mb-2" data-toggle="modal" data-target="#contant_m">
-                            Contáte-nos
+                            Contate-nos
                         </button>
 
                         <button type="button" class="btn btn-dark btn-sm  mb-2" data-toggle="modal" data-target="#llamada_m">
@@ -222,7 +222,7 @@
                         {{--<a href="" class="btn btn-dark">Nosotros te llamamos</a>--}}
                     </div>
                     <div class="col-12 col-sm-12 col-lg text-center mb-3">
-                        <h3>Fale com nós agora</h3>
+                        <h3>Fale Chat agora</h3>
                         <p>Entre em contato:</p>
                         <a href="https://m.me/GOTOPERUcom/" class="btn btn-primary mb-2" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
                         <a href="https://api.whatsapp.com/send?phone=51994954566" class="btn btn-success mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
@@ -257,7 +257,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="t_city">Cidade/País</label>
-                                    <input type="text" class="form-control" id="t_city" placeholder="Lima/Perú">
+                                    <input type="text" class="form-control" id="t_city" placeholder="Lima/Peru">
                                 </div>
 
                                 <div class="form-group">
@@ -299,8 +299,8 @@
                         <img data-src="{{asset('images/about.jpg')}}" alt="" class="w-100 rounded img-lazy">
                     </div>
                     <div class="col">
-                        <h1>Pacotes de Viagem ao Peru</h1>
-                        <p>Somos <b>ANDESVIAGENS</b>, especialistas em viagens locais! Nossos guias, motoristas e representantes locais terão prazer em compartilhar o melhor do nosso país em nossos mais de 12 anos de experiência criando viagens inesquecíveis para a terra dos Incas! Temos uma grande reputação, incluindo parceiros globais como Expedia, Travelocity e Tripadvisor, que também reconheceram nossos esforços citando-nos como os melhores especialistas locais.</p>
+                        <h1>Pacotes de Viagens ao Peru</h1>
+                        <p>Somos <b>ANDESVIAGENS</b>, especialistas em viagens locais! Nossos guias, motoristas e representantes locais terão o prazer em compartilhar o melhor do nosso país em nossos mais de 12 anos de experiência criando viagens inesquecíveis para a terra dos Incas! Temos uma grande reputação, incluindo parceiros globais como Expedia, Travelocity e Tripadvisor, que também reconheceram nossos esforços citando-nos como os melhores especialistas locais.</p>
                         <div class="row align-items-center">
                             <div class="col-12 text-center">
                                 <h6 class="text-secondary">
@@ -320,7 +320,7 @@
             <div class="container">
                 <div class="row pt-5 pb-2">
                     <div class="col">
-                        <h2 class="text-secondary h4"><strong>OFERTAS DO MES</strong></h2>
+                        <h2 class="text-secondary h4"><strong>OFERTAS DO MÊS</strong></h2>
                         {{--<h2 class="text-g-green">GREAT ADVENTURE <strong>PACKAGES</strong> FOR EVERYONE WITH GOTOPERU</h2>--}}
                         {{--<h2 class="text-g-green h3 font-weight-light">THE BEST <strong>PERU VACATIONS</strong> AND <strong>MACHU PICCHU TOURS</strong></h2>--}}
                         {{--<p class="h4 font-weight-light">Offering you an authentic and reliable <strong>travel experience</strong> in peru welcoming you to explore the many fully <strong>Customized Travel Packages</strong> we have that suit every budget. let us plan your unforgettable <strong>trip</strong> to our majestic <strong>Machu Picchu</strong> and the rest of our  homeland… Peru!</p>--}}
@@ -337,9 +337,9 @@
                                 <div class="slider-container">
                                     <div class="flexbox-slider flexbox-slider-1">
                                         <div class="flexbox-slide">
-                                            <img data-src="{{asset('images/banners/home/cusco.jpg')}}" alt="Cusco" class="img-lazy">
+                                            <img data-src="{{asset('images/banners/home/cusco.jpg')}}" alt="Cuzco" class="img-lazy">
                                             <div class="text-block">
-                                                <h3>Cusco</h3>
+                                                <h3>Cuzco</h3>
                                                 {{--<div class="text">--}}
                                                 {{--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>--}}
                                                 {{--</div>--}}
@@ -390,10 +390,10 @@
                     <div class="col col-md-4 col-xl-3 d-flex align-items-center bg-g-dark">
                         <div class="text-white p-3">
                             <h3 class="display-4">6 DIAS</h3>
-                            <p class="lead">Cusco, Machu Picchu, Maras & Moray, Vale Sagrado.</p>
-                            <p class="d-block text-g-yellow py-2">Passeios, traslados, ingressos, café da manha, trene.</p>
+                            <p class="lead">Cuzco, Machu Picchu, Maras & Moray, Vale Sagrado.</p>
+                            <p class="d-block text-g-yellow py-2">Passeios, traslados, ingressos, café da manhã, trem.</p>
                             <p class="h1 text-right my-3"><sup>de</sup> $619</p>
-                            <a href="pacotes-de-viagem-peru/imperio-dos-incas" class="btn btn-g-yellow btn-block">Olhe Mais</a>
+                            <a href="pacotes-de-viagem-peru/imperio-dos-incas" class="btn btn-g-yellow btn-block">Veja mais</a>
                         </div>
                     </div>
                 </div>
@@ -488,7 +488,7 @@
                                 <a href=""><img src="{{asset('images/icons/tripadvisor.png')}}" alt="" class="w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="If you are visiting anywhere in Peru, you cannot find a better choice than www.gotoperu.com – they live there, and work there, and can sort urgent issues readily, with a quick phone call."></a>
                             </div>
                             <div class="col">
-                                <a href="https://www.trustpilot.com/review/gotoperu.com" target="_blank"><img src="{{asset('images/icons/trust.png')}}" alt="" class="w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="In summary, we had a wonderful time! We, of course, enjoyed the sights as we expected (Machu Picchu, Sacred Valley, train, Lake Titicacca), but all of the connections were on time and very comfortable. The guides (Franklin in Cusco, Nellie in Machu Picchu) were very pleasant and very knowledgeable. "></a>
+                                <a href="https://www.trustpilot.com/review/gotoperu.com" target="_blank"><img src="{{asset('images/icons/trust.png')}}" alt="" class="w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="In summary, we had a wonderful time! We, of course, enjoyed the sights as we expected (Machu Picchu, Sacred Valley, train, Lake Titicacca), but all of the connections were on time and very comfortable. The guides (Franklin in Cuzco, Nellie in Machu Picchu) were very pleasant and very knowledgeable. "></a>
                             </div>
                             <div class="col">
                                 <a href="https://www.yelp.com/biz/gotoperu-washington?osq=gotoperu.com" target="_blank"><img src="{{asset('images/icons/yelp.png')}}" alt="" class="w-100 p-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="The arrangement of the agency since Cuzco arrival, has escort service all the way. You do not need to fear of lost. Hotel, tour guide, transfer are all excellent. "></a>
@@ -508,7 +508,7 @@
             <div class="container">
                 <div class="row pt-5 pb-2">
                     <div class="col">
-                        <h1 class="text-secondary h4"><strong>PACOTES DE VIAGEM</strong></h1>
+                        <h1 class="text-secondary h4"><strong>PACOTES DE VIAGENS</strong></h1>
                         {{--<h2 class="text-g-green">GREAT ADVENTURE <strong>PACKAGES</strong> FOR EVERYONE WITH GOTOPERU</h2>--}}
                         {{--<h2 class="text-g-green h3 font-weight-light">THE BEST <strong>PERU VACATIONS</strong> AND <strong>MACHU PICCHU TOURS</strong></h2>--}}
                         {{--<p class="h4 font-weight-light">Offering you an authentic and reliable <strong>travel experience</strong> in peru welcoming you to explore the many fully <strong>Customized Travel Packages</strong> we have that suit every budget. let us plan your unforgettable <strong>trip</strong> to our majestic <strong>Machu Picchu</strong> and the rest of our  homeland… Peru!</p>--}}
@@ -735,10 +735,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        {{--<h1 class="font-montserrat text-g-green">Tours a Machu Picchu Perú Agencia de Viajes y Turismo</h1>--}}
-                        {{--<p class="text-secondary">Oficinas: Lima, Cusco, Arequipa.</p>--}}
+                        {{--<h1 class="font-montserrat text-g-green">Tours a Machu Picchu Peru Agencia de Viajes y Turismo</h1>--}}
+                        {{--<p class="text-secondary">Oficinas: Lima, Cuzco, Arequipa.</p>--}}
                         <p class="h3 my-3 font-weight-bold ">Os melhores testemunhos, 10 anos de experiência atrás de nós.</p>
-                        <p class="lead d-none d-sm-block">Desde a sua chegada ao aeroporto em Lima ou Cusco, mostraremos a nossa paixão pelo nosso país, mostrando-lhe o melhor do Peru com a nossa seleta equipe de guias GOTOPERU profissionais, sempre com nossa melhor hospitalidade peruana!</p>
+                        <p class="lead d-none d-sm-block">Desde a sua chegada ao aeroporto em Lima ou Cuzco, mostraremos a nossa paixão pelo nosso país, mostrando-lhe o melhor do Peru com a nossa seleta equipe de guias GOTOPERU profissionais, sempre com nossa melhor hospitalidade peruana!</p>
                     </div>
                 </div>
             </div>
@@ -973,10 +973,10 @@
                             {{--<a href="http://gotoperu.com.pe/paquete/peru-magico"><img class="card-img-top " src="http://www.andesviagens.com/images/packages/AV700.jpg" alt="Card image cap"></a>--}}
 
                             {{--<div class="card-body text-center">--}}
-                                {{--<h4 class="card-title"><a href="http://gotoperu.com.pe/paquete/peru-magico" class="text-dark">Perú Magico</a></h4>--}}
+                                {{--<h4 class="card-title"><a href="http://gotoperu.com.pe/paquete/peru-magico" class="text-dark">Peru Magico</a></h4>--}}
                                 {{--<p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 6 Días</p>--}}
                                 {{--<p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i>--}}
-                                    {{--Lima, Cusco, Sacred Valley, Machu Picchu--}}
+                                    {{--Lima, Cuzco, Sacred Valley, Machu Picchu--}}
                                 {{--</p>--}}
                                 {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
                             {{--</div>--}}
@@ -1131,7 +1131,7 @@
                             <h3 class="h1 font-weight-light">PORQUE NOS IMPORTAMOS<i class="fa fa-heart text-danger"></i></h3>
                             <p class="">Nós devolvemos às nossas comunidades</p>
                             <hr>
-                            <p class="text-primary"><i>Chaullacota está localizado a 15.000 alimentações (4500 metros) 2 horas a noroeste de Cusco.</i></p>
+                            <p class="text-primary"><i>Chaullacota está localizado a 15.000 alimentações (4500 metros) 2 horas a noroeste de Cuzco.</i></p>
                             <p class="text-justify font-weight-light">Na GOTOPERU, estamos comprometidos em fazer negócios de uma maneira que realmente retorne às nossas comunidades parte de nossos lucros, especialmente para comunidades localizadas em locais remotos. Nosso planejamento e execução de uma de nossas viagens envolve uma longa cadeia de suprimentos: de guias e operadores locais a fornecedores de transporte, hotéis e restaurantes, interagimos com muitas organizações em diferentes lugares, mas também sabemos que algumas comunidades estão localizadas acima dos Andes. A mais de 15.000 pés, devido ao difícil acesso, eles não recebem a assistência que merecem, por isso organizamos periodicamente viagens a comunidades tão distantes para trazê-los especialmente suéteres e brinquedos para as crianças.</p>
                         </div>
                     </div>
