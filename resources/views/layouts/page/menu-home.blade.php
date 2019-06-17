@@ -109,7 +109,7 @@
                         <div class="col-12 col-sm border-secondary border-right-0  m-0">
 
                             <div class="d-block mb-3">
-                                <span class="text-secondary align-bottom">Informação pessoal</span>
+                                <span class="text-secondary align-bottom font-weight-bold">Informação pessoal</span>
                                 {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                             </div>
                             <div class="row">
@@ -131,14 +131,18 @@
                                         <input type="text" class="form-control" id="d_date" placeholder="Data de viagem">
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm">
-                                    <div class="form-group">
+                                <div class="col-12 col-sm-12">
+                                    <div class="input-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
-                                        <input type="tel" class="form-control" id="d_tel" placeholder="N° de Telefone">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        </div>
+                                        <input type="number" class="form-control" id="d_ddd" placeholder="DDD">
+                                        <input type="tel" class="form-control w-50" id="d_tel" placeholder="N° de Telefone">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mt-3">
                                 <div class="col-6 col-sm-6">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
@@ -159,41 +163,41 @@
                             {{--<h4 class="card-title">Card title</h4>--}}
                             {{--<label class="d-block">Eu Gostaria de visitar</label>--}}
                             <div class="d-block mb-3">
-                                <span class="text-secondary align-bottom">Eu Gostaria de visitar:</span>
+                                <span class="text-secondary align-bottom font-weight-bold">Eu Gostaria de visitar:</span>
                                 {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                             </div>
                             <div class="">
-                                <div class="row">
-                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
+                                <div class="row mb-3">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox"  autocomplete="off" name="destinations[]" value="Machu Picchu"> Machu Picchu
                                         </label>
                                     </div>
-                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Cusco"> Cusco
                                         </label>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
+                                <div class="row mb-3">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
                                         </label>
                                     </div>
-                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Puno"> Puno
                                         </label>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
+                                <div class="row mb-3">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lima"> Lima
                                         </label>
                                     </div>
-                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Linhas de Nazca
                                         </label>
@@ -201,9 +205,11 @@
                                 </div>
                             </div>
 
-                            <div class="input-group">
-                                <span class="input-group-addon" id="">Outros</span>
-                                <input type="text" class="form-control" id="d_otros" aria-describedby="basic-addon3">
+                            <div class="input-group mt-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Outros</span>
+                                </div>
+                                <input type="text" aria-label="Outros" id="d_otros" class="form-control">
                             </div>
 
                         </div>
@@ -216,12 +222,11 @@
                             <strong>Muito obrigado</strong> por entrar em contato com a GOTOPERU, um agente de viagens entrará em contato com você nas próximas 24 horas para ajudá-lo a planejar sua viagem. :)
                         </div>
                     </div>
-                    <div class="row mt-3">
+                    <hr>
+                    <div class="row mt-3 text-center">
                         <div class="col">
+                            <button class="btn btn-primary font-weight-bold" id="d_send" type="button" onclick="design()">Enviar
 
-
-                            <button class="btn btn-lg btn-block btn-g-green" id="d_send" type="button" onclick="design()">Enviar
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
                             </button>
                             <ul class="fa-ul pull-right d-none" id="loader2">
                                 <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>

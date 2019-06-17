@@ -461,6 +461,7 @@ class HomeController extends Controller
         $name = $_POST['txt_name'];
         $email = $_POST['txt_email'];
         $date = $_POST['txt_date'];
+        $ddd = $_POST['txt_ddd'];
         $tel = $_POST['txt_tel'];
         $duration = $_POST['txt_duration'];
         $number = $_POST['txt_number'];
@@ -484,6 +485,7 @@ class HomeController extends Controller
                 'date' => $date,
                 'name' => $name,
                 'email' => $email,
+                'ddd' => $ddd,
                 'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from) {
@@ -535,6 +537,7 @@ class HomeController extends Controller
         $duration = $_POST['txt_duration'];
         $duration_t = $_POST['txt_duration_t'];
         $date = $_POST['txt_date'];
+        $ddd = $_POST['txt_ddd'];
         $tel = $_POST['txt_tel'];
         $name = $_POST['txt_name'];
         $email = $_POST['txt_email'];
@@ -558,6 +561,7 @@ class HomeController extends Controller
                 'duration' => $duration,
                 'duration_t' => $duration_t,
                 'date' => $date,
+                'ddd' => $ddd,
                 'tel' => $tel,
                 'name' => $name,
                 'email' => $email,
@@ -661,6 +665,7 @@ class HomeController extends Controller
         $email = $_POST['txt_email'];
         $city = $_POST['txt_city'];
         $tel = $_POST['txt_tel'];
+        $ddd = $_POST['txt_ddd'];
 
 
         try {
@@ -676,6 +681,7 @@ class HomeController extends Controller
                 'name' => $name,
                 'email' => $email,
                 'city' => $city,
+                'ddd' => $ddd,
                 'tel' => $tel
             ], function ($messaje) use ($from) {
                 $messaje->to($from, 'AndesViagens')
@@ -718,6 +724,7 @@ class HomeController extends Controller
         $number = $_POST['txt_number'];
 
         $date = $_POST['txt_date'];
+        $ddd = $_POST['txt_ddd'];
         $tel = $_POST['txt_tel'];
         $name = $_POST['txt_name'];
         $email = $_POST['txt_email'];
@@ -740,6 +747,7 @@ class HomeController extends Controller
                 'number' => $number,
 
                 'date' => $date,
+                'ddd' => $ddd,
                 'tel' => $tel,
                 'name' => $name,
                 'email' => $email,

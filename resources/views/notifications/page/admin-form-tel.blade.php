@@ -12,6 +12,7 @@
                         <td style="text-align:left">
                             <p><strong>Email: {{$email}}</strong></p>
                             <p><strong>Ciudad: {{$city}}</strong></p>
+                            <p><strong>DDD: {{$ddd}}</strong></p>
                             <p><strong>Telefono: {{$tel}}</strong></p>
                         </td>
                     </tr>

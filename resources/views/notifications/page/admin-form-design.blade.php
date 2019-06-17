@@ -11,6 +11,7 @@
                     <tr>
                         <td style="text-align:left">
                             <p><strong>Email: {{$email}}</strong></p>
+                            <p><strong>DDD: {{$ddd}}</strong></p>
                             <p><strong>Phone: {{$tel}}</strong></p>
                             <p><strong>Destinations: {{$destinations}}</strong></p>
                             <p><strong>Other Destinations: {{$other}}</strong></p>

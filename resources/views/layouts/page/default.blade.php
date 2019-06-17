@@ -299,6 +299,7 @@
             var s_name = $('#d_name').val();
             var s_email = $('#d_email').val();
             var s_date = $('#d_date').val();
+            var s_ddd = $('#d_ddd').val();
             var s_tel = $('#d_tel').val();
             var s_duration = $('#d_duration').val();
             var s_number = $('#d_numero').val();
@@ -328,6 +329,7 @@
                     "txt_name" : s_name,
                     "txt_email" : s_email,
                     "txt_date" : s_date,
+                    "txt_ddd" : s_ddd,
                     "txt_tel" : s_tel,
                     "txt_duration" : s_duration,
                     "txt_number" : s_number
@@ -452,6 +454,7 @@
             var s_name = $('#t_name').val();
             var s_email = $('#t_email').val();
             var s_city = $('#t_city').val();
+            var s_ddd = $('#t_ddd').val();
             var s_tel = $('#t_tel').val();
 
 
@@ -483,6 +486,7 @@
                     "txt_email" : s_email,
                     "txt_name" : s_name,
                     "txt_city" : s_city,
+                    "txt_ddd" : s_ddd,
                     "txt_tel" : s_tel,
                 };
                 $.ajax({
@@ -555,6 +559,7 @@
             var s_duration = $(".duration:checked").val();
             var s_duration_t = $("#h_duration").val();
             var s_date = $('#h_date').val();
+            var s_ddd = $('#h_ddd').val();
             var s_tel = $('#h_tel').val();
             var s_name = $('#h_name').val();
             var s_email = $('#h_email').val();
@@ -582,6 +587,7 @@
                     "txt_duration" : s_duration,
                     "txt_duration_t" : s_duration_t,
                     "txt_date" : s_date,
+                    "txt_ddd" : s_ddd,
                     "txt_tel" : s_tel,
                     "txt_name" : s_name,
                     "txt_email" : s_email,

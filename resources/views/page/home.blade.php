@@ -212,11 +212,11 @@
                         <h3>Contate-nos</h3>
                         <p>Telefone: <i class="fa fa-phone"></i> 55(11)31982239</p>
                         {{--<a href="" class="btn btn-g-yellow">Contáctenos</a>--}}
-                        <button type="button" class="btn btn-g-yellow btn-sm mb-2" data-toggle="modal" data-target="#contant_m">
-                            Contate-nos
-                        </button>
+{{--                        <button type="button" class="btn btn-g-yellow btn-sm mb-2" data-toggle="modal" data-target="#contant_m">--}}
+{{--                            Contate-nos--}}
+{{--                        </button>--}}
 
-                        <button type="button" class="btn btn-dark btn-sm  mb-2" data-toggle="modal" data-target="#llamada_m">
+                        <button type="button" class="btn btn-dark  mb-2" data-toggle="modal" data-target="#llamada_m">
                             Nós te ligamos
                         </button>
                         {{--<a href="" class="btn btn-dark">Nosotros te llamamos</a>--}}
@@ -260,9 +260,18 @@
                                     <input type="text" class="form-control" id="t_city" placeholder="Lima/Peru">
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="t_tel">Telefone</label>
-                                    <input type="text" class="form-control" id="t_tel" placeholder="Ej. +51 980385734">
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="t_tel">Telefone</label>--}}
+{{--                                    <input type="text" class="form-control" id="t_tel" placeholder="Ej. +51 980385734">--}}
+{{--                                </div>--}}
+
+                                <div class="input-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                    </div>
+                                    <input type="number" class="form-control" id="t_ddd" placeholder="DDD">
+                                    <input type="tel" class="form-control w-50" id="t_tel" placeholder="N° de Telefone">
                                 </div>
 
 
@@ -276,11 +285,10 @@
                                 {{--<button type="submit" class="btn btn-primary">Sign in</button>--}}
                             </form>
                         </div>
-                        <div class="modal-footer">
+                        <div class="text-center mb-4">
                             {{--<button type="submit" class="btn btn-primary">Llámenme ahora mismo</button>--}}
+                            <button class="btn btn-primary" id="t_send" type="button" onclick="tel()">Me ligue agora mesmo
 
-                            <button class="btn btn-lg btn-block btn-g-green" id="t_send" type="button" onclick="tel()">Me ligue agora mesmo
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
                             </button>
                             <ul class="fa-ul pull-right d-none" id="loader4">
                                 <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Envio...</i></li>

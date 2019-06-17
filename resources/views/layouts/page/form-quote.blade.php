@@ -143,8 +143,8 @@
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
                                                             <input type="checkbox" autocomplete="off" name="accommodation[]" value="Econômico"> Econômico
                                                             <div class="d-block">
-                                                                <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                                <small><i class="fa fa-star text-g-yellow"></i></small>
+                                                                <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                                <small><i class="fa fa-star text-g-yellow small"></i></small>
                                                             </div>
                                                             {{--<div class="d-block text-center sec-stars">--}}
                                                             {{--<i class="fa fa-star"></i>--}}
@@ -160,9 +160,9 @@
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
                                                             <input type="checkbox" autocomplete="off" name="accommodation[]" value="Turista"> Turista
                                                             <div class="d-block">
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
                                                             </div>
                                                             {{--<i class="fa fa-star"></i>--}}
                                                             {{--<div class="d-block text-center sec-stars">--}}
@@ -180,10 +180,10 @@
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
                                                             <input type="checkbox" autocomplete="off" name="accommodation[]" value="Superior"> Superior
                                                             <div class="d-block">
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
                                                             </div>
                                                         </label>
                                                     </div>
@@ -195,11 +195,11 @@
                                                         <label class="col btn btn-outline-secondary text-secondary number-hover">
                                                             <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxo
                                                             <div class="d-block">
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
-                                                            <small><i class="fa fa-star text-g-yellow"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
+                                                            <small><i class="fa fa-star text-g-yellow small"></i></small>
                                                             </div>
                                                         </label>
                                                     </div>
@@ -244,7 +244,6 @@
                                                 <label class="col-6 col-sm col-md-6 col-xl mx-sm-2 mx-md-0 mx-xl-2 mb-2 mb-sm-0 mb-md-2 btn btn-outline-secondary text-secondary number-hover">
                                                     <input type="checkbox" name="destinations[]" autocomplete="off" value="Nazca & Ballestas">
                                                     {{--<img src="{{asset('images/destinations/destinations/nazca-lines.jpg')}}" alt="" width="40" height="40" class="rounded-circle">--}}
-                                                    <small>Nazca & Ballestas</small>
                                                     <small>Nazca & Ballestas</small>
                                                 </label>
                                                 <label class="col-6 col-sm col-md-6 col-xl mx-sm-2 mx-md-0 btn btn-outline-secondary text-secondary number-hover">
@@ -354,8 +353,8 @@
 
 
 
-                                                    <div class="row mt-4 pb-1">
-                                                        <div class="col-12 col-sm col-md-12 col-lg-6">
+                                                    <div class="row my-4 pb-1">
+                                                        <div class="col-12 col-sm col-md-12">
                                                             <div class="row">
                                                                 <div class="col">
                                                                     <h2 class="text-secondary h5"><strong>DATA DE VIAGEM</strong></h2>
@@ -373,24 +372,34 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 mt-4 mt-sm-0 col-sm col-md-12 mt-md-4 col-lg-6 mt-lg-0">
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <h2 class="text-secondary h5"><strong>NÚMERO DE TELEFONE</strong></h2>
+                                                    </div>
+
+
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h2 class="text-secondary h5"><strong>NÚMERO DE TELEFONE</strong></h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <div class="input-group input-group-lg">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text" id="basic-addon1">DDD</span>
+                                                                    </div>
+                                                                    <input type="number" class="form-control" id="h_ddd" aria-label="Phone" aria-describedby="basic-addon1">
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <div class="input-group input-group-lg">
-                                                                        <div class="input-group-prepend">
-                                                                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                                                        </div>
-                                                                        <input type="tel" class="form-control" id="h_tel" placeholder="Número de telefone" aria-label="Phone" aria-describedby="basic-addon1">
+                                                            <div class="col">
+                                                                <div class="input-group input-group-lg">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
                                                                     </div>
+                                                                    <input type="tel" class="form-control" id="h_tel" placeholder="Número de telefone" aria-label="Phone" aria-describedby="basic-addon1">
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+
+
                                                     <div class="row mt-4 pb-2">
                                                         <div class="col">
                                                             <h2 class="text-secondary h5"><strong>COMENTÁRIOS?</strong></h2>

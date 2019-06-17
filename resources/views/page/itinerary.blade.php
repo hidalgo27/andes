@@ -416,8 +416,8 @@
                         <h3 class="text-secondary mt-4">Acomodação</h3>
 
                         <div class="row">
-                            <div class="col-6 col-sm" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-block">
+                            <div class="col-6 col-sm btn-group-toggle" data-toggle="buttons">
+                                <label class="col btn btn-outline-secondary text-secondary number-hover">
                                     <input type="checkbox" autocomplete="off" name="accommodation[]" value="Econômico"> Económico
                                     <div class="d-block text-warning">
                                         <i class="fa fa-star"></i>
@@ -425,8 +425,8 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-block">
+                            <div class="col-6 col-sm btn-group-toggle" data-toggle="buttons">
+                                <label class="col btn btn-outline-secondary text-secondary number-hover">
                                     <input type="checkbox" autocomplete="off" name="accommodation[]" value="Turista"> Turista
                                     <div class="d-block text-warning">
                                         <i class="fa fa-star"></i>
@@ -435,8 +435,8 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-block">
+                            <div class="col-6 col-sm btn-group-toggle" data-toggle="buttons">
+                                <label class="col btn btn-outline-secondary text-secondary number-hover">
                                     <input type="checkbox" autocomplete="off" name="accommodation[]" value="Superior"> Superior
                                     <div class="d-block text-warning">
                                         <i class="fa fa-star"></i>
@@ -446,8 +446,8 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-block">
+                            <div class="col-6 col-sm btn-group-toggle" data-toggle="buttons">
+                                <label class="col btn btn-outline-secondary text-secondary number-hover">
                                     <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxo
                                     <div class="d-block text-warning">
                                         <i class="fa fa-star"></i>
@@ -462,9 +462,9 @@
 
                         <h3 class="text-secondary mt-4">Numero de Passageiros</h3>
 
-                        <div class="row no-gutters" data-toggle="buttons">
+                        <div class="row no-gutters btn-group-toggle" data-toggle="buttons">
                             <label class="btn col btn-outline-primary">
-                                <input type="radio" name="number" class="number" autocomplete="off" value="1" checked> 1 <i class="fa fa-male"></i>
+                                <input type="radio" name="number" class="number" autocomplete="off" value="1"> 1 <i class="fa fa-male"></i>
                             </label>
                             <label class="btn col mx-2 btn-outline-primary">
                                 <input type="radio" name="number" class="number" autocomplete="off" value="2"> 2 <i class="fa fa-male"></i>
@@ -484,10 +484,14 @@
                         </div>
 
                         <div class="row">
-                            <div class="col">
+                            <div class="col-6">
                                 <h3 class="text-secondary mt-4">Data de Viagem</h3>
                                 <input type="text" class="form-control" id="i_date" placeholder="Data de Viagem">
                                 <input type="hidden" id="i_package" value="{{$paquetes->codigo}}: {{$paquetes->titulo}} {{$paquetes->duracion}} DAYS">
+                            </div>
+                            <div class="col-2">
+                                <h3 class="text-secondary mt-4">DDD</h3>
+                                <input type="tel" class="form-control" id="i_ddd" placeholder="DDD">
                             </div>
                             <div class="col">
                                 <h3 class="text-secondary mt-4">Telefone</h3>
@@ -573,6 +577,7 @@
                 var s_number = $(".number:checked").val();
 
                 var s_date = $('#i_date').val();
+                var s_ddd = $('#i_ddd').val();
                 var s_tel = $('#i_tel').val();
                 var s_name = $('#i_name').val();
                 var s_email = $('#i_email').val();
@@ -600,6 +605,7 @@
                         "txt_number" : s_number,
 
                         "txt_date" : s_date,
+                        "txt_ddd" : s_ddd,
                         "txt_tel" : s_tel,
                         "txt_name" : s_name,
                         "txt_email" : s_email,
