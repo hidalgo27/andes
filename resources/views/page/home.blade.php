@@ -37,7 +37,7 @@
                     <div class="d-none d-lg-inline col-lg">
                         <div class="row align-items-center">
                             <div class="col-9 text-right">
-                                <span class="text-g-yellow text-right font-weight-bold">+55 (11) 31982239</span>
+                                <span class="text-g-yellow text-right font-weight-bold">+55 (11) 41302800</span>
                             </div>
                             <div class="col-3">
                                 <img src="{{asset('images/logos/logo-expedia2.png')}}" alt="Logo expedia" class="img-fluid">
