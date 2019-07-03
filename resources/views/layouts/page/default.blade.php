@@ -171,7 +171,7 @@
                 <h3 class="h6 text-g-yellow">Contato</h3>
                 <ul class="m-0 text-g-yellow list-unstyled">
                     {{--<li><a href="" class="text-white" data-toggle="modal" data-target="#modal-contact">Email</a></li>--}}
-                    <li><a href="tel:+551131982239">+55 (11) 3198-2239</a></li>
+                    <li><a href="tel:+551141302800">+55 (11) 41302800</a></li>
                     {{--<li><a href="" class="text-white">Address</a></li>--}}
                 </ul>
             </div>
