@@ -14,7 +14,7 @@
                 <h5 class="font-weight-bold mt-4 text-white">CONFIANÇA</h5>
                 {{--<h3>Andes Viagens</h3>--}}
                 <p class="py-3 text-white lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
-                <a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
+                <a href="https://api.whatsapp.com/send?phone=551141302800" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
                 <a href="https://m.me/ANDESVIAGENS/" target="_blank" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> Fale com nós agora</a>
             </div>
         </div>
