@@ -536,7 +536,7 @@
                             @foreach($paquete->where('estado',1)->sortBy('duracion')->take(4) as $paquetes)
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-3">
                                 <div class="card mb-3">
-                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="position-relative">
+                                    <a href="{{route('home_show_path', str_replace(' ','-',mb_strtolower($paquetes->titulo)))}}" class="position-relative">
                                         <img class="card-img-top img-lazy" data-src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="">
 
                                         <div class="card-img-overlay bg-rgba-dark-3 p-0">
@@ -558,8 +558,8 @@
                                             </div>
                                         </div>
                                         <div class="card-img-overlay-packages bg-rgba-dark-1">
-                                            <h5 class="card-title text-white m-0">{{ucwords(strtolower($paquetes->titulo))}}</h5>
-                                            {{--<h2 class="card-title text-white m-0 h5"><a href="{{route('itinerary_path', [str_replace(' ','-',strtolower($paquetes->titulo)), $paquetes->duracion])}}" class="text-dark">{{$paquetes->titulo}}</a></h2>--}}
+                                            <h5 class="card-title text-white m-0">{{ucwords(mb_strtolower($paquetes->titulo))}}</h5>
+                                            {{--<h2 class="card-title text-white m-0 h5"><a href="{{route('itinerary_path', [str_replace(' ','-',mb_strtolower($paquetes->titulo)), $paquetes->duracion])}}" class="text-dark">{{$paquetes->titulo}}</a></h2>--}}
                                             <small class="text-white font-weight-light">
                                                 <i class="fa fa-map-marker"></i>
                                                 @php
@@ -568,7 +568,7 @@
                                                 @endphp
                                                 @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
                                                     @if(isset($paquete_destino->destinos->nombre))
-                                                        {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($k < $num_des),@else.@endif
+                                                        {{ucwords(mb_strtolower($paquete_destino->destinos->nombre))}}@if($k < $num_des),@else.@endif
                                                         @php $k++; @endphp
                                                     @endif
                                                 @endforeach
@@ -587,11 +587,11 @@
                                 <div class="swiper-slide">
                                     <div class="list-group position-relative">
                                         @foreach($paquete->random(8) as $paquetes)
-                                            <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
+                                            <a href="{{route('home_show_path', str_replace(' ','-',mb_strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                                                 <div class="media">
                                                     <img data-src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" width="60" height="60" class="rounded-circle align-self-center mr-3 img-lazy" data-toggle="tooltip" data-placement="top" title="{{(strtolower($paquetes->titulo))}}">
                                                     <div class="media-body">
-                                                        <h5 class="mt-0"><span class="text-g-yellow">{{$paquetes->duracion}} Dias</span> {{ucwords(strtolower($paquetes->titulo))}}</h5>
+                                                        <h5 class="mt-0"><span class="text-g-yellow">{{$paquetes->duracion}} Dias</span> {{ucwords(mb_strtolower($paquetes->titulo))}}</h5>
                                                         <small>
                                                             <i class="fa fa-map-marker-alt"></i>
                                                             @php
@@ -600,7 +600,7 @@
                                                             @endphp
                                                             @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
                                                                 @if(isset($paquete_destino->destinos->nombre))
-                                                                    {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($m < $num_des),@else.@endif
+                                                                    {{ucwords(mb_strtolower($paquete_destino->destinos->nombre))}}@if($m < $num_des),@else.@endif
                                                                     @php $m++; @endphp
                                                                 @endif
                                                             @endforeach
@@ -648,11 +648,11 @@
                                 <div class="swiper-slide">
                                     <div class="list-group position-relative">
                                         @foreach($paquete->where('s_precio', 1)->sortBy('duracion') as $paquetes)
-                                            <a href="{{route('sin_hotel_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
+                                            <a href="{{route('sin_hotel_show_path', str_replace(' ','-',mb_strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                                                 <div class="media">
                                                     <img src="{{asset('images/packages/'.$paquetes->codigo.'.jpg')}}" alt="" width="60" height="60" class="rounded-circle align-self-center mr-3" data-toggle="tooltip" data-placement="top" title="{{(strtolower($paquetes->titulo))}}">
                                                     <div class="media-body">
-                                                        <h5 class="mt-0"><span class="text-g-yellow">{{$paquetes->duracion}} Days</span> {{ucwords(strtolower($paquetes->titulo))}}</h5>
+                                                        <h5 class="mt-0"><span class="text-g-yellow">{{$paquetes->duracion}} Days</span> {{ucwords(mb_strtolower($paquetes->titulo))}}</h5>
                                                         <small>
                                                             <i class="fa fa-map-marker-alt"></i>
                                                             @php
@@ -661,7 +661,7 @@
                                                             @endphp
                                                             @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
                                                                 @if(isset($paquete_destino->destinos->nombre))
-                                                                    {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($m < $num_des),@else.@endif
+                                                                    {{ucwords(mb_strtolower($paquete_destino->destinos->nombre))}}@if($m < $num_des),@else.@endif
                                                                     @php $m++; @endphp
                                                                 @endif
                                                             @endforeach
@@ -694,10 +694,10 @@
                                     <div class="list-group position-relative">
 
                                             @foreach($tours as $tour)
-                                                <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
+                                                <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',mb_strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
                                                     <div class="row no-gutters">
                                                         <div class="col-8 col-sm-6 text-primary">
-                                                            <b>{{ucwords(strtolower($tour->titulo))}}</b>
+                                                            <b>{{ucwords(mb_strtolower($tour->titulo))}}</b>
                                                         </div>
                                                         <div class="col d-none d-sm-inline">
                                                             <i class="fa fa-map-marker-alt  text-g-green"></i>
@@ -706,7 +706,7 @@
                                                                 $num_des = count($tours_destinos->where('idtours',$tour->id));
                                                             @endphp
                                                             @foreach($tours_destinos->where('idtours',$tour->id) as $tour_destino)
-                                                                {{ucwords(strtolower($tour_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                                                {{ucwords(mb_strtolower($tour_destino->destinos->nombre))}}@if($i < $num_des),@endif
                                                                 @php $i++; @endphp
                                                             @endforeach
                                                         </div>
@@ -771,10 +771,10 @@
                                         @else
                                             @php $new = ""; $bad = "d-none"; @endphp
                                         @endif
-                                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action {{$new}} position-relative">
+                                    <a href="{{route('home_show_path', str_replace(' ','-',mb_strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action {{$new}} position-relative">
                                         <div class="row no-gutters">
                                             <div class="col-8 col-sm-5 text-primary">
-                                                <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
+                                                <b>{{$paquetes->duracion}} Días</b> {{ucwords(mb_strtolower($paquetes->titulo))}}
                                             </div>
                                             <div class="col d-none d-sm-inline">
                                                 <i class="fa fa-map-marker-alt  text-g-green"></i>
@@ -783,7 +783,7 @@
                                                     $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
                                                 @endphp
                                                 @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                                    {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                                    {{ucwords(mb_strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
                                                     @php $i++; @endphp
                                                 @endforeach
                                             </div>
@@ -825,10 +825,10 @@
                                 <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> Passeios, traslados, ingressos, café da manha, trenes.</h5>
 
                                 @foreach($paquete->where('s_precio', 1)->sortBy('duracion')->take(6) as $paquetes)
-                                        <a href="{{route('sin_hotel_show_path', str_replace(' ','-',strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
+                                        <a href="{{route('sin_hotel_show_path', str_replace(' ','-',mb_strtolower($paquetes->titulo)))}}" class="list-group-item list-group-item-action">
                                         <div class="row no-gutters">
                                             <div class="col-8 col-sm-5 text-primary">
-                                                <b>{{$paquetes->duracion}} Días</b> {{ucwords(strtolower($paquetes->titulo))}}
+                                                <b>{{$paquetes->duracion}} Días</b> {{ucwords(mb_strtolower($paquetes->titulo))}}
                                             </div>
                                             <div class="col d-none d-sm-inline">
                                                 <i class="fa fa-map-marker-alt  text-danger"></i>
@@ -837,7 +837,7 @@
                                                     $num_des = count($paquete_destinos->where('idpaquetes',$paquetes->id));
                                                 @endphp
                                                 @foreach($paquete_destinos->where('idpaquetes',$paquetes->id) as $paquete_destino)
-                                                    {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                                    {{ucwords(mb_strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@endif
                                                     @php $i++; @endphp
                                                 @endforeach
                                             </div>
@@ -868,10 +868,10 @@
                                 <h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluso:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>
 
                                 @foreach($tours as $tour)
-                                    <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
+                                    <a href="{{route('itinerario_tours_show_path', str_replace(' ','-',mb_strtolower($tour->titulo)))}}" class="list-group-item list-group-item-action">
                                         <div class="row no-gutters">
                                             <div class="col-8 col-sm-5 text-primary">
-                                                <b>{{ucwords(strtolower($tour->titulo))}}</b>
+                                                <b>{{ucwords(mb_strtolower($tour->titulo))}}</b>
                                             </div>
                                             {{--<div class="col">--}}
                                                 {{--<i class="fa fa-clock  text-info"></i> {{$tour->duracion}}--}}
@@ -883,7 +883,7 @@
                                                     $num_des = count($tours_destinos->where('idtours',$tour->id));
                                                 @endphp
                                                 @foreach($tours_destinos->where('idtours',$tour->id) as $tour_destino)
-                                                    {{ucwords(strtolower($tour_destino->destinos->nombre))}}@if($i < $num_des),@endif
+                                                    {{ucwords(mb_strtolower($tour_destino->destinos->nombre))}}@if($i < $num_des),@endif
                                                     @php $i++; @endphp
                                                 @endforeach
                                             </div>
@@ -935,10 +935,10 @@
                                 {{--<h5 class="text-secondary py-2"><i class="fa fa-chevron-right"></i> <b>Incluye:</b> hoteles, tours, traslados, entradas, desayunos, trenes.</h5>--}}
 
                                 @foreach($traslado as $traslados)
-                                    <a href="{{route('transfer_path', str_replace(' ','-',strtolower($traslados->titulo)))}}" class="list-group-item list-group-item-action">
+                                    <a href="{{route('transfer_path', str_replace(' ','-',mb_strtolower($traslados->titulo)))}}" class="list-group-item list-group-item-action">
                                         <div class="row no-gutters">
                                             <div class="col-5 text-primary">
-                                                <b>{{ucwords(strtolower($traslados->titulo))}}</b>
+                                                <b>{{ucwords(mb_strtolower($traslados->titulo))}}</b>
                                             </div>
 
                                             <div class="col text-right">
