@@ -156,7 +156,7 @@
         </div>
     </section>
     @include('layouts.page.menu-home')
-    @include('layouts.page.menu-mobil')
+{{--    @include('layouts.page.menu-mobil')--}}
 
     <section class="d-md-none">
         <div class="container-fluid p-0">

@@ -438,3 +438,22 @@ img.img-lazy:not([src]) {
   -webkit-box-shadow: 0 0 0 0.05rem rgba(249, 168, 37, 0.5) !important;
   box-shadow: 0 0 0 0.05rem rgba(249, 168, 37, 0.5) !important;
 }
+
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}

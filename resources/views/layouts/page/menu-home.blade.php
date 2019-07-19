@@ -23,12 +23,18 @@
 <section class="bg-dark sticky-top py-2 d-md-none">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-6">
-                <a href="#Inquire" class="btn btn-block btn-g-yellow">PERGUNTAR</a>
+            <div class="col-auto">
+                <a href="#Inquire" class="btn btn-sm btn-block btn-g-yellow">PERGUNTAR</a>
             </div>
-            {{--<div class="col">--}}
-                {{--<a href="tel:+2029963000" class="mx-3 h4"><i class="fa fa-phone text-white"></i></a>--}}
-            {{--</div>--}}
+            <div class="col text-right">
+{{--                <a href="tel:+2029963000" class="mx-3 h4"><i class="fa fa-phone text-white"></i></a>--}}
+                <div id="watchme">
+                <a href="https://api.whatsapp.com/send?phone=551141302800" target="_blank" class="font-weight-bold text-white stretched-link">
+                    +55 11 4130-2800
+                    <img src="{{asset('images/icons/whatsapp-i.png')}}" class="py-1" alt="logo whatsapp" width="50" data-toggle="tooltip" data-placement="top" title="Perú">
+                </a>
+                </div>
+            </div>
             {{--<div class="col">--}}
                 {{--<a href="#" class="mx-3 h2"  data-toggle="modal" data-target="#modal-menu"><i class="fa fa-bars text-white"></i></a>--}}
             {{--</div>--}}
