@@ -171,7 +171,7 @@
                 <h3 class="h6 text-g-yellow">Contato</h3>
                 <ul class="m-0 text-g-yellow list-unstyled">
                     {{--<li><a href="" class="text-white" data-toggle="modal" data-target="#modal-contact">Email</a></li>--}}
-                    <li><a href="tel:+551131982239">+55 (11) 3198-2239</a></li>
+                    <li><a href="tel:+551141302800">+55 (11) 41302800</a></li>
                     {{--<li><a href="" class="text-white">Address</a></li>--}}
                 </ul>
             </div>
@@ -637,6 +637,28 @@
         }
         function estado2() {
             $(".number_ch").removeClass('active');
+        }
+
+
+        var e = document.getElementById("watchme");
+        e.addEventListener("animationstart", listener, false);
+        e.addEventListener("animationend", listener, false);
+        e.addEventListener("animationiteration", listener, false);
+
+        e.className = "slidein";function listener(e) {
+            var l = document.createElement("li");
+            switch(e.type) {
+                case "animationstart":
+                    l.innerHTML = "Iniciado: tiempo transcurrido " + e.elapsedTime;
+                    break;
+                case "animationend":
+                    l.innerHTML = "Finalizado: tiempo transcurrido " + e.elapsedTime;
+                    break;
+                case "animationiteration":
+                    l.innerHTML = "Nueva iteración comenzó a los " + e.elapsedTime;
+                    break;
+            }
+            document.getElementById("output").appendChild(l);
         }
 
 
