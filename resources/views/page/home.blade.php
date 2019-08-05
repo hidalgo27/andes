@@ -144,6 +144,34 @@
                                     {{--<div class="content-video-btn-1 mt-4">--}}
                                     {{--<a href="https://www.youtube.com/watch?v=pNe-NtXIULs"  class="html5lightbox text-white" title=""><i class="fa fa-play-circle fa-4x"></i></a>--}}
                                     {{--</div>--}}
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-7 col-lg-5 mt-5">
+                                            <div class="bg-rgba-white-5 rounded shadow p-3">
+                                                <h5 class="m-0 text-dark font-weight-bold">PARCELE SUA COMPRA <span class="text-primary">EM ATÉ</span></h5>
+                                                <p class="display-2 font-weight-bold m-0 font-weight-bold text-primary">12x</p>
+                                                <div class="row no-gutters">
+                                                    <div class="col">
+                                                        <img src="{{asset('images/logos/visa.png')}}" alt="logo visa" class="w-100 p-1">
+                                                    </div>
+                                                    <div class="col">
+                                                        <img src="{{asset('images/logos/mastercard.png')}}" alt="logo mastercard" class="w-100 p-1">
+                                                    </div>
+                                                    <div class="col">
+                                                        <img src="{{asset('images/logos/american_express.png')}}" alt="logo american express" class="w-100 p-1">
+                                                    </div>
+                                                    <div class="col">
+                                                        <img src="{{asset('images/logos/hipercard.png')}}" alt="logo hipercard" class="w-100 p-1">
+                                                    </div>
+                                                    <div class="col">
+                                                        <img src="{{asset('images/logos/elo.png')}}" alt="logo elo" class="w-100 p-1">
+                                                    </div>
+                                                    <div class="col">
+                                                        <img src="{{asset('images/logos/diners_club.png')}}" alt="logo diner club" class="w-100 p-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,6 +179,8 @@
                     </div>
 
                 </div>
+
+
 
             </div>
         </div>
