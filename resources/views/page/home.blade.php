@@ -255,7 +255,7 @@
                         <h3>Fale Chat agora</h3>
                         <p>Entre em contato:</p>
 {{--                        <a href="https://m.me/GOTOPERUcom/" class="btn btn-primary mb-2" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>--}}
-                        <a href="https://wa.me/5117064514" class="btn btn-success btn-block mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                        <a href="https://wa.me/5117064514" class="btn btn-success btn-lg mb-2" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a>
                     </div>
                 </div>
             </div>
