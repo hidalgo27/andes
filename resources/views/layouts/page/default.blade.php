@@ -23,7 +23,7 @@
 
         gtag('config', 'UA-57960909-3');
     </script>
-    <script type="text/javascript" src="https://widget.sirena.app/get?token=zdF9nfRDq1GYnzBarfuv3NTwoEBBmEga" async="true"></script>
+{{--    <script type="text/javascript" src="https://widget.sirena.app/get?token=zdF9nfRDq1GYnzBarfuv3NTwoEBBmEga" async="true"></script>--}}
 
 </head>
 <body data-spy="scroll" data-target="#menu" class="position-relative">
